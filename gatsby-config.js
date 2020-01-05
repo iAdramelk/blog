@@ -3,9 +3,7 @@ const dvc = require('./config/prismjs/dvc');
 
 const netlifyCMSPathConfig = {
   resolve: 'gatsby-plugin-netlify-cms-paths',
-  options: {
-    cmsConfig: '/static/admin/config.yml'
-  }
+  options: { cmsConfig: '/static/admin/config.yml' }
 };
 
 const title = 'Data Version Control · DVC';
@@ -25,30 +23,18 @@ const plugins = [
       gatsbyRemarkPlugins: [
         {
           resolve: 'gatsby-remark-embed-gist',
-          options: {
-            includeDefaultCss: true
-          }
+          options: { includeDefaultCss: true }
         },
-        {
-          resolve: 'gatsby-remark-relative-images'
-        },
+        { resolve: 'gatsby-remark-relative-images' },
         {
           resolve: 'gatsby-remark-images',
-          options: {
-            maxWidth: 700,
-            withWebp: true
-          }
+          options: { maxWidth: 700, withWebp: true }
         },
         'gatsby-remark-responsive-iframe',
         {
           resolve: 'gatsby-remark-prismjs',
           options: {
-            languageExtensions: [
-              {
-                language: 'dvc',
-                definition: dvc
-              }
-            ]
+            languageExtensions: [{ language: 'dvc', definition: dvc }]
           }
         },
         'gatsby-remark-copy-linked-files',
@@ -59,10 +45,7 @@ const plugins = [
   },
   {
     resolve: 'gatsby-source-filesystem',
-    options: {
-      path: path.join(__dirname, 'content', 'blog'),
-      name: 'blog'
-    }
+    options: { path: path.join(__dirname, 'content', 'blog'), name: 'blog' }
   },
   {
     resolve: 'gatsby-source-filesystem',
@@ -73,26 +56,15 @@ const plugins = [
   },
   {
     resolve: 'gatsby-source-filesystem',
-    options: {
-      path: path.join(__dirname, 'content', 'assets'),
-      name: 'assets'
-    }
+    options: { path: path.join(__dirname, 'content', 'assets'), name: 'assets' }
   },
   {
     resolve: 'gatsby-source-filesystem',
-    options: {
-      path: path.join(__dirname, 'static', 'uploads'),
-      name: 'images'
-    }
+    options: { path: path.join(__dirname, 'static', 'uploads'), name: 'images' }
   },
   'gatsby-plugin-typescript',
   'gatsby-plugin-postcss',
-  {
-    resolve: 'gatsby-plugin-svgr',
-    options: {
-      ref: true
-    }
-  },
+  { resolve: 'gatsby-plugin-svgr', options: { ref: true } },
   'gatsby-plugin-tslint',
   {
     resolve: `gatsby-plugin-feed`,
@@ -168,9 +140,7 @@ const plugins = [
   'gatsby-plugin-react-helmet',
   {
     resolve: 'gatsby-plugin-netlify-cms',
-    options: {
-      modulePath: `${__dirname}/config/netlify/index.js`
-    }
+    options: { modulePath: `${__dirname}/config/netlify/index.js` }
   },
   netlifyCMSPathConfig
 ];
@@ -178,10 +148,7 @@ const plugins = [
 if (process.env.CONTEXT === 'production') {
   plugins.push({
     resolve: 'gatsby-plugin-google-analytics',
-    options: {
-      trackingId: process.env.GA_ID,
-      respectDNT: true
-    }
+    options: { trackingId: process.env.GA_ID, respectDNT: true }
   });
 }
 
