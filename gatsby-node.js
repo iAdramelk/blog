@@ -7,28 +7,26 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
   const blogPost = path.resolve('./src/templates/blog-post.tsx');
-  const result = await graphql(
-    `
-      {
-        allMdx(
-          sort: { fields: [frontmatter___date], order: DESC }
-          filter: { fileAbsolutePath: { regex: "/content/blog/" } }
-          limit: 1000
-        ) {
-          edges {
-            node {
-              fields {
-                slug
-              }
-              frontmatter {
-                title
-              }
+  const result = await graphql(`
+    {
+      allMdx(
+        sort: { fields: [frontmatter___date], order: DESC }
+        filter: { fileAbsolutePath: { regex: "/content/blog/" } }
+        limit: 1000
+      ) {
+        edges {
+          node {
+            fields {
+              slug
+            }
+            frontmatter {
+              title
             }
           }
         }
       }
-    `
-  );
+    }
+  `);
 
   if (result.errors) {
     throw result.errors;
@@ -44,11 +42,7 @@ exports.createPages = async ({ graphql, actions }) => {
     createPage({
       path: post.node.fields.slug,
       component: blogPost,
-      context: {
-        slug: post.node.fields.slug,
-        previous,
-        next
-      }
+      context: { slug: post.node.fields.slug, previous, next }
     });
   });
 };
@@ -58,11 +52,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
   if (node.internal.type === 'Mdx') {
     const value = createFilePath({ node, getNode }).replace(/^\/[0-9\-]*/, '/');
-    createNodeField({
-      name: 'slug',
-      node,
-      value
-    });
+    createNodeField({ name: 'slug', node, value });
   }
 };
 
@@ -105,12 +95,7 @@ exports.onPostBuild = async function({ graphql }) {
     }) => {
       const url = `${siteMetadata.siteUrl}/${slug}`;
 
-      return {
-        url,
-        title,
-        date,
-        commentsUrl
-      };
+      return { url, title, date, commentsUrl };
     }
   );
 
