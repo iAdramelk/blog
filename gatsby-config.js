@@ -14,39 +14,15 @@ const description =
   'Data Version Control Blog. We write about machine learning workflow. From data versioning and processing to model productionization. We share our news, findings, interesting reads, community takeaways.';
 
 const plugins = [
+  'gatsby-transformer-sharp',
+  'gatsby-plugin-sharp',
+  'gatsby-remark-images',
   'gatsby-plugin-twitter',
   {
-    resolve: 'gatsby-source-filesystem',
+    resolve: `gatsby-plugin-mdx`,
     options: {
-      path: path.join(__dirname, 'content', 'blog'),
-      name: 'blog'
-    }
-  },
-  {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      path: path.join(__dirname, 'content', 'authors'),
-      name: 'authors'
-    }
-  },
-  {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      path: path.join(__dirname, 'content', 'assets'),
-      name: 'assets'
-    }
-  },
-  {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      path: path.join(__dirname, 'static', 'uploads'),
-      name: 'images'
-    }
-  },
-  {
-    resolve: 'gatsby-transformer-remark',
-    options: {
-      plugins: [
+      extensions: [`.mdx`, `.md`, `.markdown`],
+      gatsbyRemarkPlugins: [
         {
           resolve: 'gatsby-remark-embed-gist',
           options: {
@@ -81,6 +57,34 @@ const plugins = [
       ]
     }
   },
+  {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      path: path.join(__dirname, 'content', 'blog'),
+      name: 'blog'
+    }
+  },
+  {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      path: path.join(__dirname, 'content', 'authors'),
+      name: 'authors'
+    }
+  },
+  {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      path: path.join(__dirname, 'content', 'assets'),
+      name: 'assets'
+    }
+  },
+  {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      path: path.join(__dirname, 'static', 'uploads'),
+      name: 'images'
+    }
+  },
   'gatsby-plugin-typescript',
   'gatsby-plugin-postcss',
   {
@@ -90,9 +94,6 @@ const plugins = [
     }
   },
   'gatsby-plugin-tslint',
-  'gatsby-transformer-sharp',
-  'gatsby-plugin-sharp',
-
   {
     resolve: `gatsby-plugin-feed`,
     options: {
@@ -110,8 +111,8 @@ const plugins = [
         `,
       feeds: [
         {
-          serialize: ({ query: { site, allMarkdownRemark } }) => {
-            return allMarkdownRemark.edges.map(edge => {
+          serialize: ({ query: { site, allMdx } }) => {
+            return allMdx.edges.map(edge => {
               return Object.assign({}, edge.node.frontmatter, {
                 description:
                   edge.node.descriptionLong || edge.node.descriptionLong,
@@ -124,7 +125,7 @@ const plugins = [
           },
           query: `
               {
-                allMarkdownRemark(
+                allMdx(
                   sort: { fields: [frontmatter___date], order: DESC }
                   filter: { fileAbsolutePath: { regex: "/content/blog/" } }
                 ) {
