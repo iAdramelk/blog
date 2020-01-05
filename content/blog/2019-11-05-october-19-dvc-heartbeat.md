@@ -60,7 +60,7 @@ it this year. Here are some of the highlights:
 - Seeing [Dmitry Petrov](https://twitter.com/FullStackML) being really happy one
   day:
 
-<blockquote class="twitter-tweet" data-lang="en" data-dnt="true" data-theme="light"><p lang="en" dir="ltr">.<a href="https://twitter.com/martinfowler?ref_src=twsrc%5Etfw">@martinfowler</a>&#39;s books and his website were always the source of programming wisdom 💎 His Refactoring book is the first book I recommend to developers.<br><br>Now they write about ML lifecycle and automation. I’m especially excited because they use <a href="https://twitter.com/DVCorg?ref_src=twsrc%5Etfw">@DVCorg</a> that we’ve created. <a href="https://t.co/HwswZqjOsb">https://t.co/HwswZqjOsb</a></p>&mdash; Dmitry Petrov (@FullStackML) <a href="https://twitter.com/FullStackML/status/1169403554290814976?ref_src=twsrc%5Etfw">September 5, 2019</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en" data-dnt="true" data-theme="light"><p lang="en" dir="ltr">.<a href="https://twitter.com/martinfowler?ref_src=twsrc%5Etfw">@martinfowler</a>&#39;s books and his website were always the source of programming wisdom 💎 His Refactoring book is the first book I recommend to developers.<br/><br/>Now they write about ML lifecycle and automation. I’m especially excited because they use <a href="https://twitter.com/DVCorg?ref_src=twsrc%5Etfw">@DVCorg</a> that we’ve created. <a href="https://t.co/HwswZqjOsb">https://t.co/HwswZqjOsb</a></p>&mdash; Dmitry Petrov (@FullStackML) <a href="https://twitter.com/FullStackML/status/1169403554290814976?ref_src=twsrc%5Etfw">September 5, 2019</a></blockquote>
 
 <hr />
 
