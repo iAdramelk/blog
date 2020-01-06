@@ -6,10 +6,13 @@ description: |
   discussions, and articles either created or brought to us by our community.
 descriptionLong: |
   Every month we are sharing here our news, findings, interesting reads, community takeaways, and everything along the way.
-  
+
   Some of those are related to our brainchild DVC and its journey. The others are a collection of exciting stories and ideas centered around ML best practices and workflow.
 picture: /uploads/images/2019-06-26/post-image.png
-pictureComment: Thanks to the amazing [Signaturit Tech](https://twitter.com/SignaturitTech) team for [this photo](https://twitter.com/SignaturitTech/status/1127927520140120065?s=20)!
+pictureComment:
+  Thanks to the amazing [Signaturit Tech](https://twitter.com/SignaturitTech)
+  team for [this
+  photo](https://twitter.com/SignaturitTech/status/1127927520140120065?s=20)!
 author: ../authors/svetlana_grinchenko.md
 commentsUrl: https://discuss.dvc.org/t/june-19-dvc-heartbeat/289
 tags:

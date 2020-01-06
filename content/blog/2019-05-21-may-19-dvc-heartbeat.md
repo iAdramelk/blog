@@ -7,7 +7,7 @@ description: |
   brought to us by our community.
 descriptionLong: |
   Every month we are sharing here our news, findings, interesting reads, community takeaways, and everything along the way.
-  
+
   Some of those are related to our brainchild DVC and its journey. The others are a collection of exciting stories and ideas centered around ML best practices and workflow.
 picture: /uploads/images/2019-05-21/post-image.jpeg
 pictureComment:
