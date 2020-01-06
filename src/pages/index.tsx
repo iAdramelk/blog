@@ -1,5 +1,5 @@
+import { graphql } from 'gatsby';
 import { FixedObject, FluidObject } from 'gatsby-image';
-import { graphql } from 'gatsby'; // tslint:disable-line: ordered-imports
 import React from 'react';
 
 import Layout from '../components/layout';
@@ -24,7 +24,7 @@ export interface IFeedPostData {
       };
     };
     author: {
-      childMdx: {
+      childMarkdownRemark: {
         frontmatter: {
           name: string;
           avatar: {
@@ -74,7 +74,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    posts: allMdx(
+    posts: allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { fileAbsolutePath: { regex: "/content/blog/" } }
     ) {
@@ -101,7 +101,7 @@ export const pageQuery = graphql`
               }
             }
             author {
-              childMdx {
+              childMarkdownRemark {
                 frontmatter {
                   name
                   avatar {

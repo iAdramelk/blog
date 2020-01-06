@@ -28,7 +28,7 @@ function Post({ html, timeToRead, frontmatter, fields }: IBlogPostData) {
     commentsUrl,
     tags,
     author: {
-      childMdx: {
+      childMarkdownRemark: {
         frontmatter: { name, avatar }
       }
     }
