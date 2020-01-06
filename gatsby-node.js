@@ -6,6 +6,12 @@ const { siteMetadata } = require('./gatsby-config');
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
+  // Create 404 page.
+  createPage({
+      path: `/404/`,
+      component: path.resolve(`./src/templates/404.tsx`),
+  })
+
   const blogPost = path.resolve('./src/templates/blog-post.tsx');
   const result = await graphql(
     `
