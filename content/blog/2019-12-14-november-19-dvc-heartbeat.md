@@ -6,11 +6,9 @@ description: |
   fresh Discord gems and other
   news.
 descriptionLong: |
-  Every month we are sharing here our news, findings, interesting reads,
-  community takeaways, and everything along the way.
-  Some of those are related to our brainchild DVC and its journey. The others
-  are a collection of exciting stories and ideas centered around ML best
-  practices and workflow.
+  Every month we are sharing here our news, findings, interesting reads, community takeaways, and everything along the way.
+  
+  Some of those are related to our brainchild DVC and its journey. The others are a collection of exciting stories and ideas centered around ML best practices and workflow.
 picture: /uploads/images/2019-12-14/post-image.jpeg
 pictureComment:
   How cool is this handmade swag from our community? We were in tears!

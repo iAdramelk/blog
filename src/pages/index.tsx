@@ -11,6 +11,7 @@ export interface IFeedPostData {
   timeToRead: string;
   fields: {
     slug: string;
+    descriptionLong: string;
   };
   frontmatter: {
     title: string;
@@ -84,6 +85,7 @@ export const pageQuery = graphql`
           timeToRead
           fields {
             slug
+            descriptionLong
           }
           frontmatter {
             date(formatString: "MMMM DD, YYYY")

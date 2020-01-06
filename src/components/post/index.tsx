@@ -7,7 +7,7 @@ import { useWindowScroll, useWindowSize } from 'react-use';
 import { IBlogPostData } from '../../templates/blog-post';
 
 import { getCommentsCount } from '../../api';
-import { siteLinks } from '../../data';
+//import { siteLinks } from '../../data';
 import { pluralizeComments } from '../../utils/i18n';
 
 import Markdown from '../markdown';
@@ -24,7 +24,7 @@ function Post({ html, timeToRead, frontmatter, fields }: IBlogPostData) {
     picture,
     pictureComment,
     description,
-    descriptionLong,
+    //descriptionLong,
     commentsUrl,
     tags,
     author: {
@@ -74,9 +74,7 @@ function Post({ html, timeToRead, frontmatter, fields }: IBlogPostData) {
       <div className={styles.head}>
         <div className={styles.headContent}>
           <h1 className={styles.title}>{title}</h1>
-          <div className={styles.description}>
-            {descriptionLong || description}
-          </div>
+          <div className={styles.description} dangerouslySetInnerHTML={{ __html: fields.descriptionLong || description }}/>
           <Meta
             commentsCount={commentsCount}
             commentsUrl={commentsUrl}
@@ -96,7 +94,7 @@ function Post({ html, timeToRead, frontmatter, fields }: IBlogPostData) {
             />
           </div>
           {pictureComment && (
-            <div className={styles.pictureComment}>{pictureComment}</div>
+            <div className={styles.pictureComment} dangerouslySetInnerHTML={{ __html: fields.pictureComment }}/>
           )}
         </>
       )}

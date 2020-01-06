@@ -6,11 +6,9 @@ description: |
   design, new Discord discussions, interesting reads that caught our eye, and
   everything along the way.
 descriptionLong: |
-  Every month we are sharing here our news, findings, interesting reads,
-  community takeaways, and everything along the way.
-  Some of those are related to our brainchild DVC and its journey. The others
-  are a collection of exciting stories and ideas centered around ML best
-  practices and workflow.
+  Every month we are sharing here our news, findings, interesting reads, community takeaways, and everything along the way.
+  
+  Some of those are related to our brainchild DVC and its journey. The others are a collection of exciting stories and ideas centered around ML best practices and workflow.
 picture: /uploads/images/2019-04-18/post-image.jpeg
 author: ../authors/svetlana_grinchenko.md
 commentsUrl: https://discuss.dvc.org/t/april-19-dvc-heartbeat/292

@@ -6,11 +6,9 @@ description: |
   Docs program, sharing Open Source Summit experience, and more news, links, and
   gems.
 descriptionLong: |
-  Every month we are sharing here our news, findings, interesting reads,
-  community takeaways, and everything along the way.
-  Some of those are related to our brainchild DVC and its journey. The others
-  are a collection of exciting stories and ideas centered around ML best
-  practices and workflow.
+  Every month we are sharing here our news, findings, interesting reads, community takeaways, and everything along the way.
+  
+  Some of those are related to our brainchild DVC and its journey. The others are a collection of exciting stories and ideas centered around ML best practices and workflow.
 picture: /uploads/images/2019-09-26/post-image.jpeg
 author: ../authors/svetlana_grinchenko.md
 commentsUrl: https://discuss.dvc.org/t/september-19-dvc-heartbeat/287

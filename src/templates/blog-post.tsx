@@ -40,6 +40,8 @@ export interface IBlogPostData {
   timeToRead: string;
   fields: {
     slug: string;
+    descriptionLong?: string;
+    pictureComment?: string;
   };
   frontmatter: IBlogPostFrontmatter;
 }
@@ -83,6 +85,8 @@ export const pageQuery = graphql`
       timeToRead
       fields {
         slug
+        descriptionLong
+        pictureComment
       }
       frontmatter {
         title

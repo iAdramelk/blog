@@ -5,11 +5,9 @@ description: |
   The very first issue of the DVC Heartbeat! News, links, Discord discussions
   from the community.
 descriptionLong: |
-  Every month we are sharing here our news, findings, interesting reads,
-  community takeaways, and everything along the way.
-  Some of those are related to our brainchild DVC and its journey. The others
-  are a collection of exciting stories and ideas centered around ML best
-  practices and workflow.
+  Every month we are sharing here our news, findings, interesting reads, community takeaways, and everything along the way.
+  
+  Some of those are related to our brainchild DVC and its journey. The others are a collection of exciting stories and ideas centered around ML best practices and workflow.
 picture: /uploads/images/2019-03-05/post-image.jpeg
 author: ../authors/svetlana_grinchenko.md
 commentsUrl: https://discuss.dvc.org/t/march-19-dvc-heartbeat/293

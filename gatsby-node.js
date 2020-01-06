@@ -2,6 +2,8 @@ const fs = require('fs');
 const path = require('path');
 const { createFilePath } = require('gatsby-source-filesystem');
 const { siteMetadata } = require('./gatsby-config');
+const remark = require("remark");
+const remarkHTML = require("remark-html");
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
@@ -73,6 +75,34 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       node,
       value
     });
+
+    const descriptionLong = node.frontmatter.descriptionLong;
+    if (descriptionLong) {
+      const descriptionLong_value = remark()
+        .use(remarkHTML)
+        .processSync(descriptionLong)
+        .toString();
+      createNodeField({
+        name: 'descriptionLong',
+        node,
+        value: descriptionLong_value
+      });
+    }
+
+
+    const pictureComment = node.frontmatter.pictureComment;
+    if (pictureComment) {
+      const pictureComment_value = remark()
+        .use(remarkHTML)
+        .processSync(pictureComment)
+        .toString();
+      createNodeField({
+        name: 'pictureComment',
+        node,
+        value: pictureComment_value
+      });
+    }
+
   }
 };
 
