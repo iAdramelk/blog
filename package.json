@@ -47,7 +47,8 @@
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-helmet": "^5.2.1",
-    "react-use": "^13.6.3"
+    "react-use": "^13.6.3",
+    "remark-html": "^10.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.7.2",
