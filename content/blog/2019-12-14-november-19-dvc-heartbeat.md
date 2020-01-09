@@ -85,18 +85,13 @@ discovered in October and November:
 > you wish. This tutorial is for readers who are familiar with ML and would like
 > to learn how to build ML web services.
 
-<a href="https://www.deploymachinelearning.com/" class="external-link-preview">
-  <section class="elp-content-holder">
-    <div class="elp-description-holder">
-      <h4 class="elp-title">Deploy Machine Learning Models with Django</h4>
-      <div class="elp-description">Version 1.0 (04/11/2019) Piotr Płoński The demand for Machine Learning (ML) applications is growing. Many resources…</div>
-      <div class="elp-link">deploymachinelearning.com</div>
-    </div>
-    <div class="elp-image-holder">
-      <img src="/uploads/images/2019-12-14/deploy-machine-learning-models.png" />
-    </div>
-  </section>
-</a>
+<inline-block
+ href="https://www.deploymachinelearning.com/"
+  title="Deploy Machine Learning Models with Django"
+  description="Version 1.0 (04/11/2019) Piotr Płoński The demand for Machine Learning (ML) applications is growing. Many resources…"
+  picture="/uploads/images/2019-12-14/deploy-machine-learning-models.png"
+  link="deploymachinelearning.com"
+/>
 
 - **[How to Manage Your Machine Learning Workflow with DVC, Weights & Biases, and Docker](https://towardsdatascience.com/how-to-manage-your-machine-learning-workflow-with-dvc-weights-biases-and-docker-5529ea4e59e0)
   by [James Le](https://towardsdatascience.com/@james_aka_yale).**
@@ -105,18 +100,13 @@ discovered in October and November:
 > machine learning development within an organization by making it easy to
 > track, reproduce, manage, and deploy models.
 
-<a href="https://towardsdatascience.com/how-to-manage-your-machine-learning-workflow-with-dvc-weights-biases-and-docker-5529ea4e59e0" class="external-link-preview">
-  <section class="elp-content-holder">
-    <div class="elp-description-holder">
-      <h4 class="elp-title">How to Manage Your Machine Learning Workflow withDVC, Weights & Biases, and Docker</h4>
-      <div class="elp-description">Managing a machine learning workflow is hard!</div>
-      <div class="elp-link">towardsdatascience.com</div>
-    </div>
-    <div class="elp-image-holder">
-      <img src="/uploads/images/2019-12-14/how-to-manage-your-machine-learning-workflow.jpeg" />
-    </div>
-  </section>
-</a>
+<inline-block
+ href="https://towardsdatascience.com/"
+  title="How to Manage Your Machine Learning Workflow withDVC, Weights & Biases, and Docker"
+  description="Managing a machine learning workflow is hard!"
+  picture="/uploads/images/2019-12-14/how-to-manage-your-machine-learning-workflow.jpeg"
+  link="towardsdatascience.com"
+/>
 
 - **[Creating a solid Data Science development environment](https://towardsdatascience.com/creating-a-solid-data-science-development-environment-60df14ce3a34)
   by

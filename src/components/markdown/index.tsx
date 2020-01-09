@@ -3,16 +3,12 @@ import React from 'react';
 import styles from './styles.module.css';
 
 interface IMarkdownProps {
-  html: string;
+  htmlAst: string;
+  renderAst: any;
 }
 
-function Markdown({ html }: IMarkdownProps) {
-  return (
-    <div
-      className={styles.wrapper}
-      dangerouslySetInnerHTML={{ __html: html }}
-    />
-  );
+function Markdown({ htmlAst, renderAst }: IMarkdownProps) {
+  return <div className={styles.wrapper}>{renderAst(htmlAst)}</div>;
 }
 
 export default Markdown;
