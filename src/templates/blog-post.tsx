@@ -36,7 +36,7 @@ export interface IBlogPostFrontmatter {
 
 export interface IBlogPostData {
   id: string;
-  htmlAst: string;
+  html: string;
   timeToRead: string;
   fields: {
     slug: string;
@@ -79,7 +79,7 @@ export const pageQuery = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       excerpt(format: HTML)
-      htmlAst
+      html
       timeToRead
       fields {
         slug
