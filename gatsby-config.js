@@ -51,10 +51,6 @@ const plugins = [
           resolve: 'gatsby-remark-relative-images'
         },
         {
-          resolve: 'gatsby-remark-component',
-          options: { components: ['inline-block'] }
-        },
-        {
           resolve: 'gatsby-remark-images',
           options: {
             maxWidth: 700,
@@ -74,7 +70,8 @@ const plugins = [
           }
         },
         'gatsby-remark-copy-linked-files',
-        'gatsby-remark-smartypants'
+        'gatsby-remark-smartypants',
+        'external-linc-plugin'
       ]
     }
   },
