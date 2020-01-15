@@ -1,6 +1,6 @@
 const visit = require('unist-util-visit');
 
-const re = /((\S+)=["']((?:.(?!["']?\s+(?:\S^=+)=|[>"']))+.)["']?)/g;
+const re = /((\S+)=((?:.(?!["]?\s+(?:\S^=+)=|["]))+..))/g;
 
 function stripquotes(value) {
   if (
@@ -26,6 +26,7 @@ module.exports = ({ markdownAST }) => {
           )
         };
       }, {});
+      console.log(attrs)
 
       node.type = 'html';
       node.value = `
