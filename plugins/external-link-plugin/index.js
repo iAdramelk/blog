@@ -1,16 +1,16 @@
 const visit = require('unist-util-visit');
 
-const re = /((\S+)=["']?((?:.(?!["']?\s+(?:\S+)=|[>"']))+.)["']?)/g;
+const re = /((\S+)=["']((?:.(?!["']?\s+(?:\S^=+)=|[>"']))+.)["']?)/g;
 
-function stripquotes(a) {
+function stripquotes(value) {
   if (
-    a.charAt(0) === '"' ||
-    (a.charAt(0) === "'" && a.charAt(a.length - 1) === '"') ||
-    a.charAt(a.length - 1) === "'"
+    value.charAt(0) === '"' ||
+    (value.charAt(0) === "'" && value.charAt(value.length - 1) === '"') ||
+    value.charAt(value.length - 1) === "'"
   ) {
-    return a.substr(1, a.length - 2);
+    return value.substr(1, value.length - 2);
   }
-  return a;
+  return value;
 }
 
 module.exports = ({ markdownAST }) => {
@@ -18,10 +18,12 @@ module.exports = ({ markdownAST }) => {
     if (node.value.includes('<external-link')) {
       const found = node.value.match(re);
       const attrs = found.reduce((res, item) => {
-        const objectParse = item.split('=');
+        const firstSignNumber = item.indexOf('=');
         return {
           ...res,
-          [objectParse[0]]: stripquotes(objectParse[1])
+          [item.substring(0, firstSignNumber)]: stripquotes(
+            item.substring(firstSignNumber + 1)
+          )
         };
       }, {});
 
