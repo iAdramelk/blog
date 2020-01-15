@@ -90,7 +90,7 @@ href="https://www.deploymachinelearning.com/"
 title='Deploy Machine Learning Models with Django' 
 description='Version 1.0 (04/11/2019) Piotr Płoński The demand for Machine Learning (ML) applications is growing. Many resources…' 
 link='deploymachinelearning.com' 
-image='/uploads/images/2019-12-14/deploy-machine-learning-models.png'></external-link>
+image='/uploads/images/2019-12-14/deploy-machine-learning-models.png' />
 
 - **[How to Manage Your Machine Learning Workflow with DVC, Weights & Biases, and Docker](https://towardsdatascience.com/how-to-manage-your-machine-learning-workflow-with-dvc-weights-biases-and-docker-5529ea4e59e0)
   by [James Le](https://towardsdatascience.com/@james_aka_yale).**
@@ -104,8 +104,7 @@ href="https://towardsdatascience.com/how-to-manage-your-machine-learning-workflo
 title='How to Manage Your Machine Learning Workflow withDVC, Weights & Biases,
 and Docker' description='Managing a machine learning workflow is hard!'
 link='towardsdatascience.com'
-image='/uploads/images/2019-12-14/how-to-manage-your-machine-learning-workflow.jpeg'>
-</external-link>
+image='/uploads/images/2019-12-14/how-to-manage-your-machine-learning-workflow.jpeg' />
 
 - **[Creating a solid Data Science development environment](https://towardsdatascience.com/creating-a-solid-data-science-development-environment-60df14ce3a34)
   by
@@ -120,8 +119,7 @@ href="https://towardsdatascience.com/creating-a-solid-data-science-development-e
 title='Creating a solid Data Science development environment' 
 description='How to organize and replicate your development environment using Conda, Git, DVC, and JupyterLab.'
 link='towardsdatascience.com'
-image='/uploads/images/2019-12-14/creating-solid-data-science-dev-env.png'>
-</external-link>
+image='/uploads/images/2019-12-14/creating-solid-data-science-dev-env.png' />
 
 - **[Creating reproducible data science workflows with DVC](https://medium.com/y-data-stories/creating-reproducible-data-science-workflows-with-dvc-3bf058e9797b)
   by [Gleb Ivashkevich](https://medium.com/@glib.ivashkevych).**
@@ -133,8 +131,7 @@ href="https://medium.com/y-data-stories/creating-reproducible-data-science-workf
 title='Creating reproducible data science workflows with DVC'
 description='Getting started” tutorial into DVC to make a structure and order in your daily ML routine'
 link='medium.com'
-image='/uploads/images/2019-12-14/creating-reproducible-data-science-workflows.jpeg'>
-</external-link>
+image='/uploads/images/2019-12-14/creating-reproducible-data-science-workflows.jpeg' />
 
 <hr />
 
