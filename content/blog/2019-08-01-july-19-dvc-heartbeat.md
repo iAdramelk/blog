@@ -42,17 +42,17 @@ please let us know [here](http://dvc.org/support) or on Twitter!
 
 <external-link
 href="https://ossna19.sched.com/event/PUVv/open-source-tools-for-ml-experiments-management-dmitry-petrov-ruslan-kuprieiev-iterative-ai"
-title='Open Source Summit + ELC North America 2019: Open Source Tools for ML Experiments Man...'
+title="Open Source Summit + ELC North America 2019: Open Source Tools for ML Experiments Man..."
 description="Speakers Software Engineer, Iterative AI Ruslan is a Software Engineer at Iterative AI. Previously he worked on live…"
-link='ossna19.sched.com'
-image='/uploads/images/2019-08-01/open-source-north-america-summit.png' />
+link="ossna19.sched.com"
+image="/uploads/images/2019-08-01/open-source-north-america-summit.png" />
 
 <external-link
 href="https://ossna19.sched.com/event/PWNk/speaker-preparation-simple-steps-with-a-tremendous-impact-svetlana-grinchenko-dvcorg"
-title='Open Source Summit + ELC North America 2019: Speaker Preparation: Simple Steps with a...'
+title="Open Source Summit + ELC North America 2019: Speaker Preparation: Simple Steps with a..."
 description="Speakers Head of Developer Relations, DVC.org Svetlana is driving developer relations and community at DVC.org…"
-link='ossna19.sched.com'
-image='/uploads/images/2019-08-01/open-source-north-america-summit.png' />
+link="ossna19.sched.com"
+image="/uploads/images/2019-08-01/open-source-north-america-summit.png" />
 
 Every month our team is excited to discover new great pieces of content
 addressing some of the burning ML issues. Here are some of the links that caught
@@ -63,10 +63,10 @@ our eye in June:
 
 <external-link
 href="https://dev.to/robogeek/principled-machine-learning-4eho"
-title='Principled Machine Learning: Practices and Tools for Efficient Collaboration'
+title="Principled Machine Learning: Practices and Tools for Efficient Collaboration"
 description="Machine learning projects are often harder than they should be. The code to train an ML model is just software, and we…"
-link='dev.to'
-image='/uploads/images/2019-08-01/principled-machine-learning.jpeg' />
+link="dev.to"
+image="/uploads/images/2019-08-01/principled-machine-learning.jpeg" />
 
 > As we’ve seen in this article some tools and practices can be borrowed from
 > regular software engineering. However, the needs of machine learning projects
@@ -79,10 +79,10 @@ image='/uploads/images/2019-08-01/principled-machine-learning.jpeg' />
 
 <external-link
 href="http://ml-repa.ru/"
-title='Machine Learning REPA'
+title="Machine Learning REPA"
 description="Анонсы мероприятий, проектов, обзоров инструментов и кейсов про ML проекты, управление экспериментами, автоматизацию и…"
-link='ml-repa.ru'
-image='/uploads/images/2019-08-01/machine-learning-repa.png' />
+link="ml-repa.ru"
+image="/uploads/images/2019-08-01/machine-learning-repa.png" />
 
 [ML-REPA](http://ml-repa.ru/) is an a new fantastic resource for
 Russian-speaking folks interested in Reproducibility, Experiments and Pipelines

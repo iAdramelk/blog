@@ -38,10 +38,10 @@ checking.
 
 <external-link
 href="https://veekaybee.github.io/2019/02/13/data-science-is-different/"
-title='Data science is different now'
+title="Data science is different now"
 description="Woman holding a balance, Vermeer 1664 What do you think of when you read the phrase 'data science'? It's probably some…"
-link='veekaybee.github.io'
-image='/uploads/images/2019-03-05/data-science-is-different-now.png' />
+link="veekaybee.github.io"
+image="/uploads/images/2019-03-05/data-science-is-different-now.png" />
 
 > What is becoming clear is that, in the late stage of the hype cycle, data
 > science is asymptotically moving closer to engineering, and the
@@ -54,10 +54,10 @@ image='/uploads/images/2019-03-05/data-science-is-different-now.png' />
 
 <external-link
 href="https://emilygorcenski.com/post/data-versioning/"
-title='Data Versioning'
+title="Data Versioning"
 description="Productionizing machine learning/AI/data science is a challenge. Not only are the outputs of machine-learning…"
-link='emilygorcenski.com'
-image='/uploads/images/2019-03-05/data-versioning.jpeg' />
+link="emilygorcenski.com"
+image="/uploads/images/2019-03-05/data-versioning.jpeg" />
 
 > I want to explore how the degrees of freedom in versioning machine learning
 > systems poses a unique challenge. I’ll identify four key axes on which machine
@@ -69,10 +69,10 @@ image='/uploads/images/2019-03-05/data-versioning.jpeg' />
 
 <external-link
 href="https://emilygorcenski.com/post/data-versioning/"
-title='Reproducibility in Machine Learning | Computer Science Blog'
+title="Reproducibility in Machine Learning | Computer Science Blog"
 description="The rise of Machine Learning has led to changes across all areas of computer science. From a very abstract point of…"
-link='blog.mi.hdm-stuttgart.de'
-image='/uploads/images/2019-03-05/reproducibility-in-machine-learning.jpeg' />
+link="blog.mi.hdm-stuttgart.de"
+image="/uploads/images/2019-03-05/reproducibility-in-machine-learning.jpeg" />
 
 > ...the objective of this post is not to philosophize about the dangers and
 > dark sides of AI. In fact, this post aims to work out common challenges in

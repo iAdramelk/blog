@@ -26,7 +26,6 @@ module.exports = ({ markdownAST }) => {
           )
         };
       }, {});
-      console.log(attrs)
 
       node.type = 'html';
       node.value = `

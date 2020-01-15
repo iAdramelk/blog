@@ -82,10 +82,10 @@ Here are some of the links that caught our eye past month:
 
 <external-link
 href="https://martinfowler.com/articles/cd4ml.html"
-title='Continuous Delivery for Machine Learning'
+title="Continuous Delivery for Machine Learning"
 description="bio I am a consultant at ThoughtWorks Germany, where I am leading our data and machine learning activities. I enjoy…"
-link='martinfowler.com'
-image='/uploads/images/2019-11-05/continuous-delivery-for-machine-learning.png' />
+link="martinfowler.com"
+image="/uploads/images/2019-11-05/continuous-delivery-for-machine-learning.png" />
 
 - **[The Path to Identity Validation](https://medium.com/signaturit-tech-blog/the-path-to-identity-validation-2-3-4f698b2ffae9)
   by [Víctor Segura](https://medium.com/@victor.segura).**
@@ -97,10 +97,10 @@ image='/uploads/images/2019-11-05/continuous-delivery-for-machine-learning.png' 
 
 <external-link
 href="https://medium.com/signaturit-tech-blog/the-path-to-identity-validation-2-3-4f698b2ffae9"
-title='The Path to Identity Validation (2/3)'
+title="The Path to Identity Validation (2/3)"
 description="How to start your own machine learning project?"
-link='medium.com'
-image='/uploads/images/2019-11-05/the-path-to-identity-validation.jpeg' />
+link="medium.com"
+image="/uploads/images/2019-11-05/the-path-to-identity-validation.jpeg" />
 
 - **Talk:
   [Managing Big Data in Machine Learning projects](https://pretalx.com/pyconuk-2019/talk/GCLBFH/)
@@ -128,10 +128,10 @@ image='/uploads/images/2019-11-05/the-path-to-identity-validation.jpeg' />
 
 <external-link
 href="https://twimlai.com/twiml-talk-295-managing-deep-learning-experiments-with-lukas-biewald/"
-title='Managing Deep Learning Experiments with Lukas Biewald — Talk #295'
+title="Managing Deep Learning Experiments with Lukas Biewald — Talk #295"
 description="Today we are joined by Lukas Biewald, CEO and Co-Founder of Weights & Biases. Lukas, previously CEO and Founder of…"
-link='twimlai.com'
-image='/uploads/images/2019-11-05/managing-deep-learning-experiments.jpeg' />
+link="twimlai.com"
+image="/uploads/images/2019-11-05/managing-deep-learning-experiments.jpeg" />
 
 <hr />
 

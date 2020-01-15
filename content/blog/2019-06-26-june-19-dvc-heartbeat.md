@@ -76,10 +76,10 @@ resonates with our vision and ideas behind DVC. Highly recommended by DVC team!
 
 <external-link
 href="https://towardsdatascience.com/the-rise-of-dataops-from-the-ashes-of-data-governance-da3e0c3ac2c4"
-title='The Rise of DataOps (from the ashes of Data Governance)'
+title="The Rise of DataOps (from the ashes of Data Governance)"
 description="Legacy Data Governance is broken in the ML era. Let’s rebuild it as an engineering discipline to drive…"
-link='towardsdatascience.com'
-image='/uploads/images/2019-06-26/the-rise-of-data-ops.png' />
+link="towardsdatascience.com"
+image="/uploads/images/2019-06-26/the-rise-of-data-ops.png" />
 
 > Legacy Data Governance is broken in the ML era. Let’s rebuild it as an
 > engineering discipline. At the end of the transformation, data governance will
@@ -91,10 +91,10 @@ image='/uploads/images/2019-06-26/the-rise-of-data-ops.png' />
 
 <external-link
 href="https://medium.com/@christopher.samiullah/first-impressions-of-data-science-version-control-dvc-fe96ab29cdda"
-title='First Impressions of Data Science Version Control (DVC)'
+title="First Impressions of Data Science Version Control (DVC)"
 description="A Powerful New Machine Learning Tool"
-link='medium.com'
-image='/uploads/images/2019-06-26/first-impressions-of-data-science-version-control.png' />
+link="medium.com"
+image="/uploads/images/2019-06-26/first-impressions-of-data-science-version-control.png" />
 
 > In 2019, we tend to find organizations using a mix of git, Makefiles, ad hoc
 > scripts and reference files to try and achieve reproducibility. DVC enters
@@ -115,10 +115,10 @@ image='/uploads/images/2019-06-26/first-impressions-of-data-science-version-cont
 
 <external-link
 href="https://www.oreilly.com/ideas/becoming-a-machine-learning-company-means-investing-in-foundational-technologies"
-title='Becoming a machine learning company means investing in foundational technologies'
+title="Becoming a machine learning company means investing in foundational technologies"
 description="Get expert knowledge on the tools and technologies you need to put your data strategies to work. Join us at the…"
-link='oreilly.com'
-image='/uploads/images/2019-06-26/becoming-a-machine-learning-company.jpeg' />
+link="oreilly.com"
+image="/uploads/images/2019-06-26/becoming-a-machine-learning-company.jpeg" />
 
 > With an eye toward the growing importance of machine learning, we recently
 > completed

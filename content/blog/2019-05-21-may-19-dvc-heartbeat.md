@@ -79,10 +79,10 @@ our favorite links from the past month:
 
 <external-link
 href="https://www.pythonpodcast.com/data-version-control-episode-206/"
-title='Version Control For Machine Learning Projects'
+title="Version Control For Machine Learning Projects"
 description="An interview with the creator of DVC about how it improves collaboration and reduces duplicate effort on data science…"
-link='pythonpodcast.com'
-image='/uploads/images/2019-05-21/version-control-for-your-machine-learning-projects.png' />
+link="pythonpodcast.com"
+image="/uploads/images/2019-05-21/version-control-for-your-machine-learning-projects.png" />
 
 > Version control has become table stakes for any software team, but for machine
 > learning projects there has been no good answer for tracking all of the data
@@ -100,19 +100,19 @@ image='/uploads/images/2019-05-21/version-control-for-your-machine-learning-proj
 
 <external-link
 href="https://towardsdatascience.com/data-version-control-with-dvc-what-do-the-authors-have-to-say-3c3b10f27ee"
-title='Data version control with DVC. What do the authors have to say?'
+title="Data version control with DVC. What do the authors have to say?"
 description="Data versioning is one of the most ignored features in data science projects, but that has to change. Here I’ll discuss…"
-link='towardsdatascience.com'
-image='/uploads/images/2019-05-21/data-version-control-with-dvc.png' />
+link="towardsdatascience.com"
+image="/uploads/images/2019-05-21/data-version-control-with-dvc.png" />
 
 - **[Why Git and Git-LFS is not enough to solve the Machine Learning Reproducibility crisis](https://towardsdatascience.com/why-git-and-git-lfs-is-not-enough-to-solve-the-machine-learning-reproducibility-crisis-f733b49e96e8)**
 
 <external-link
 href="https://towardsdatascience.com/why-git-and-git-lfs-is-not-enough-to-solve-the-machine-learning-reproducibility-crisis-f733b49e96e8"
-title='Why Git and Git-LFS is not enough to solve the Machine Learning Reproducibility crisis'
+title="Why Git and Git-LFS is not enough to solve the Machine Learning Reproducibility crisis"
 description="Some claim the machine learning field is in a crisis due to software tooling that’s insufficient to ensure repeatable…"
-link='towardsdatascience.com'
-image='/uploads/images/2019-05-21/why-git-and-git-lfs-is-not-enough.jpeg' />
+link="towardsdatascience.com"
+image="/uploads/images/2019-05-21/why-git-and-git-lfs-is-not-enough.jpeg" />
 
 > With Git-LFS your team has better control over the data, because it is now
 > version controlled. Does that mean the problem is solved? Earlier we said the

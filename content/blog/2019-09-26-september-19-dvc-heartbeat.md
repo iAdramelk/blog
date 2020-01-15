@@ -35,10 +35,10 @@ and save your spot now:
 
 <external-link
 href="https://www.meetup.com/San-Francisco-Machine-Learning-Meetup/events/264846847/"
-title='Open-source tools to version control Machine Learning models and experiments'
+title="Open-source tools to version control Machine Learning models and experiments"
 description="AI and ML are becoming an essential part of the engineering and data science everyday workflow. ML teams need new tools…"
-link='meetup.com'
-image='/uploads/images/2019-09-26/open-source-tools-to-version-control.png' />
+link="meetup.com"
+image="/uploads/images/2019-09-26/open-source-tools-to-version-control.png" />
 
 If you are not in SF on this date and happen to be in Europe — don’t miss the
 PyCon DE & PyData Berlin 2019 joint event on October 9–11. We cannot make it to
@@ -96,10 +96,10 @@ discovered in July and August:
 
 <external-link
 href="https://medium.com/ixorthink/our-machine-learning-workflow-dvc-mlflow-and-training-in-docker-containers-5b9c80cdf804"
-title='Our Machine Learning Workflow: DVC, MLFlow and Training in Docker Containers'
+title="Our Machine Learning Workflow: DVC, MLFlow and Training in Docker Containers"
 description="Googling for machine learning frameworks to version data, track python models etc.. I was surprised to see that these…"
-link='medium.com'
-image='/uploads/images/2019-09-26/our-machine-learning-workflow.jpeg' />
+link="medium.com"
+image="/uploads/images/2019-09-26/our-machine-learning-workflow.jpeg" />
 
 - **[Using DVC to create an efficient version control system for data projects](https://medium.com/qonto-engineering/using-dvc-to-create-an-efficient-version-control-system-for-data-projects-96efd94355fe)
   by [Basile Guerrapin](https://medium.com/@basile_16101).**
@@ -110,10 +110,10 @@ image='/uploads/images/2019-09-26/our-machine-learning-workflow.jpeg' />
 
 <external-link
 href="https://medium.com/qonto-engineering/using-dvc-to-create-an-efficient-version-control-system-for-data-projects-96efd94355fe"
-title='Using DVC to create an efficient version control system for data projects'
+title="Using DVC to create an efficient version control system for data projects"
 description="At first we were looking for a tool to help us dealing with production data files such as trained machine learning…"
-link='medium.com'
-image='/uploads/images/2019-09-26/using-dvc-to-create-an-efficient-vcs.png' />
+link="medium.com"
+image="/uploads/images/2019-09-26/using-dvc-to-create-an-efficient-vcs.png" />
 
 - **[Managing versioned machine learning datasets in DVC, and easily share ML projects with colleagues](https://techsparx.com/software-development/ai/dvc/versioning-example.html)
   by [David Herron](https://twitter.com/7genblogger).**
@@ -124,10 +124,10 @@ image='/uploads/images/2019-09-26/using-dvc-to-create-an-efficient-vcs.png' />
 
 <external-link
 href="https://techsparx.com/software-development/ai/dvc/versioning-example.html"
-title='Managing versioned machine learning datasets in DVC, and easily share ML projects with colleagues'
+title="Managing versioned machine learning datasets in DVC, and easily share ML projects with colleagues"
 description="Software Development Artificial Intelligence Data Version Control (DVC) Managing versioned machine learning datasets in…"
-link='techsparx.com'
-image='/uploads/images/2019-09-26/managing-versioned-machine-learning-datasets.jpeg' />
+link="techsparx.com"
+image="/uploads/images/2019-09-26/managing-versioned-machine-learning-datasets.jpeg" />
 
 - **[How to use data version control (dvc) in a machine learning project](https://towardsdatascience.com/how-to-use-data-version-control-dvc-in-a-machine-learning-project-a78245c0185)
   by [Matthias Bitzer](https://towardsdatascience.com/@matthiasbitzer94).**
@@ -139,10 +139,10 @@ image='/uploads/images/2019-09-26/managing-versioned-machine-learning-datasets.j
 
 <external-link
 href="https://towardsdatascience.com/how-to-use-data-version-control-dvc-in-a-machine-learning-project-a78245c0185"
-title='How to use data version control (dvc) in a machine learning project'
+title="How to use data version control (dvc) in a machine learning project"
 description="When working in a productive machine learning project you probably deal with a tone of data and several models. To keep…"
-link='towardsdatascience.com'
-image='/uploads/images/2019-09-26/how-to-use-data-version-control.jpeg' />
+link="towardsdatascience.com"
+image="/uploads/images/2019-09-26/how-to-use-data-version-control.jpeg" />
 
 - **[Version Control ML Model](https://towardsdatascience.com/version-control-ml-model-4adb2db5f87c)
   by [Tianchen Wu](https://towardsdatascience.com/@TianchenW)**
@@ -152,10 +152,10 @@ image='/uploads/images/2019-09-26/how-to-use-data-version-control.jpeg' />
 
 <external-link
 href="https://towardsdatascience.com/version-control-ml-model-4adb2db5f87c"
-title='Version Control ML Model'
+title="Version Control ML Model"
 description="Machine Learning operations (let’s call it MLOps under the current buzzword pattern xxOps) are quite different from…"
-link='towardsdatascience.com'
-image='/uploads/images/2019-09-26/version-control-ml-model.png' />
+link="towardsdatascience.com"
+image="/uploads/images/2019-09-26/version-control-ml-model.png" />
 
 - **[Reflinks vs symlinks vs hard links, and how they can help machine learning projects](https://dev.to/robogeek/reflinks-vs-symlinks-vs-hard-links-and-how-they-can-help-machine-learning-projects-1cj4)
   by [David Herron](https://medium.com/@7genblogger)**
@@ -166,10 +166,10 @@ image='/uploads/images/2019-09-26/version-control-ml-model.png' />
 
 <external-link
 href="https://towardsdatascience.com/version-control-ml-model-4adb2db5f87c"
-title='Reflinks vs symlinks vs hard links, and how they can help machine learning projects'
+title="Reflinks vs symlinks vs hard links, and how they can help machine learning projects"
 description="Hard links and symbolic links have been available since time immemorial, and we use them all the time without even…"
-link='dev.to'
-image='/uploads/images/2019-09-26/reflinks-vs-symlinks-vs-hard-links.jpeg' />
+link="dev.to"
+image="/uploads/images/2019-09-26/reflinks-vs-symlinks-vs-hard-links.jpeg" />
 
 - **[DVC dependency management — a guide](https://blog.codecentric.de/en/2019/08/dvc-dependency-management/)
   by [Bert Besser](https://blog.codecentric.de/en/author/bert-besser/) and
@@ -183,10 +183,10 @@ image='/uploads/images/2019-09-26/reflinks-vs-symlinks-vs-hard-links.jpeg' />
 
 <external-link
 href="https://blog.codecentric.de/en/2019/08/dvc-dependency-management/"
-title='DVC dependency management - a guide - codecentric AG Blog'
+title="DVC dependency management - a guide - codecentric AG Blog"
 description="This post is a follow-up to A walkthrough of DVC that deals with managing dependencies between DVC projects. In…"
-link='blog.codecentric.de'
-image='/uploads/images/2019-09-26/dvc-org.png' />
+link="blog.codecentric.de"
+image="/uploads/images/2019-09-26/dvc-org.png" />
 
 - **[Effective ML Teams — Lessons Learne](https://medium.com/@czeslaw.szubert/effective-ml-teams-lessons-learned-6a6e761bc283)
   by [Czeslaw Szubert](https://medium.com/@czeslaw.szubert)**
@@ -196,10 +196,10 @@ image='/uploads/images/2019-09-26/dvc-org.png' />
 
 <external-link
 href="https://medium.com/@czeslaw.szubert/effective-ml-teams-lessons-learned-6a6e761bc283"
-title='Effective ML Teams — Lessons Learned'
+title="Effective ML Teams — Lessons Learned"
 description="Machine Learning and Artificial Intelligence has entered our everyday lives — from Virtual Assistants built into each…"
-link='medium.com'
-image='/uploads/images/2019-09-26/effective-ml-teams.jpeg' />
+link="medium.com"
+image="/uploads/images/2019-09-26/effective-ml-teams.jpeg" />
 
 - **[Lessons learned from training a German Speech Recognition model](https://www.esentri.com/lessons-learned-from-training-a-german-speech-recognition-model/)
   by [David Schönleber](https://www.linkedin.com/in/dschoenleber/).**
@@ -209,10 +209,10 @@ image='/uploads/images/2019-09-26/effective-ml-teams.jpeg' />
 
 <external-link
 href="https://medium.com/@czeslaw.szubert/effective-ml-teams-lessons-learned-6a6e761bc283"
-title='Lessons Learned from Training a German Speech Recognition Model - esentri AG'
+title="Lessons Learned from Training a German Speech Recognition Model - esentri AG"
 description="This post is the first of a two-part series. In this first part, I address learnings from a recent project in which I…"
-link='esentri.com'
-image='/uploads/images/2019-09-26/lessons-learned-from-training.jpeg' />
+link="esentri.com"
+image="/uploads/images/2019-09-26/lessons-learned-from-training.jpeg" />
 
 <hr />
 

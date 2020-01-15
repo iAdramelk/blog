@@ -54,10 +54,10 @@ Here is a number of interesting reads that caught our eye:
 
 <external-link
 href="https://blog.codecentric.de/en/2019/03/walkthrough-dvc/"
-title='A walkthrough of DVC — codecentric AG Blog'
+title="A walkthrough of DVC — codecentric AG Blog"
 description="This post is on how to systematially organize Machine Learning (ML) model development. A model’s performance improves…"
-link='blog.codecentric.de'
-image='/uploads/images/2019-04-18/walkthrough-of-dvc.png' />
+link="blog.codecentric.de"
+image="/uploads/images/2019-04-18/walkthrough-of-dvc.png" />
 
 A great article about using DVC with a quite advanced scenario and docker. If
 you haven’t had a chance to try [DVC.org](http://dvc.org/) yet — this is a great
@@ -68,10 +68,10 @@ comprehensive read on why you should do so right away.
 
 <external-link
 href="https://github.com/EthicalML/state-of-mlops-2019"
-title='The state of machine learning operations'
+title="The state of machine learning operations"
 description="Contribute to EthicalML/state-of-mlops-2019 development by creating an account on GitHub."
-link='github.com'
-image='/uploads/images/2019-04-18/the-state-of-machine-learning-operations.jpeg' />
+link="github.com"
+image="/uploads/images/2019-04-18/the-state-of-machine-learning-operations.jpeg" />
 
 A short (only 8 minutes!) and inspiring talk by Alejandro Saucedo at FOSDEM.
 Alejandro covers the key trends in machine learning operations, as well as most
@@ -84,10 +84,10 @@ of ML operations.
 
 <external-link
 href="https://hackernoon.com/interview-with-kaggle-grandmaster-senior-cv-engineer-at-lyft-dr-vladimir-i-iglovikov-9938e1fc7c"
-title='Interview with Kaggle Grandmaster, Senior Computer Vision Engineer at Lyft: Dr. Vladimir I. Iglovikov'
+title="Interview with Kaggle Grandmaster, Senior Computer Vision Engineer at Lyft: Dr. Vladimir I. Iglovikov"
 description="Part 24 of The series where I interview my heroes."
-link='hackernoon.com'
-image='/uploads/images/2019-04-18/interview-with-kaggle-grandmaster.jpeg' />
+link="hackernoon.com"
+image="/uploads/images/2019-04-18/interview-with-kaggle-grandmaster.jpeg" />
 
 > There is no way you will become Kaggle Master and not learn how to approach
 > anew, the unknown problem in a fast hacking way with a very high number of
