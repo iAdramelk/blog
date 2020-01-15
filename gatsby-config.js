@@ -71,7 +71,7 @@ const plugins = [
         },
         'gatsby-remark-copy-linked-files',
         'gatsby-remark-smartypants',
-        'external-linc-plugin'
+        'external-link-plugin'
       ]
     }
   },
