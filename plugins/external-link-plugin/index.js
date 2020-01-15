@@ -30,7 +30,7 @@ function renderTag(withImage, attrs) {
             <div class="elp-link">${attrs.link}</div>
           </div>
           <div class="elp-image-holder">
-            <img src="${attrs.image}"/>
+            <img src="${attrs.image}" alt="${attrs.title}"/>
           </div>
         </section>
       </a>
