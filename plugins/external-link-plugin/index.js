@@ -18,40 +18,63 @@ function isExternalLinkAttr(elem) {
   return attrKeyArray.some(item => elem.includes(item));
 }
 
+function renderTag(withImage, attrs) {
+  if (withImage) {
+    return `
+    <div>
+      <a href=${attrs.href} class="external-link-preview">
+        <section class="elp-content-holder">
+          <div class="elp-description-holder">
+            <h4 class="elp-title">${attrs.title}</h4>
+            <div class="elp-description">${attrs.description}</div>
+            <div class="elp-link">${attrs.link}</div>
+          </div>
+          <div class="elp-image-holder">
+            <img src="${attrs.image}"/>
+          </div>
+        </section>
+      </a>
+    </div>`;
+  } else {
+    return ` 
+    <div>
+      <a href=${attrs.href} class="external-link-preview">
+        <section class="elp-content-holder">
+          <div class="elp-description-holder">
+            <h4 class="elp-title">${attrs.title}</h4>
+            <div class="elp-description">${attrs.description}</div>
+            <div class="elp-link">${attrs.link}</div>
+          </div>
+        </section>
+      </a>
+    </div>
+    `;
+  }
+}
+
 module.exports = ({ markdownAST }) => {
+ 
   visit(markdownAST, 'html', node => {
     if (node.value.includes('<external-link')) {
       const found = node.value.match(re);
       if (found.every(isExternalLinkAttr)) {
+        let isImage = false;
         const attrs = found.reduce((res, item) => {
           const firstSignNumber = item.indexOf('=');
+          const key = item.substring(0, firstSignNumber);
+          if (key.toLowerCase() === 'image') {
+            isImage = true;
+          }
           return {
             ...res,
-            [item.substring(0, firstSignNumber)]: stripquotes(
-              item.substring(firstSignNumber + 1)
-            )
+            [key]: stripquotes(item.substring(firstSignNumber + 1))
           };
         }, {});
 
         node.type = 'html';
-        node.value = `
-          <div>
-            <a href=${attrs.href} class="external-link-preview">
-              <section class="elp-content-holder">
-                <div class="elp-description-holder">
-                  <h4 class="elp-title">${attrs.title}</h4>
-                  <div class="elp-description">${attrs.description}</div>
-                  <div class="elp-link">${attrs.link}</div>
-                </div>
-                <div class="elp-image-holder">
-                  <img src="${attrs.image}"/>
-                </div>
-              </section>
-            </a>
-          </div>
-        `;
+        node.value = renderTag(isImage, attrs);
       } else {
-        throw new Error (`No correct tag <external-link /> in ${node.value}`)
+        throw new Error(`No correct tag <external-link /> in ${node.value}`);
       }
     }
   });
