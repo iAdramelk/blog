@@ -19,8 +19,7 @@ function isExternalLinkAttr(elem) {
 }
 
 function renderTag(withImage, attrs) {
-  if (withImage) {
-    return `
+  return `
     <div>
       <a href=${attrs.href} class="external-link-preview">
         <section class="elp-content-holder">
@@ -29,31 +28,19 @@ function renderTag(withImage, attrs) {
             <div class="elp-description">${attrs.description}</div>
             <div class="elp-link">${attrs.link}</div>
           </div>
-          <div class="elp-image-holder">
-            <img src="${attrs.image}" alt="${attrs.title}"/>
-          </div>
+           ${
+             withImage
+               ? `<div class="elp-image-holder">
+                <img src="${attrs.image}" alt="${attrs.title}"/>
+            </div>`
+               : ``
+           }
         </section>
       </a>
     </div>`;
-  } else {
-    return ` 
-    <div>
-      <a href=${attrs.href} class="external-link-preview">
-        <section class="elp-content-holder">
-          <div class="elp-description-holder">
-            <h4 class="elp-title">${attrs.title}</h4>
-            <div class="elp-description">${attrs.description}</div>
-            <div class="elp-link">${attrs.link}</div>
-          </div>
-        </section>
-      </a>
-    </div>
-    `;
-  }
 }
 
 module.exports = ({ markdownAST }) => {
- 
   visit(markdownAST, 'html', node => {
     if (node.value.includes('<external-link')) {
       const found = node.value.match(re);
