@@ -3,7 +3,7 @@
   "private": true,
   "description": "Blog for dvc.org",
   "version": "0.1.0",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
