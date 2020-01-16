@@ -1,18 +1,8 @@
 const visit = require('unist-util-visit');
+const unified = require('unified');
+const parse = require('rehype-parse');
 
-const re = /((\S+)=((?:.(?!["]?\s+(?:\S^=+)=|["]))+..))/g;
-const attrKeyArray = ['href=', 'title=', 'description=', 'link='];
-
-function stripquotes(value) {
-  if (
-    value.charAt(0) === '"' ||
-    (value.charAt(0) === "'" && value.charAt(value.length - 1) === '"') ||
-    value.charAt(value.length - 1) === "'"
-  ) {
-    return value.substr(1, value.length - 2);
-  }
-  return value;
-}
+const attrKeyArray = ['href', 'title', 'description', 'link'];
 
 function isCorrectExternalLinkAttr(elem) {
   return (
@@ -45,25 +35,14 @@ function renderTag(withImage, attrs) {
 module.exports = ({ markdownAST }) => {
   visit(markdownAST, 'html', node => {
     if (node.value.includes('<external-link')) {
-      const found = node.value.match(re);
-      if (isCorrectExternalLinkAttr(found)) {
-        let isImage = false;
-        const attrs = found.reduce((res, item) => {
-          const firstSignNumber = item.indexOf('=');
-          const key = item.substring(0, firstSignNumber);
-          if (key.toLowerCase() === 'image') {
-            isImage = true;
-          }
-          return {
-            ...res,
-            [key]: stripquotes(item.substring(firstSignNumber + 1))
-          };
-        }, {});
-
+      const properties = unified()
+        .use(parse)
+        .parse(node.value).children[0].children[1].children[0].properties;
+      if (isCorrectExternalLinkAttr(Object.keys(properties))) {
+        let isImage = Boolean(properties.image);
         node.type = 'html';
-        node.value = renderTag(isImage, attrs);
+        node.value = renderTag(isImage, properties);
       } else {
-        console.log(found, found.length);
         throw new Error(
           `No correct tag <external-link /> or not all nested tags in ${node.value}`
         );
