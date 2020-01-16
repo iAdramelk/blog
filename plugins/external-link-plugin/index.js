@@ -1,7 +1,7 @@
 const visit = require('unist-util-visit');
 
 const re = /((\S+)=((?:.(?!["]?\s+(?:\S^=+)=|["]))+..))/g;
-const attrKeyArray = ['href', 'title', 'description', 'link', 'image'];
+const attrKeyArray = ['href=', 'title=', 'description=', 'link='];
 
 function stripquotes(value) {
   if (
@@ -14,8 +14,11 @@ function stripquotes(value) {
   return value;
 }
 
-function isExternalLinkAttr(elem) {
-  return attrKeyArray.some(item => elem.includes(item));
+function isCorrectExternalLinkAttr(elem) {
+  return (
+    attrKeyArray.filter(item => elem.some(value => value.includes(item)))
+      .length >= attrKeyArray.length
+  );
 }
 
 function renderTag(withImage, attrs) {
@@ -44,7 +47,7 @@ module.exports = ({ markdownAST }) => {
   visit(markdownAST, 'html', node => {
     if (node.value.includes('<external-link')) {
       const found = node.value.match(re);
-      if (found.every(isExternalLinkAttr)) {
+      if (isCorrectExternalLinkAttr(found)) {
         let isImage = false;
         const attrs = found.reduce((res, item) => {
           const firstSignNumber = item.indexOf('=');
@@ -61,7 +64,10 @@ module.exports = ({ markdownAST }) => {
         node.type = 'html';
         node.value = renderTag(isImage, attrs);
       } else {
-        throw new Error(`No correct tag <external-link /> in ${node.value}`);
+        console.log(found, found.length);
+        throw new Error(
+          `No correct tag <external-link /> or not all nested tags in ${node.value}`
+        );
       }
     }
   });
