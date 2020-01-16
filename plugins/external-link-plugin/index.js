@@ -23,9 +23,8 @@ function isCorrectExternalLinkAttr(elem) {
 
 function renderTag(withImage, attrs) {
   return `
-    <div>
+    <section class="elp-content-holder">
       <a href=${attrs.href} class="external-link-preview">
-        <section class="elp-content-holder">
           <div class="elp-description-holder">
             <h4 class="elp-title">${attrs.title}</h4>
             <div class="elp-description">${attrs.description}</div>
@@ -38,9 +37,9 @@ function renderTag(withImage, attrs) {
             </div>`
                : ``
            }
-        </section>
       </a>
-    </div>`;
+    </section>
+    `;
 }
 
 module.exports = ({ markdownAST }) => {
