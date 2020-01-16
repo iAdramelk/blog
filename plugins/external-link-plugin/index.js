@@ -1,6 +1,7 @@
 const visit = require('unist-util-visit');
 const unified = require('unified');
 const parse = require('rehype-parse');
+const _ = require('lodash');
 
 const attrKeyArray = ['href', 'title', 'description', 'link'];
 
@@ -32,21 +33,34 @@ function renderTag(withImage, attrs) {
     `;
 }
 
+function getExternalLinkTag(collection, childKeys, iteratee) {
+  const each = _.partial(_.each, _, (value, index) => {
+    iteratee(value, index);
+    _(value)
+      .pick(childKeys)
+      .each(each);
+  });
+  each(collection);
+}
+
 module.exports = ({ markdownAST }) => {
   visit(markdownAST, 'html', node => {
-    if (node.value.includes('<external-link')) {
-      const properties = unified()
-        .use(parse)
-        .parse(node.value).children[0].children[1].children[0].properties;
-      if (isCorrectExternalLinkAttr(Object.keys(properties))) {
-        let isImage = Boolean(properties.image);
-        node.type = 'html';
-        node.value = renderTag(isImage, properties);
-      } else {
-        throw new Error(
-          `No correct tag <external-link /> or not all nested tags in ${node.value}`
-        );
+    const data = unified()
+      .use(parse)
+      .parse(node.value);
+    getExternalLinkTag(data.children, ['children'], value => {
+      if (_.includes(['external-link'], value.tagName)) {
+        const { properties } = value;
+        if (isCorrectExternalLinkAttr(Object.keys(properties))) {
+          let isImage = Boolean(properties.image);
+          node.type = 'html';
+          node.value = renderTag(isImage, properties);
+        } else {
+          throw new Error(
+            `No correct tag <external-link /> or not all nested tags in ${node.value}`
+          );
+        }
       }
-    }
+    });
   });
 };
