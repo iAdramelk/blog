@@ -20,7 +20,7 @@
     }
   },
   "lint-staged": {
-    "*.{ts,tsx}": [
+    "*.{js,ts,tsx}": [
       "yarn prettier --write",
       "yarn lint-ts",
       "git add"
