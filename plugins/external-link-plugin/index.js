@@ -1,7 +1,7 @@
 const visit = require('unist-util-visit');
 const unified = require('unified');
 const parse = require('rehype-parse');
-const select = require('hast-util-select');
+const select = require('hast-util-select').select;
 
 const attrKeyArray = ['href', 'title', 'description', 'link'];
 
