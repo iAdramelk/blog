@@ -5,10 +5,11 @@ const select = require('hast-util-select').select;
 
 const attrKeyArray = ['href', 'title', 'description', 'link'];
 
-function isCorrectExternalLinkAttr(elem) {
+function isCorrectExternalLinkAttr(attrsKeyTagArray) {
   return (
-    attrKeyArray.filter(item => elem.some(value => value.includes(item)))
-      .length >= attrKeyArray.length
+    attrKeyArray.filter(key =>
+      attrsKeyTagArray.some(keyTag => keyTag.includes(key))
+    ).length >= attrKeyArray.length
   );
 }
 
