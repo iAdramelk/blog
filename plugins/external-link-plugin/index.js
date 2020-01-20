@@ -1,7 +1,7 @@
 const visit = require('unist-util-visit');
 const unified = require('unified');
 const parse = require('rehype-parse');
-const _ = require('lodash');
+const select = require('hast-util-select').select;
 
 const attrKeyArray = ['href', 'title', 'description', 'link'];
 
@@ -33,24 +33,14 @@ function renderTag(withImage, attrs) {
     `;
 }
 
-function getExternalLinkTag(collection, childKeys, iteratee) {
-  const each = _.partial(_.each, _, (value, index) => {
-    iteratee(value, index);
-    _(value)
-      .pick(childKeys)
-      .each(each);
-  });
-  each(collection);
-}
-
 module.exports = ({ markdownAST }) => {
   visit(markdownAST, 'html', node => {
     const data = unified()
       .use(parse)
       .parse(node.value);
-    getExternalLinkTag(data.children, ['children'], value => {
-      if (_.includes(['external-link'], value.tagName)) {
-        const { properties } = value;
+      const externalLink = select('external-link', data);
+      if(externalLink) {
+        const { properties } = externalLink;
         if (isCorrectExternalLinkAttr(Object.keys(properties))) {
           let isImage = Boolean(properties.image);
           node.type = 'html';
@@ -61,6 +51,5 @@ module.exports = ({ markdownAST }) => {
           );
         }
       }
-    });
   });
 };
