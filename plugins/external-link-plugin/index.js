@@ -38,18 +38,18 @@ module.exports = ({ markdownAST }) => {
     const data = unified()
       .use(parse)
       .parse(node.value);
-      const externalLink = select('external-link', data);
-      if(externalLink) {
-        const { properties } = externalLink;
-        if (isCorrectExternalLinkAttr(Object.keys(properties))) {
-          let isImage = Boolean(properties.image);
-          node.type = 'html';
-          node.value = renderTag(isImage, properties);
-        } else {
-          throw new Error(
-            `No correct tag <external-link /> or not all nested tags in ${node.value}`
-          );
-        }
+    const externalLink = select('external-link', data);
+    if (externalLink) {
+      const { properties } = externalLink;
+      if (isCorrectExternalLinkAttr(Object.keys(properties))) {
+        const isImage = Boolean(properties.image);
+        node.type = 'html';
+        node.value = renderTag(isImage, properties);
+      } else {
+        throw new Error(
+          `No correct tag <external-link /> or not all nested tags in ${node.value}`
+        );
       }
+    }
   });
 };
