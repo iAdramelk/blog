@@ -5,6 +5,7 @@
   "author": "",
   "license": "Apache 2",
   "dependencies": {
+    "hast-util-select": "^3.0.1",
     "unist-util-visit": "^2.0.1"
   }
 }
