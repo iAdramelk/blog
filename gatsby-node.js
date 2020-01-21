@@ -89,6 +89,13 @@ exports.onPostBuild = async function({ graphql }) {
               title
               date
               commentsUrl
+              picture {
+                childImageSharp {
+                  resize(width: 160, height: 160, fit: COVER) {
+                    src
+                  }
+                }
+              }
             }
           }
         }
@@ -104,16 +111,27 @@ exports.onPostBuild = async function({ graphql }) {
     ({
       node: {
         fields: { slug },
-        frontmatter: { title, date, commentsUrl }
+        frontmatter: {
+          title,
+          date,
+          commentsUrl,
+          picture: {
+            childImageSharp: {
+              resize: { src }
+            }
+          }
+        }
       }
     }) => {
       const url = `${siteMetadata.siteUrl}/${slug}`;
+      const pictureUrl = `${siteMetadata.siteUrl}${src}`;
 
       return {
         url,
         title,
         date,
-        commentsUrl
+        commentsUrl,
+        pictureUrl
       };
     }
   );

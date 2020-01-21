@@ -1,0 +1,6 @@
+name = "blog"
+type = "javascript"
+account_id = "e471c5ec97d957624fbe991da0a1c119"
+workers_dev = true
+route = ""
+zone_id = ""
