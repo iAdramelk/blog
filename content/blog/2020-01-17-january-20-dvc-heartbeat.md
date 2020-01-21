@@ -6,16 +6,15 @@ description: |
   fresh Discord gems and other
   news.
 descriptionLong: |
-  Every month we are sharing here our news, findings, interesting reads,
-  community takeaways, and everything along the way.
+  Every month we share news, findings, interesting reads,
+  community takeaways, and everything else along the way.
   Some of those are related to our brainchild DVC and its journey. The others
   are a collection of exciting stories and ideas centered around ML best
   practices and workflow.
-picture: ../../static/uploads/images/2019-12-14/post-image.jpeg
-pictureComment:
-  How cool is this handmade swag from our community? We were in tears!
-author: ../authors/svetlana_grinchenko.md
-commentsUrl: https://discuss.dvc.org/t/november-19-dvc-heartbeat/284
+picture: ../../static/uploads/images/2020-01-17/DVC_chalk_donuts.png
+pictureComment: We spread the joys of version control and donuts at PyData LA.
+author: ../authors/elle_obrien.md
+commentsUrl: https://discuss.dvc.org/t/january-20-dvc-heartbeat/314
 tags:
   - Heartbeat
   - PyData
@@ -30,9 +29,8 @@ the DVC community.
 -We were honored to be named a
 [Project of the Year](https://ods.ai/awards/2019/) by Open Data Science,
 Russia's largest community of data scientists and machine learning
-practitioners. Check out our incredibly shiny trophy.
-
-![](/uploads/images/2020-01-17/Project_of_the_year.png)
+practitioners. Check out our
+⭐️[incredibly shiny trophy](https://twitter.com/DVCorg/status/1209544709930016768)⭐️!
 
 -DVC hit **100 individual contributors** on Github! To celebrate, we picked 3 of
 our favorite pull requests around the 100-mark to give prizes to. Meet our
@@ -42,6 +40,12 @@ winners: [Vera Sativa](https://github.com/verasativa/),
 received \$500 to use on any educational opportunity of their choosing and, of
 course, their own DeeVee (that's our rainbow owl) to keep.
 
+Vera thanked us with this lovely picture of DeeVee and her team,
+[Odd Industries](https://odd.co/en/) (they are making some extremely neat tools
+for construction teams using computer vision).
+
+![](/uploads/images/2020-01-17/odd_with_deevee.png)
+
 -We were at PyData LA! Our fearless leader
 [Dmitry gave a talk](https://www.youtube.com/watch?v=7Wsd6V0k4Oc) and we set up
 a busy booth to meet with the Pythonistas of Los Angeles. It was a cold and
@@ -50,6 +54,12 @@ they came for the open source version control and not the donuts.
 
 ![](/uploads/images/2020-01-17/py_data1.jpeg)
 ![](/uploads/images/2020-01-17/py_data2.jpeg)
+
+Our engineer and technical writer Jorge reported:
+
+> We were super happy to meet all kinds of data professionals and enthusiasts in
+> several fields who are learning and adopting DVC with their teams – including
+> several working with privacy-sensitive medical records, very cool!
 
 ## From the community
 
@@ -106,7 +116,7 @@ writes:
 > debt you inadvertently burden on yourself and your team.”
 
 In this blog, DVC gets a shout-out as Andrew’s preferred data versioning tool,
-used in conjunction with git for versioning Python code. Thanks!
+used in conjunction with Git for versioning Python code. Thanks!
 
 <a href="https://towardsdatascience.com/down-with-technical-debt-clean-python-for-data-scientists-aa7592eff7fc" class="external-link-preview">
   <section class="elp-content-holder">
@@ -152,32 +162,4 @@ data.” Thanks, Sharif! We think you’re perfect, too.
   </section>
 </a>
 
-## Discord gems
-
-There are lots of hidden gems in our Discord community discussions. Here are
-some useful, good-to-know, and interesting conversations from our channels.
-
-### Q: [What pros does DVC have compared to Git LFS?](https://discordapp.com/channels/485586884165107732/563406153334128681/657590900754612284)
-
-For an in-depth answer, check out this
-[Stack Overflow discussion](https://stackoverflow.com/questions/58541260/difference-between-git-lfs-and-dvc).
-But in brief, with DVC you don't need a special server, and you can use nearly
-any kind of storage (S3, Google Cloud Storage, Azure Blobs, your own server,
-etc.) without a fuss. There are also no limits on the size of the data that you
-can store, unlike with GitHub. With Git LFS, there are some general LFS server
-limits, too. DVC has additional features for sharing your data (e.g.,
-`dvc import`) and has pipeline support, so it does much more than LFS. Plus, we
-have flexible and quick checkouts, as we utilize different link types (reflinks,
-symlinks, and hardlinks). We think there are lots of advantages; of course, the
-usefulness will depend on your particular needs.
-
-### Q: [How do I use DVC with SSH remote storage?](https://discordapp.com/channels/485586884165107732/563406153334128681/656016145119182849) I usually connect with a .pem key file. How do I do the same with DVC?
-
-DVC is built to work with the SSH protocol to access remote storage (we provide
-some
-[examples in our official documentation](https://dvc.org/doc/user-guide/external-dependencies#ssh)).
-When SSH requires a key file, try this:
-
-```
-$ dvc remote modify myremote keyfile <path to *.pem>
-```
+That's a wrap for January. We'll see you next month with more updates!
