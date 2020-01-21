@@ -3,8 +3,7 @@ title: January '20 DVC❤️Heartbeat
 date: 2020-01-17
 description: |
   Reaching 100 contributors, PyData LA, 
-  fresh Discord gems and other
-  news.
+  and more news from the DVC community.
 descriptionLong: |
   Every month we share news, findings, interesting reads,
   community takeaways, and everything else along the way.
