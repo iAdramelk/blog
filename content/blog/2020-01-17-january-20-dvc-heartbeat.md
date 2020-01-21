@@ -40,11 +40,10 @@ winners: [Vera Sativa](https://github.com/verasativa/),
 received \$500 to use on any educational opportunity of their choosing and, of
 course, their own DeeVee (that's our rainbow owl) to keep.
 
-Vera thanked us with this lovely picture of DeeVee and her team,
-[Odd Industries](https://odd.co/en/) (they are making some extremely neat tools
-for construction teams using computer vision).
-
-![](/uploads/images/2020-01-17/odd_with_deevee.png)
+![](/uploads/images/2020-01-17/odd_with_deevee.png)_Vera (center, flashing a
+peace sign) thanked us with this lovely picture of DeeVee and her team,
+[Odd Industries](https://odd.co/en/). They are making some extremely neat tools
+for construction teams using computer vision._
 
 -We were at PyData LA! Our fearless leader
 [Dmitry gave a talk](https://www.youtube.com/watch?v=7Wsd6V0k4Oc) and we set up
@@ -53,7 +52,8 @@ blustery day, but visitors kept showing up to our semi-outdoor booth. We're sure
 they came for the open source version control and not the donuts.
 
 ![](/uploads/images/2020-01-17/py_data1.jpeg)
-![](/uploads/images/2020-01-17/py_data2.jpeg)
+![](/uploads/images/2020-01-17/py_data2.jpeg) _The DVC team and PyData
+volunteers who heroically staffed our booth in the rain._
 
 Our engineer and technical writer Jorge reported:
 
