@@ -12,7 +12,8 @@
     "typecheck": "tsc --noEmit",
     "lint-ts": "tslint --project .",
     "lint-css": "stylelint \"src/**/*.css\"",
-    "format-all": "prettier --write './**/*.{js,jsx,md,tsx,ts,json}'"
+    "format-all": "prettier --write './**/*.{js,jsx,md,tsx,ts,json}'",
+    "postinstall": "cd plugins/external-link-plugin/ && yarn install"
   },
   "husky": {
     "hooks": {
@@ -43,13 +44,11 @@
     "gatsby-plugin-twitter": "^2.1.17",
     "gatsby-remark-embed-gist": "^1.1.9",
     "gatsby-remark-relative-images": "^0.2.3",
-    "hast-util-select": "^3.0.1",
     "prismjs": "^1.17.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-helmet": "^5.2.1",
-    "react-use": "^13.6.3",
-    "rehype-parse": "^6.0.2"
+    "react-use": "^13.6.3"
   },
   "devDependencies": {
     "@babel/core": "^7.7.2",
