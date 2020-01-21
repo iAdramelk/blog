@@ -7,9 +7,8 @@ const attrKeyArray = ['href', 'title', 'description', 'link'];
 
 function isCorrectExternalLinkAttr(attrsKeyTagArray) {
   return (
-    attrKeyArray.filter(key =>
-      attrsKeyTagArray.some(keyTag => keyTag.includes(key))
-    ).length >= attrKeyArray.length
+    attrKeyArray.filter(key => attrsKeyTagArray.indexOf(key) !== -1).length >=
+    attrKeyArray.length
   );
 }
 
