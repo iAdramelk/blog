@@ -25,14 +25,13 @@ the DVC community.
 
 ## News
 
--We were honored to be named a
-[Project of the Year](https://ods.ai/awards/2019/) by Open Data Science,
-Russia's largest community of data scientists and machine learning
-practitioners. Check out our ⭐️incredibly shiny trophy⭐️!
+We were honored to be named a [Project of the Year](https://ods.ai/awards/2019/)
+by Open Data Science, Russia's largest community of data scientists and machine
+learning practitioners. Check out our ⭐️incredibly shiny trophy⭐️!
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">DVC is the &quot;project of the year&quot; according to <a href="https://twitter.com/odsai_en?ref_src=twsrc%5Etfw">@odsai_en</a>!<br>😱🏆🎉<br>Open Data Science the largest DS community we know, with over 40K active members, great courses and it&#39;s own conf Data Fest.<br>Many thanks to the organizers and voters!<br>This is the best surprize gift for the team!!🥳 <a href="https://t.co/LZgewjM582">pic.twitter.com/LZgewjM582</a></p>&mdash; 🦉DVC (@DVCorg) <a href="https://twitter.com/DVCorg/status/1209544709930016768?ref_src=twsrc%5Etfw">December 24, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
--DVC hit **100 individual contributors** on Github! To celebrate, we picked 3 of
+DVC hit **100 individual contributors** on Github! To celebrate, we picked 3 of
 our favorite pull requests around the 100-mark to give prizes to. Meet our
 winners: [Vera Sativa](https://github.com/verasativa/),
 [Vít Novotný](https://twitter.com/tweetiko), and
@@ -45,7 +44,7 @@ peace sign) thanked us with this lovely picture of DeeVee and her team,
 [Odd Industries](https://odd.co/en/). They are making some extremely neat tools
 for construction teams using computer vision._
 
--We were at PyData LA! Our fearless leader
+**We were at PyData LA!** Our fearless leader
 [Dmitry gave a talk](https://www.youtube.com/watch?v=7Wsd6V0k4Oc) and we set up
 a busy booth to meet with the Pythonistas of Los Angeles. It was a cold and
 blustery day, but visitors kept showing up to our semi-outdoor booth. We're sure
@@ -61,12 +60,14 @@ Our engineer and technical writer Jorge reported:
 > several fields who are learning and adopting DVC with their teams – including
 > several working with privacy-sensitive medical records, very cool!
 
+<hr>
+
 ## From the community
 
 Here are some rumblings from the machine learning (ML) and data science
 community that got us talking.
 
--**A machine learning software wishlist.** Computer scientist and writer
+**A machine learning software wishlist.** Computer scientist and writer
 [Chip Huyen](https://twitter.com/chipro) tweeted about her ML software wishlist
 and kicked off a big community discussion.
 
@@ -84,7 +85,7 @@ on Twitter for more excllent, accessible content about ML engineering. We're
 thinking hard about these ideas and hope the discussion continues on- and
 offline.
 
--**A gentle intro to DVC for data scientists.** Scientist
+**A gentle intro to DVC for data scientists.** Scientist
 [Elle O'Brien](https://twitter.com/andronovhopf) published a code walkthrough
 about using DVC to make an image classification project more reproducible.
 Specifically, the blog is a case study about version control when a dataset
@@ -104,7 +105,7 @@ scientists, this might be up your alley.
   </section>
 </a>
 
--**Ideas for data scientists to level up their code** Machine learning engineer
+**Ideas for data scientists to level up their code** Machine learning engineer
 Andrew Greatorex posted a blog called “Down with technical debt! Clean Python
 for data scientists.” Andrew highlights something we can easily relate to: the
 “science” part of data science, which encourages experimentation and
@@ -132,7 +133,7 @@ used in conjunction with Git for versioning Python code. Thanks!
   </section>
 </a>
 
--**An introduction to MLOps** Engineer
+**An introduction to MLOps** Engineer
 [Sharif Elfouly](https://twitter.com/elfouly_sharif) wrote an approachable guide
 to thinking about MLOps, the growing field around making ML projects run
 efficiently from experimentation to production. He summarises why managing ML
