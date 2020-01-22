@@ -31,6 +31,7 @@ function SEO({
             title
             description
             keywords
+            siteUrl
           }
         }
       }
@@ -85,7 +86,7 @@ function SEO({
     },
     {
       name: 'twitter:image',
-      content: metaImage
+      content: encodeURI(`${site.siteMetadata.siteUrl}${metaImage}`)
     }
   ];
 
