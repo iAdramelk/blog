@@ -1,12 +1,7 @@
 {
   "name": "external-link-plugin",
   "version": "1.0.0",
-  "main": "index.ts",
-  "author": "",
-  "license": "Apache-2.0",
-  "dependencies": {
-    "hast-util-select": "^3.0.1",
-    "rehype-parse": "^6.0.2",
-    "unist-util-visit": "^2.0.1"
-  }
+  "main": "index.js",
+  "author": "Ilja Bykovskij",
+  "license": "Apache-2.0"
 }
