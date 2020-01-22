@@ -28,8 +28,9 @@ the DVC community.
 -We were honored to be named a
 [Project of the Year](https://ods.ai/awards/2019/) by Open Data Science,
 Russia's largest community of data scientists and machine learning
-practitioners. Check out our
-⭐️[incredibly shiny trophy](https://twitter.com/DVCorg/status/1209544709930016768)⭐️!
+practitioners. Check out our ⭐️incredibly shiny trophy⭐️!
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">DVC is the &quot;project of the year&quot; according to <a href="https://twitter.com/odsai_en?ref_src=twsrc%5Etfw">@odsai_en</a>!<br>😱🏆🎉<br>Open Data Science the largest DS community we know, with over 40K active members, great courses and it&#39;s own conf Data Fest.<br>Many thanks to the organizers and voters!<br>This is the best surprize gift for the team!!🥳 <a href="https://t.co/LZgewjM582">pic.twitter.com/LZgewjM582</a></p>&mdash; 🦉DVC (@DVCorg) <a href="https://twitter.com/DVCorg/status/1209544709930016768?ref_src=twsrc%5Etfw">December 24, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 -DVC hit **100 individual contributors** on Github! To celebrate, we picked 3 of
 our favorite pull requests around the 100-mark to give prizes to. Meet our
@@ -68,13 +69,14 @@ community that got us talking.
 -**A machine learning software wishlist.** Computer scientist and writer
 [Chip Huyen](https://twitter.com/chipro) tweeted about her ML software wishlist
 and kicked off a big community discussion.
-![](/uploads/images/2020-01-17/chip_tweet.png)
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I&#39;ve been thinking about the software stack for machine learning. Tools I&#39;d love to see.<br><br>1. Pip for pretrained models.<br>2. Version control for datasets.<br>3. GPU-friendly CI. Travis CI, Circe CI don&#39;t support GPUs. Jenkins is a pain.<br>4. Fast dataframes. Why is Pandas so slow?</p>&mdash; Chip Huyen (@chipro) <a href="https://twitter.com/chipro/status/1202815757593108480?ref_src=twsrc%5Etfw">December 6, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Her tweet resonated with a lot of practitioners, who were eager to discuss the
 solutions they'd tried. Among the many thoughtful replies and recommendations,
 we were thrilled to see DVC mentioned.
 
-![](/uploads/images/2020-01-17/chip_tweet_reply.png)
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">We&#39;re using <a href="https://twitter.com/DVCorg?ref_src=twsrc%5Etfw">@DVCorg</a> for 2) and it works great. 🙂</p>&mdash; Kristijan Ivancic (@kristijan_ivanc) <a href="https://twitter.com/kristijan_ivanc/status/1202879739716870144?ref_src=twsrc%5Etfw">December 6, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 If you haven't already, definitely check out Chip's
 [thread](https://twitter.com/chipro/status/1202815757593108480), and follow her
