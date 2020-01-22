@@ -72,7 +72,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
 // Create json to use on https://dvc.org/community
 
-exports.onPostBuild = async function({ graphql }) {
+exports.onPreBuild = async function({ graphql }) {
   const result = await graphql(`
     {
       allMarkdownRemark(
