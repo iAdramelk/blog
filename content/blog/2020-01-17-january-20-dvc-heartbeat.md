@@ -31,13 +31,12 @@ learning practitioners. Check out our ⭐️incredibly shiny trophy⭐️!
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">DVC is the &quot;project of the year&quot; according to <a href="https://twitter.com/odsai_en?ref_src=twsrc%5Etfw">@odsai_en</a>!<br>😱🏆🎉<br>Open Data Science the largest DS community we know, with over 40K active members, great courses and it&#39;s own conf Data Fest.<br>Many thanks to the organizers and voters!<br>This is the best surprize gift for the team!!🥳 <a href="https://t.co/LZgewjM582">pic.twitter.com/LZgewjM582</a></p>&mdash; 🦉DVC (@DVCorg) <a href="https://twitter.com/DVCorg/status/1209544709930016768?ref_src=twsrc%5Etfw">December 24, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-DVC hit **100 individual contributors** on Github! To celebrate, we picked 3 of
-our favorite pull requests around the 100-mark to give prizes to. Meet our
-winners: [Vera Sativa](https://github.com/verasativa/),
-[Vít Novotný](https://twitter.com/tweetiko), and
-[David Příhoda](https://twitter.com/david_prihoda). Vera, Vít and David each
-received \$500 to use on any educational opportunity of their choosing and, of
-course, their own DeeVee (that's our rainbow owl) to keep.
+DVC hit **100 individual contributors** on Github! To celebrate our
+100<sup>th</sup> contributor, [Vera Sativa](https://github.com/verasativa/), we
+sent her \$500 to use on any educational opportunity and her own DeeVee (that's
+our rainbow owl). We also awarded educational mini-grants to two of DVC's
+biggest contributors, [Vít Novotný](https://twitter.com/tweetiko), and
+[David Příhoda](https://twitter.com/david_prihoda).
 
 ![](/uploads/images/2020-01-17/odd_with_deevee.png)_Vera (center, flashing a
 peace sign) thanked us with this lovely picture of DeeVee and her team,
