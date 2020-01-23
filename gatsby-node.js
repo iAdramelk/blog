@@ -72,7 +72,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
 // Create json to use on https://dvc.org/community
 
-exports.onPostBuild = async function({ graphql }) {
+exports.onPreBuild = async function({ graphql }) {
   const result = await graphql(`
     {
       allMarkdownRemark(
@@ -89,6 +89,13 @@ exports.onPostBuild = async function({ graphql }) {
               title
               date
               commentsUrl
+              picture {
+                childImageSharp {
+                  resize(width: 160, height: 160, fit: COVER) {
+                    src
+                  }
+                }
+              }
             }
           }
         }
@@ -104,16 +111,28 @@ exports.onPostBuild = async function({ graphql }) {
     ({
       node: {
         fields: { slug },
-        frontmatter: { title, date, commentsUrl }
+        frontmatter: { title, date, commentsUrl, picture }
       }
     }) => {
       const url = `${siteMetadata.siteUrl}/${slug}`;
+      let pictureUrl = null;
+
+      if (picture) {
+        const {
+          childImageSharp: {
+            resize: { src }
+          }
+        } = picture;
+
+        pictureUrl = `${siteMetadata.siteUrl}${src}`;
+      }
 
       return {
         url,
         title,
         date,
-        commentsUrl
+        commentsUrl,
+        pictureUrl
       };
     }
   );
