@@ -31,13 +31,17 @@ involved our community is and can’t wait to share more with you:
   So many great conversations, new use cases and insights! Many thanks to
   [Dan Fischetti](https://www.linkedin.com/in/daniel-fischetti-4a6592bb/) from
   [Standard Cognition](https://standard.ai/), who joined our Dmitry Petrov on
-  stage. Watch the recording [HERE](https://youtu.be/RHQXK7EC0jI).
+  stage. Watch the recording here.
+
+  https://youtu.be/RHQXK7EC0jI
 
 - [Hacktoberfest](https://blog.dataversioncontrol.com/dvc-org-for-hacktoberfest-2019-ce5320151a0c)
   was a great exercise for DVC team on many levels and we really enjoyed
   supporting new contributors. Kudos to
   [Nabanita Dash](https://twitter.com/explorer_07) for organizing a cool
-  [DVC-themed hackathon](https://twitter.com/psociiit/status/1185150096792535040?s=20)!
+  DVC-themed hackathon!
+
+  https://twitter.com/psociiit/status/1185150096792535040?s=20
 
 - We’ve crossed 4k stars mark on [Github](https://github.com/iterative/dvc)!
 
@@ -45,6 +49,8 @@ involved our community is and can’t wait to share more with you:
   [Devsprints](https://twitter.com/FossMec/status/1192866498324254720) (Thank
   you [Kurian Benoy](https://twitter.com/kurianbenoy2) for the intro!) and we
   were happy to jump in and help with some mentoring.
+
+  https://twitter.com/FossMec/status/1192866498324254720
 
 ![](/uploads/images/2019-12-14/devsprints.png)_Devsprints participants on our
 [Discord](http://dvc.org/chat) channel_
@@ -62,7 +68,7 @@ involved our community is and can’t wait to share more with you:
   DVC-related topic — we are here to help, just
   [let us know](https://dvc.org/support)!**
 
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/Ipzf6oQqQpo" frameborder="0" allowfullscreen></iframe></center>
+  https://youtu.be/Ipzf6oQqQpo
 
 - Our own [Dmitry Petrov](https://twitter.com/FullStackML) went to Europe to
   speak at the
