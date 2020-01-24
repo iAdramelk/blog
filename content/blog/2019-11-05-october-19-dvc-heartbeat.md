@@ -31,9 +31,9 @@ it this year. Here are some of the highlights:
   [Dan Fischetti](https://www.linkedin.com/in/daniel-fischetti-4a6592bb/) from
   [Standard Cognition](https://twitter.com/standardAI) to discuss Open-source
   tools to version control Machine Learning models and experiments. The
-  recording is available now [here.](https://youtu.be/RHQXK7EC0jI)
+  recording is available now here.
 
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/RHQXK7EC0jI" frameborder="0" allowfullscreen></iframe></center>
+  https://youtu.be/RHQXK7EC0jI
 
 - [Getting ready for the Hacktoberfest](https://blog.dataversioncontrol.com/dvc-org-for-hacktoberfest-2019-ce5320151a0c)
   and having the whole team get together to pick up and label nice issues and be
@@ -124,7 +124,7 @@ Here are some of the links that caught our eye past month:
 > increasingly difficult to manage and collaborate on projects that deal with
 > huge amounts of data and ML models apart from just source code.
 
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/4XpHk85_x0E" frameborder="0" allowfullscreen></iframe></center>
+https://youtu.be/4XpHk85_x0E
 
 - **Podcast: TWIML Talk #295
   [Managing Deep Learning Experiments](https://twimlai.com/twiml-talk-295-managing-deep-learning-experiments-with-lukas-biewald/)
