@@ -1,5 +1,5 @@
 ---
-title: January '20 Community
+title: January '20 Community Gems
 date: 2020-01-20
 description: |
   Great discussions and technical Q&A's from our users.
