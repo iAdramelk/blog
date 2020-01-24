@@ -55,7 +55,7 @@ When SSH requires a key file, try this:
 $ dvc remote modify myremote keyfile <path to *.pem>
 ```
 
-### Q: [If you train a tensorflow model that creates multiple checkpoint files, how do you establish them as dependencies in the DVC pipeline?](https://discordapp.com/channels/485586884165107732/563406153334128681/651098762466426891)
+### Q: [If you train a TensorFlow model that creates multiple checkpoint files, how do you establish them as dependencies in the DVC pipeline?](https://discordapp.com/channels/485586884165107732/563406153334128681/651098762466426891)
 
 You can specify a directory as a dependency/output in your DVC pipeline, and
 store checkpointed models in that directory. It might look like this:
@@ -116,10 +116,10 @@ as we'll be eager to pass on any insights to the community.
 
 ### Q: Say I have a Git repository with multiple projets inside (one classification, one object detection, etc.). [Is it possible to tell DVC to just pull data for one particular project?](https://discordapp.com/channels/485586884165107732/563406153334128681/646760832616890408)
 
-Absolutely, DVC supports pulling data from different .dvc files. An example
-would be having two project subdirectories in your Git repo, `classification`
-and `detection`. You could use `dvc pull -R classification` to only pull files
-in that project to your workspace.
+Absolutely, DVC supports pulling data from different DVC-files. An example would
+be having two project subdirectories in your Git repo, `classification` and
+`detection`. You could use `dvc pull -R classification` to only pull files in
+that project to your workspace.
 
 If you prefer to be even more granular, you can `dvc add` files individually.
 Then you can use `dvc pull <filename>.dvc` to retrieve the outputs specified
@@ -134,7 +134,7 @@ you’ll see that DVC is downloading data from an HTTP repository, which is
 actually just an S3 repository that we've granted public HTTP read-access to.
 
 So you would need to configure two remotes in your config file, each pointing to
-the same s3 bucket through different protocols. Like this:
+the same S3 bucket through different protocols. Like this:
 
 ```dvc
 $ dvc remote add -d --local myremote s3://bucket/path
@@ -148,5 +148,5 @@ can read more about this
 [in our docs](https://dvc.org/doc/command-reference/remote/add#remote-add)).
 
 This means that even though you and users from the public are accessing the
-stored dataset by different protocols (s3 and HTTPS), you'll all run the same
+stored dataset by different protocols (S3 and HTTPS), you'll all run the same
 command: `dvc pull`.
