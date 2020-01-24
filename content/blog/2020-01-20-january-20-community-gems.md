@@ -1,5 +1,5 @@
 ---
-title: January '20 Community Gems
+title: January '20 Community
 date: 2020-01-20
 description: |
   Great discussions and technical Q&A's from our users.
@@ -12,10 +12,11 @@ descriptionLong: |
 picture: ../../static/uploads/images/2020-01-20/Community_Gems.png
 pictureComment:
 author: ../authors/elle_obrien.md
-commentsUrl: https://discuss.dvc.org/t/january-20-dvc-heartbeat/314
+commentsUrl: https://discuss.dvc.org/t/january-20-community-gems/315
 tags:
   - Discord
   - DVC
+  - Gems
 ---
 
 ## Discord gems
@@ -23,7 +24,7 @@ tags:
 There's a lot of action in our Discord channel these days. Ruslan, DVC's core
 maintainer, said it best with a gif.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">How it feels when <a href="https://twitter.com/DVCorg?ref_src=twsrc%5Etfw">@DVCorg</a> team is handling multiple conversations on Discord at the same time. <a href="https://t.co/QrLusdWYml">https://t.co/QrLusdWYml</a></p>&mdash; 🦉 Ruslan Kuprieiev (@rkuprieiev) <a href="https://twitter.com/rkuprieiev/status/1144008869414342658?ref_src=twsrc%5Etfw">June 26, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+https://twitter.com/rkuprieiev/status/1144008869414342658?ref_src=twsrc%5Etfw
 
 It's a lot to keep up with, so here are some highlights. We think these are
 useful, good-to-know, and interesting conversations between DVC developers and
@@ -50,7 +51,7 @@ some
 [examples in our official documentation](https://dvc.org/doc/user-guide/external-dependencies#ssh)).
 When SSH requires a key file, try this:
 
-```
+```dvc
 $ dvc remote modify myremote keyfile <path to *.pem>
 ```
 
@@ -59,7 +60,7 @@ $ dvc remote modify myremote keyfile <path to *.pem>
 You can specify a directory as a dependency/output in your DVC pipeline, and
 store checkpointed models in that directory. It might look like this:
 
-```
+```dvc
 $ dvc run \
      -f train.dvc \
      -d data \
@@ -71,7 +72,7 @@ where `models` is a directory created for checkpoint files. If you would like to
 preserve your models in the data directory, though, then you would need to
 specify them one by one. You can do this with bash:
 
-```
+```dvc
 $ dvc run $(for file in data/*.gz; do echo -n -d $file; done)
 ```
 
@@ -135,7 +136,7 @@ actually just an S3 repository that we've granted public HTTP read-access to.
 So you would need to configure two remotes in your config file, each pointing to
 the same s3 bucket through different protocols. Like this:
 
-```
+```dvc
 $ dvc remote add -d --local myremote s3://bucket/path
 $ dvc remote add -d mypublicemote http://s3-external-1.amazonaws.com/bucket/path
 ```
