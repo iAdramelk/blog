@@ -37,7 +37,9 @@ involved our community is and can’t wait to share more with you:
   was a great exercise for DVC team on many levels and we really enjoyed
   supporting new contributors. Kudos to
   [Nabanita Dash](https://twitter.com/explorer_07) for organizing a cool
-  [DVC-themed hackathon](https://twitter.com/psociiit/status/1185150096792535040?s=20)!
+  DVC-themed hackathon!
+
+  https://twitter.com/psociiit/status/1185150096792535040?s=20
 
 - We’ve crossed 4k stars mark on [Github](https://github.com/iterative/dvc)!
 
@@ -45,6 +47,8 @@ involved our community is and can’t wait to share more with you:
   [Devsprints](https://twitter.com/FossMec/status/1192866498324254720) (Thank
   you [Kurian Benoy](https://twitter.com/kurianbenoy2) for the intro!) and we
   were happy to jump in and help with some mentoring.
+
+  https://twitter.com/FossMec/status/1192866498324254720
 
 ![](/uploads/images/2019-12-14/devsprints.png)_Devsprints participants on our
 [Discord](http://dvc.org/chat) channel_
