@@ -31,9 +31,9 @@ it this year. Here are some of the highlights:
   [Dan Fischetti](https://www.linkedin.com/in/daniel-fischetti-4a6592bb/) from
   [Standard Cognition](https://twitter.com/standardAI) to discuss Open-source
   tools to version control Machine Learning models and experiments. The
-  recording is available now [here.](https://youtu.be/RHQXK7EC0jI)
+  recording is available now here.
 
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/RHQXK7EC0jI" frameborder="0" allowfullscreen></iframe></center>
+  https://youtu.be/RHQXK7EC0jI
 
 - [Getting ready for the Hacktoberfest](https://blog.dataversioncontrol.com/dvc-org-for-hacktoberfest-2019-ce5320151a0c)
   and having the whole team get together to pick up and label nice issues and be
@@ -60,7 +60,7 @@ it this year. Here are some of the highlights:
 - Seeing [Dmitry Petrov](https://twitter.com/FullStackML) being really happy one
   day:
 
-<blockquote class="twitter-tweet" data-lang="en" data-dnt="true" data-theme="light"><p lang="en" dir="ltr">.<a href="https://twitter.com/martinfowler?ref_src=twsrc%5Etfw">@martinfowler</a>&#39;s books and his website were always the source of programming wisdom 💎 His Refactoring book is the first book I recommend to developers.<br><br>Now they write about ML lifecycle and automation. I’m especially excited because they use <a href="https://twitter.com/DVCorg?ref_src=twsrc%5Etfw">@DVCorg</a> that we’ve created. <a href="https://t.co/HwswZqjOsb">https://t.co/HwswZqjOsb</a></p>&mdash; Dmitry Petrov (@FullStackML) <a href="https://twitter.com/FullStackML/status/1169403554290814976?ref_src=twsrc%5Etfw">September 5, 2019</a></blockquote>
+  https://twitter.com/FullStackML/status/1169403554290814976
 
 <hr />
 
@@ -112,7 +112,7 @@ image="/uploads/images/2019-11-05/the-path-to-identity-validation.jpeg" />
 > increasingly difficult to manage and collaborate on projects that deal with
 > huge amounts of data and ML models apart from just source code.
 
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/4XpHk85_x0E" frameborder="0" allowfullscreen></iframe></center>
+https://youtu.be/4XpHk85_x0E
 
 - **Podcast: TWIML Talk #295
   [Managing Deep Learning Experiments](https://twimlai.com/twiml-talk-295-managing-deep-learning-experiments-with-lukas-biewald/)

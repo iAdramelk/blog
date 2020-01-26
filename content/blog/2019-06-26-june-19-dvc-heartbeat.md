@@ -52,7 +52,7 @@ activities was great! Last-minute accommodation cancellations, booth equipment
 delivery issues, and being late for our very own talk was not so great. Will be
 sharing more about it in a separate blogpost soon.
 
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/jkfh2PM5Sz8" frameborder="0" allowfullscreen></iframe></center>
+https://youtu.be/jkfh2PM5Sz8
 
 Here is [Dmitry Petrov](https://twitter.com/FullStackML)’s PyCon
 [talk](https://www.youtube.com/watch?v=jkfh2PM5Sz8) and

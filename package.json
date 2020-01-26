@@ -42,6 +42,7 @@
     "gatsby-image": "^2.2.39",
     "gatsby-plugin-twitter": "^2.1.18",
     "gatsby-remark-embed-gist": "^1.1.9",
+    "gatsby-remark-embedder": "^1.8.0",
     "gatsby-remark-relative-images": "^0.2.3",
     "hast-util-select": "^3.0.1",
     "prismjs": "^1.17.1",

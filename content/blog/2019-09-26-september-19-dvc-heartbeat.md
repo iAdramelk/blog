@@ -64,17 +64,18 @@ Some other highlights of the end of summer:
   applicants and now moving to the next stage with our chosen tech writer
   [Dashamir Hoxha](http://dashohoxha.fs.al/).
 
-- We’ve
-  [crossed the 3,000 stars mark](https://twitter.com/DVCorg/status/1147220439472545793?s=20)
-  on Github ([over 3,500 now](https://github.com/iterative/dvc)). Thank you for
-  your support!
+- We’ve crossed the 3,000 stars mark on Github
+  ([over 3,500 now](https://github.com/iterative/dvc)). Thank you for your
+  support!
 
-- We’ve
-  [had great time](https://twitter.com/a142hr/status/1164256520235675648?s=20)
-  at the
+  https://twitter.com/DVCorg/status/1147220439472545793?s=20
+
+- We’ve had great time at the
   [Open Source Summit](https://events.linuxfoundation.org/events/open-source-summit-north-america-2019/program/)
   by Linux foundation in San Diego — speaking on stage, running a booth and
   chatting with all the amazing open-source crowd out there.
+
+  https://twitter.com/a142hr/status/1164256520235675648?s=20
 
 ![](/uploads/images/2019-09-26/open-source-summit-by-linux-foundation.jpeg)
 
@@ -83,11 +84,10 @@ Some other highlights of the end of summer:
 Here are some of the great pieces of content around DVC and ML ops that we
 discovered in July and August:
 
-- **[Great insightful discussion](https://twitter.com/NathanBenaich/status/1151815916512010242)
-  on Twitter about versioning ML projects started by
-  [Nathan Benaich](https://medium.com/@NathanBenaich).**
+- ** Great insightful discussion on Twitter about versioning ML projects started
+  by [Nathan Benaich](https://medium.com/@NathanBenaich).**
 
-<blockquote class="twitter-tweet" data-lang="en" data-dnt="true"><p lang="en" dir="ltr">🙏Question to ML friends: How do you go about version control for your ML projects (data, models, and intermediate steps in your data pipelines)? Have you built your own tools? Are using something open source? Or a SaaS? Or does this come bundled with your ML infra products? Thx!</p>&mdash; Nathan Benaich (@NathanBenaich) <a href="https://twitter.com/NathanBenaich/status/1151815916512010242?ref_src=twsrc%5Etfw">July 18, 2019</a></blockquote>
+  https://twitter.com/NathanBenaich/status/1151815916512010242
 
 - **[Our Machine Learning Workflow: DVC, MLFlow and Training in Docker Containers](https://medium.com/ixorthink/our-machine-learning-workflow-dvc-mlflow-and-training-in-docker-containers-5b9c80cdf804)
   by [Ward Van Laer](https://medium.com/@ward.vanlaer).**

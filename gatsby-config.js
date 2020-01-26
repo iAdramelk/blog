@@ -42,6 +42,9 @@ const plugins = [
     options: {
       plugins: [
         {
+          resolve: 'gatsby-remark-embedder'
+        },
+        {
           resolve: 'gatsby-remark-embed-gist',
           options: {
             includeDefaultCss: true
