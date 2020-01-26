@@ -1,18 +1,18 @@
 const visit = require('unist-util-visit');
 const unified = require('unified');
 const parse = require('rehype-parse');
-const select = require('hast-util-select').select;
+const stringify = require('rehype-stringify');
+const { selectAll } = require('hast-util-select');
 
-const attrKeyArray = ['href', 'title', 'description', 'link'];
+const requiredExternalLinkAttrs = ['href', 'title', 'description', 'link'];
 
 function isCorrectExternalLinkAttr(attrsKeyTagArray) {
-  return (
-    attrKeyArray.filter(key => attrsKeyTagArray.indexOf(key) !== -1).length >=
-    attrKeyArray.length
+  return requiredExternalLinkAttrs.every(attr =>
+    attrsKeyTagArray.includes(attr)
   );
 }
 
-function renderTag(withImage, attrs) {
+function renderTag(attrs) {
   return `
     <section class="elp-content-holder">
       <a href=${attrs.href} class="external-link-preview">
@@ -22,7 +22,7 @@ function renderTag(withImage, attrs) {
             <div class="elp-link">${attrs.link}</div>
           </div>
            ${
-             withImage
+             attrs.image
                ? `<div class="elp-image-holder">
                 <img src="${attrs.image}" alt="${attrs.title}"/>
             </div>`
@@ -33,23 +33,42 @@ function renderTag(withImage, attrs) {
     `;
 }
 
+/** HAST - Hypertext Abstract Syntax Tree */
+function convertHtmlToHast(htmlString) {
+  return unified()
+    .use(parse)
+    .parse(htmlString);
+}
+
+function convertHastToHtml(htmlAst) {
+  return unified()
+    .use(stringify)
+    .stringify(htmlAst);
+}
+
 module.exports = ({ markdownAST }) => {
   visit(markdownAST, 'html', node => {
-    const data = unified()
-      .use(parse)
-      .parse(node.value);
-    const externalLink = select('external-link', data);
-    if (externalLink) {
-      const { properties } = externalLink;
+    const hast = convertHtmlToHast(node.value);
+
+    const externalLinkNodeList = selectAll('external-link', hast);
+
+    externalLinkNodeList.forEach(externalLinkNode => {
+      const { properties } = externalLinkNode;
       if (isCorrectExternalLinkAttr(Object.keys(properties))) {
-        const isImage = Boolean(properties.image);
-        node.type = 'html';
-        node.value = renderTag(isImage, properties);
+        const externalLinkHtml = renderTag(properties);
+        const externalLinkHast = convertHtmlToHast(externalLinkHtml);
+
+        externalLinkNode.type = externalLinkHast.type;
+        externalLinkNode.tagName = externalLinkHast.tagName;
+        externalLinkNode.properties = externalLinkHast.properties;
+        externalLinkNode.children = externalLinkHast.children;
       } else {
         throw new Error(
           `No correct tag <external-link /> or not all nested tags in ${node.value}`
         );
       }
-    }
+    });
+
+    node.value = convertHastToHtml(hast);
   });
 };
