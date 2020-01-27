@@ -91,18 +91,12 @@ Specifically, the blog is a case study about version control when a dataset
 grows over time. If you're looking for a DVC tutorial geared for data
 scientists, this might be up your alley.
 
-<a href="https://towardsdatascience.com/start-version-controlling-your-machine-learning-datasets-2b872e109856" class="external-link-preview">
-  <section class="elp-content-holder">
-    <div class="elp-description-holder">
-      <h4 class="elp-title">Start Version Controlling your Machine Learning Datasets</h4>
-      <div class="elp-description">Make your machine learning and data science projects reproducible with open source tools.</div>
-      <div class="elp-link">medium.com</div>
-    </div>
-    <div class="elp-image-holder">
-      <img src="/uploads/images/2020-01-17/medium_1.png" />
-    </div>
-  </section>
-</a>
+<external-link
+href="https://towardsdatascience.com/start-version-controlling-your-machine-learning-datasets-2b872e109856"
+title="Start Version Controlling your Machine Learning Datasets"
+description="Make your machine learning and data science projects reproducible with open source tools."
+link="medium.com"
+image="/uploads/images/2020-01-17/medium_1.png" />
 
 **Ideas for data scientists to level up their code** Machine learning engineer
 Andrew Greatorex posted a blog called “Down with technical debt! Clean Python
@@ -119,18 +113,12 @@ writes:
 In this blog, DVC gets a shout-out as Andrew’s preferred data versioning tool,
 used in conjunction with Git for versioning Python code. Thanks!
 
-<a href="https://towardsdatascience.com/down-with-technical-debt-clean-python-for-data-scientists-aa7592eff7fc" class="external-link-preview">
-  <section class="elp-content-holder">
-    <div class="elp-description-holder">
-      <h4 class="elp-title">Down with technical debt! Clean Python for data scientists.</h4>
-      <div class="elp-description"></div>
-      <div class="elp-link">medium.com</div>
-    </div>
-    <div class="elp-image-holder">
-      <img src="/uploads/images/2020-01-17/medium_2.png" />
-    </div>
-  </section>
-</a>
+<external-link
+href="https://towardsdatascience.com/down-with-technical-debt-clean-python-for-data-scientists-aa7592eff7fc"
+title="Down with technical debt! Clean Python for data scientists."
+description=""
+link="medium.com"
+image="/uploads/images/2020-01-17/medium_2.png" />
 
 **An introduction to MLOps** Engineer
 [Sharif Elfouly](https://twitter.com/elfouly_sharif) wrote an approachable guide
@@ -150,17 +138,11 @@ Sharif gives some recommendations for tools that work especially well for ML,
 and he writes that DVC is the “perfect combination for versioning your code and
 data.” Thanks, Sharif! We think you’re perfect, too.
 
-<a href="https://towardsdatascience.com/down-with-technical-debt-clean-python-for-data-scientists-aa7592eff7fc" class="external-link-preview">
-  <section class="elp-content-holder">
-    <div class="elp-description-holder">
-      <h4 class="elp-title">MLOps Done Right</h4>
-      <div class="elp-description">What is MLOps? Why is it so important? How to do it right!</div>
-      <div class="elp-link">medium.com</div>
-    </div>
-    <div class="elp-image-holder">
-      <img src="/uploads/images/2020-01-17/medium_3.png" />
-    </div>
-  </section>
-</a>
+<external-link
+href="https://towardsdatascience.com/down-with-technical-debt-clean-python-for-data-scientists-aa7592eff7fc"
+title="MLOps Done Right"
+description="What is MLOps? Why is it so important? How to do it right!"
+link="medium.com"
+image="/uploads/images/2020-01-17/medium_3.png" />
 
 That's a wrap for January. We'll see you next month with more updates!
