@@ -6,7 +6,7 @@ const Prism = require('prismjs');
 // examples isn't copiable by making it an 'input' token.
 Prism.hooks.add('after-tokenize', env => {
   if (env.language !== 'dvc') return;
-  debugger;
+
   const { tokens } = env;
   for (let i = 0; i < tokens.length; i++) {
     if (tokens[i].type === 'line' && /\$\s?/.test(tokens[i].content[0])) {
