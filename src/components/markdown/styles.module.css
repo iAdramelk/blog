@@ -375,7 +375,10 @@
         color: #0086b3;
       }
 
-      .token.dvc,
+      .token.dvc {
+        color: #73bdd5;
+      }
+
       .token.command,
       .token.selector,
       .token.atrule,
