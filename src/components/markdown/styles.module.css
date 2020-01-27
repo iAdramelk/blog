@@ -44,23 +44,6 @@
     }
   }
 
-  b,
-  strong {
-    font-weight: 500;
-  }
-
-  code,
-  kbd,
-  samp {
-    @media (--md-scr) {
-      font-size: 16px;
-    }
-
-    @media (--lg-scr) {
-      font-size: 20px;
-    }
-  }
-
   :global(.gatsby-resp-image-wrapper) + em {
     @mixin text-secondary;
 
@@ -130,8 +113,13 @@
   blockquote:not(:global(.twitter-tweet)) {
     margin: 30px 0;
     padding-left: 25px;
-    font-style: italic;
     position: relative;
+    font-size: 0.92em;
+    font-style: italic;
+
+    em {
+      font-style: normal;
+    }
 
     &::before {
       content: "";
@@ -150,10 +138,20 @@
   samp {
     padding: 0 5px;
     border-radius: 4px;
-    font-family: var(--font-mono);
-    font-style: normal;
+    font-style: inherit;
+    line-height: 1.6em;
+    font-size: 0.74em;
     color: var(--color-black);
     background: var(--color-light-blue);
+  }
+
+  h1,
+  h2,
+  h3 {
+    code {
+      line-height: 1.8em;
+      font-size: 0.84em;
+    }
   }
 
   ol,
@@ -232,6 +230,10 @@
     @mixin link;
 
     word-wrap: break-word;
+
+    code {
+      color: inherit;
+    }
   }
 
   pre {
@@ -306,6 +308,8 @@
       min-width: 100%;
       padding: 0;
       color: #a0a0a0;
+      font-size: 0.74em;
+      line-height: 1.6em;
     }
 
     :global {
