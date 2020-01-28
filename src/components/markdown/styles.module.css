@@ -371,12 +371,12 @@
         color: #0086b3;
       }
 
-      .token.git {
+      .token.dvc {
         color: #0086b3;
       }
 
-      .token.dvc {
-        color: #73bdd5;
+      .token.git {
+        color: #d57a66;
       }
 
       .token.command,

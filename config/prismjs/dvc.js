@@ -1,37 +1,14 @@
 // Command arrays are intentionally reverse sorted
 // to prevent shorter matches before longer ones
 
-const commands = [
-  'which',
-  'wget',
-  'virtualenv',
-  'vi',
-  'unzip',
-  'tree',
-  'tar',
-  'sudo',
-  'source',
-  'rm',
-  'python',
-  'pip',
-  'mkdir',
-  'md5',
-  'ls',
-  'file',
-  'export',
-  'exec',
-  'echo',
-  'du',
-  'curl',
-  'cp',
-  'cd',
-  'cat',
-  'autoload'
-];
-
 const git = [
   'tag',
   'status',
+  'remote update',
+  'remote rename',
+  'remote remove',
+  'remote add',
+  'remote',
   'push',
   'pull',
   'merge',
@@ -92,25 +69,6 @@ const dvc = [
   'add'
 ];
 
-const keywords = [
-  'while',
-  'until',
-  'time',
-  'then',
-  'select',
-  'in',
-  'if',
-  'function',
-  'for',
-  'fi',
-  'esac',
-  'else',
-  'elif',
-  'done',
-  'do',
-  'case'
-];
-
 const beforeCommand = String.raw`(\$[\s(]+|;\s*)`;
 
 const variable = {
@@ -124,9 +82,9 @@ const comment = {
 };
 
 const insideLine = {
-  command: {
+  dvc: {
     pattern: new RegExp(
-      String.raw`${beforeCommand}\b(?:${commands.concat(keywords).join('|')})\b`
+      String.raw`${beforeCommand}\b(?:dvc (?:${dvc.join('|')}))\b`
     ),
     greedy: true,
     lookbehind: true
@@ -138,10 +96,8 @@ const insideLine = {
     greedy: true,
     lookbehind: true
   },
-  dvc: {
-    pattern: new RegExp(
-      String.raw`${beforeCommand}\b(?:dvc (?:${dvc.join('|')}))\b`
-    ),
+  command: {
+    pattern: new RegExp(String.raw`${beforeCommand}\b[a-zA-Z0-9]+\b`),
     greedy: true,
     lookbehind: true
   },
