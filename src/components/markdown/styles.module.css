@@ -317,8 +317,12 @@
         background: #55436a;
       }
 
-      .token.line {
+      .language-dvc {
         font-weight: bold;
+
+        .token.comment {
+          font-weight: normal;
+        }
       }
 
       .token.input {

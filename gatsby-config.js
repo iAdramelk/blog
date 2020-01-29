@@ -68,7 +68,11 @@ const plugins = [
             languageExtensions: [
               {
                 language: 'dvc',
-                definition: dvc
+                extend: 'bash',
+                // insert our definitions at the very start
+                insertBefore: {
+                  shebang: dvc
+                }
               }
             ]
           }

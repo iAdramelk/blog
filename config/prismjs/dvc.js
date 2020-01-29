@@ -71,17 +71,7 @@ const dvc = [
 
 const beforeCommand = String.raw`(\$[\s(]+|;\s*)`;
 
-const variable = {
-  pattern: /\$[a-zA-Z_][a-zA-Z_0-9]*/,
-  greedy: true
-};
-
-const comment = {
-  pattern: /#.*/,
-  greedy: true
-};
-
-const insideLine = {
+module.exports = {
   dvc: {
     pattern: new RegExp(
       String.raw`${beforeCommand}\b(?:dvc (?:${dvc.join('|')}))\b`
@@ -97,33 +87,8 @@ const insideLine = {
     lookbehind: true
   },
   command: {
-    pattern: new RegExp(String.raw`${beforeCommand}\b[a-zA-Z0-9]+\b`),
+    pattern: new RegExp(String.raw`${beforeCommand}\b[a-zA-Z0-9\-_]+\b`),
     greedy: true,
     lookbehind: true
-  },
-  string: {
-    pattern: /(["'])(?:\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1/,
-    greedy: true,
-    inside: {
-      variable: { ...variable }
-    }
-  },
-  variable
-};
-
-const subcommand = {
-  pattern: /\$\((.+)\)/,
-  inside: { ...insideLine },
-  alias: 'important'
-};
-
-module.exports = {
-  comment: { ...comment },
-  line: {
-    pattern: /(?<=(^|\n))\$[\s\S]*?[^\\](:?\n|$)/,
-    inside: {
-      subcommand,
-      ...insideLine
-    }
   }
 };
