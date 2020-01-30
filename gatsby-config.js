@@ -1,6 +1,5 @@
 const path = require('path');
-const dvc = require('./config/prismjs/dvc');
-require('./config/prismjs/dvc-hook');
+require('./config/prismjs/dvc');
 
 const title = 'Data Version Control · DVC';
 const keywords =
@@ -63,19 +62,7 @@ const plugins = [
         },
         'gatsby-remark-responsive-iframe',
         {
-          resolve: 'gatsby-remark-prismjs',
-          options: {
-            languageExtensions: [
-              {
-                language: 'dvc',
-                extend: 'bash',
-                // insert our definitions at the very start
-                insertBefore: {
-                  shebang: dvc
-                }
-              }
-            ]
-          }
+          resolve: 'gatsby-remark-prismjs'
         },
         'gatsby-remark-copy-linked-files',
         'gatsby-remark-smartypants'

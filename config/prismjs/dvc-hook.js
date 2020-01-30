@@ -2,21 +2,13 @@ const Prism = require('prismjs');
 
 // Make sure the $ part of the command prompt in shell
 // examples isn't copiable by making it an 'input' token.
-const rInput = /^\$\s+$/m;
-const rLineSplit = /(?<=\n)/; // split lines without losing the \n
 Prism.hooks.add('after-tokenize', env => {
   if (env.language !== 'dvc') return;
 
-  env.tokens = env.tokens.flatMap(contents => {
-    if (typeof contents === 'string' && rInput.test(contents)) {
-      // one or more lines contain a prompt (`$ `)
-      return contents.split(rLineSplit).map(line => {
-        if (rInput.test(line)) {
-          return new Prism.Token('input', line, null, line, false);
-        }
-        return line;
-      });
+  for (const token of env.tokens) {
+    if (token.type === 'line' && /^\$\s+$/.test(token.content[0])) {
+      const old = token.content[0];
+      token.content[0] = new Prism.Token('input', old, null, old, false);
     }
-    return [contents];
-  });
+  }
 });
