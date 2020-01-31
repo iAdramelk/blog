@@ -119,7 +119,7 @@ export const pageQuery = graphql`
                       fixed(
                         width: 40
                         height: 40
-                        quality: 95
+                        quality: 50
                         cropFocus: CENTER
                       ) {
                         ...GatsbyImageSharpFixed_withWebp
