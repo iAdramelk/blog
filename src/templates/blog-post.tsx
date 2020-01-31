@@ -97,7 +97,7 @@ export const pageQuery = graphql`
               name
               avatar {
                 childImageSharp {
-                  fixed(width: 40, height: 40) {
+                  fixed(width: 40, height: 40, quality: 95, cropFocus: CENTER) {
                     ...GatsbyImageSharpFixed_withWebp
                   }
                 }
