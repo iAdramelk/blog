@@ -38,10 +38,18 @@ our rainbow owl). We also awarded educational mini-grants to two of DVC's
 biggest contributors, [Vít Novotný](https://twitter.com/tweetiko), and
 [David Příhoda](https://twitter.com/david_prihoda).
 
-![](/uploads/images/2020-01-17/odd_with_deevee.png)_Vera (center, flashing a
+![=200](/uploads/images/2020-01-17/odd_with_deevee.png)_Vera (center, flashing a
 peace sign) thanked us with this lovely picture of DeeVee and her team,
 [Odd Industries](https://odd.co/en/). They are making some extremely neat tools
 for construction teams using computer vision._
+
+![=200][img] _Vera (center, flashing a
+peace sign) thanked us with this lovely picture of DeeVee and her team,
+[Odd Industries](https://odd.co/en/). They are making some extremely neat tools
+for construction teams using computer vision._
+
+
+[img]:/uploads/images/2020-01-17/odd_with_deevee.png 
 
 **We were at PyData LA!** Our fearless leader
 [Dmitry gave a talk](https://www.youtube.com/watch?v=7Wsd6V0k4Oc) and we set up
@@ -50,8 +58,9 @@ blustery day, but visitors kept showing up to our semi-outdoor booth. We're sure
 they came for the open source version control and not the donuts.
 
 ![](/uploads/images/2020-01-17/py_data1.jpeg)
-![](/uploads/images/2020-01-17/py_data2.jpeg) _The DVC team and PyData
-volunteers who heroically staffed our booth in the rain._
+
+![](/uploads/images/2020-01-17/py_data1.jpeg "=400")
+
 
 Our engineer and technical writer Jorge reported:
 

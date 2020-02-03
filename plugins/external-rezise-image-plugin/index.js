@@ -51,7 +51,7 @@ module.exports = ({ markdownAST }) => {
       if (!!resize) {
         const [width, height] = resize[0].replace(/^(.)/g, '').split('x');
 
-        image.properties.title = title
+        image.properties.title = title ? title : image.properties.alt
 
         wrapperImage.properties.style = wrapperImage
           .properties
@@ -68,14 +68,14 @@ module.exports = ({ markdownAST }) => {
           image.properties.style = image
             .properties
             .style
-            .replace(/(width:100%;)([\s\S]+)/g, `width:${Number(width) > Number(maxWidth) ? maxWidth : width}px; $2 object-fit: cover; overflow:hidden;`)
+            .replace(/(width:100%;)([\s\S]+)/g, `max-width:${Number(width) > Number(maxWidth) ? maxWidth : width}px; $2 object-fit: cover; overflow:hidden;`)
 
         } else {
 
           image.properties.style = image
             .properties
             .style
-            .replace(/(width:100%;)/g, `width:${Number(width) > Number(maxWidth) ? maxWidth : width}px;`)
+            .replace(/(width:100%;)/g, `max-width:${Number(width) > Number(maxWidth) ? maxWidth : width}px;`)
         }
       }
     })
