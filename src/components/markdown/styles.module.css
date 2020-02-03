@@ -318,10 +318,17 @@
       }
 
       .language-dvc {
-        font-weight: bold;
+        font-weight: normal;
+        color: #ccc !important;
+
+        .token.line {
+          font-weight: bold;
+          color: #a0a0a0;
+        }
 
         .token.comment {
           font-weight: normal;
+          color: #a0a0a0;
         }
       }
 
