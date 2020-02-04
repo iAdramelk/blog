@@ -1,3 +1,11 @@
+//# Support for resize image inline on markdown
+//# Syntax "=WIDTH" 
+//#
+//# Examples
+//# ![](/relative-path-image "=500")
+//# ![](/relative-path-image "=500 Some Title")
+//# ![](/relative-path-image "Some Title =500")
+
 const visit = require('unist-util-visit');
 const { selectAll, select } = require('hast-util-select');
 
@@ -35,15 +43,16 @@ module.exports = ({ markdownAST }) => {
         .replace(/\D/g, '')
 
       if (resize) {
+
         const width = resize[0].replace('=', '');
 
-        // by default Gatsby populates title value with alt, 
-        // restoring it here if needed
+        //# by default Gatsby populates title value with alt, 
+        //# restoring it here if needed
 
-        // # image related HTML produced by Gatsby looks like: 
-        // # <span .gatsby-resp-image-wrapper max-width: 100px>
-        //#     <img .gatsby-resp-image-image title='..' alt='...' >
-        //#...
+        //# image related HTML produced by Gatsby looks like: 
+        //# <span .gatsby-resp-image-wrapper max-width: 100px>
+        //#   <img .gatsby-resp-image-image title='..' alt='...'>
+        //# ...
 
         image.properties.title = title ? title : image.properties.alt
 
