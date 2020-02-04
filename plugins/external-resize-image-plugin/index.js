@@ -49,10 +49,15 @@ module.exports = ({ markdownAST }) => {
         //# by default Gatsby populates title value with alt, 
         //# restoring it here if needed
 
-        //# image related HTML produced by Gatsby looks like: 
-        //# <span .gatsby-resp-image-wrapper max-width: 100px>
-        //#   <img .gatsby-resp-image-image title='..' alt='...'>
-        //# ...
+        //  image related HTML produced by Gatsby looks like: 
+        //  <span .gatsby-resp-image-wrapper max-width: 100px>
+        //    <a .gatsby-resp-image-link href='/static/...'>
+        //      <span .gatsby-resp-image-background-image background-Image>
+        //      <picture>
+        //        <source srcset="/static/..">
+        //        <source srcset="/static/..">
+        //        <img .gatsby-resp-image-image title='..' alt='...' max-width: 100%>
+        //   ...
 
         image.properties.title = title ? title : image.properties.alt
 
