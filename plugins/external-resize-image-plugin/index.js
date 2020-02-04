@@ -33,7 +33,6 @@ module.exports = ({ markdownAST }) => {
     const hast = convertHtmlToHast(node.value);
 
     const wrapperImageList = selectAll('.gatsby-resp-image-wrapper', hast);
-
     //  image related HTML produced by Gatsby looks like: 
     //  <span .gatsby-resp-image-wrapper max-width: 100px>
     //    <a .gatsby-resp-image-link href='/static/...'>
