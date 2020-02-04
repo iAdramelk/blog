@@ -30,7 +30,7 @@ module.exports = ({ markdownAST }) => {
         .properties
         .style
         .match(/max-width: (\d{0,5})px/g)[0]
-        .replace(/\D/gi, ' ')
+        .replace(/\D/g, ' ')
         .trim();
 
       if (resize !== null) {
@@ -41,7 +41,10 @@ module.exports = ({ markdownAST }) => {
         wrapperImage.properties.style = wrapperImage
           .properties
           .style
-          .replace(/(max-width: \d{0,5}px)/g, `max-width: ${Number(width) > Number(maxWidth) ? maxWidth : width}px`);
+          .replace(
+            /(max-width: \d{0,5}px)/g,
+            `max-width: ${Math.min(Number(width), Number(maxWidth))}px`
+          );
       }
     })
     node.value = convertHastToHtml(hast)
