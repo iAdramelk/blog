@@ -3,6 +3,9 @@ const { selectAll, select } = require('hast-util-select');
 
 const { convertHastToHtml, convertHtmlToHast } = require('../utils/convertHast');
 
+const regexMaxWidth = /max-width: \d{1,5}px/g
+const regexResize = /=\d{2,4}/g
+
 module.exports = ({ markdownAST }) => {
 
   visit(markdownAST, 'html', node => {
@@ -16,25 +19,22 @@ module.exports = ({ markdownAST }) => {
       const title = image
         .properties
         .title
+        .replace(regexResize, '')
         .trim()
-        .replace(/=\d{2,4}/g, ' ')
-        .trim();
 
       const resize = image
         .properties
         .title
-        .trim()
-        .match(/=\d{2,4}/g);
+        .match(regexResize);
 
       const maxWidth = wrapperImage
         .properties
         .style
-        .match(/max-width: (\d{0,5})px/g)[0]
-        .replace(/\D/g, ' ')
-        .trim();
+        .match(regexMaxWidth)[0]
+        .replace(/\D/g, '')
 
-      if (resize !== null) {
-        const width = resize[0].replace(/^./, '');
+      if (resize) {
+        const width = resize[0].replace(/=/, '');
 
         image.properties.title = title ? title : image.properties.alt
 
@@ -42,8 +42,8 @@ module.exports = ({ markdownAST }) => {
           .properties
           .style
           .replace(
-            /(max-width: \d{0,5}px)/g,
-            `max-width: ${Math.min(Number(width), Number(maxWidth))}px`
+            regexMaxWidth,
+            `max-width: ${Math.min(width, maxWidth)}px`
           );
       }
     })
