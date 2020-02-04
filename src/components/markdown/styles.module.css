@@ -308,6 +308,11 @@
       color: #a0a0a0;
     }
 
+    /* DVC's command outputs are a different color */
+    code[class*="language-dvc"] {
+      color: #ccc;
+    }
+
     :global {
       .gatsby-highlight-code-line {
         display: block;
@@ -319,7 +324,6 @@
 
       .language-dvc {
         font-weight: normal;
-        color: #ccc !important;
 
         .token.line {
           font-weight: bold;
