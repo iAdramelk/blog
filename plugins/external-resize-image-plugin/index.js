@@ -8,9 +8,9 @@
 
 const visit = require('unist-util-visit');
 const { selectAll, select } = require('hast-util-select');
+const { imageClass, imageWrapperClass } = require('gatsby-remark-images/constants')
 
 const { convertHastToHtml, convertHtmlToHast } = require('../utils/convertHast');
-
 
 const extractResize = (string) => {
   const regexResize = /=\d{2,4}/g
@@ -32,19 +32,19 @@ module.exports = ({ markdownAST }) => {
 
     const hast = convertHtmlToHast(node.value);
 
-    const wrapperImageList = selectAll('.gatsby-resp-image-wrapper', hast);
+    const wrapperImageList = selectAll(`.${imageWrapperClass}`, hast);
     //  image related HTML produced by Gatsby looks like: 
     //  <span .gatsby-resp-image-wrapper max-width: 100px>
     //    <a .gatsby-resp-image-link href='/static/...'>
     //      <span .gatsby-resp-image-background-image background-Image>
     //      <picture>
-    //        <source srcset="/static/..">
-    //        <source srcset="/static/..">
+    //        <source srcset="/static/...webp">
+    //        <source srcset="/static/...jpg">
     //        <img .gatsby-resp-image-image title='..' alt='...' max-width: 100%>
     //      ...
 
     wrapperImageList.forEach(wrapperImage => {
-      const image = select('.gatsby-resp-image-image', wrapperImage)
+      const image = select(`.${imageClass}`, wrapperImage)
 
       const { title, resize } = extractResize(image.properties.title)
 
