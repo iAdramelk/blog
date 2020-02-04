@@ -31,24 +31,24 @@ module.exports = ({ markdownAST }) => {
         .properties
         .title
         .trim()
-        .replace(/=\d{2,4}/gi, ' ')
+        .replace(/=\d{2,4}/g, ' ')
         .trim();
 
       const resize = image
         .properties
         .title
         .trim()
-        .match(/=\d{2,4}/gi);
+        .match(/=\d{2,4}/g);
 
       const maxWidth = wrapperImage
         .properties
         .style
-        .match(/max-width: (\d{0,5})px/gi)[0]
+        .match(/max-width: (\d{0,5})px/g)[0]
         .replace(/\D/gi, ' ')
         .trim();
 
-      if (!!resize) {
-        const width = resize[0].replace(/^(.)/g, '');
+      if (resize !== null) {
+        const width = resize[0].replace(/^./, '');
 
         image.properties.title = title ? title : image.properties.alt
 
