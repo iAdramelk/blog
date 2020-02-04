@@ -6,6 +6,16 @@ const { convertHastToHtml, convertHtmlToHast } = require('../utils/convertHast')
 const regexMaxWidth = /max-width: \d{1,5}px/g
 const regexResize = /=\d{2,4}/g
 
+const extractResize = (string) => {
+  const title = string.replace(regexResize, '').trim()
+  const resize = string.match(regexResize);
+
+  return {
+    title,
+    resize
+  }
+}
+
 module.exports = ({ markdownAST }) => {
 
   visit(markdownAST, 'html', node => {
@@ -16,16 +26,7 @@ module.exports = ({ markdownAST }) => {
     wrapperImageList.forEach(wrapperImage => {
       const image = select('.gatsby-resp-image-image', wrapperImage)
 
-      const title = image
-        .properties
-        .title
-        .replace(regexResize, '')
-        .trim()
-
-      const resize = image
-        .properties
-        .title
-        .match(regexResize);
+      const { title, resize } = extractResize(image.properties.title)
 
       const maxWidth = wrapperImage
         .properties
@@ -34,7 +35,15 @@ module.exports = ({ markdownAST }) => {
         .replace(/\D/g, '')
 
       if (resize) {
-        const width = resize[0].replace(/=/, '');
+        const width = resize[0].replace('=', '');
+
+        // by default Gatsby populates title value with alt, 
+        // restoring it here if needed
+
+        // # image related HTML produced by Gatsby looks like: 
+        // # <span .gatsby-resp-image-wrapper max-width: 100px>
+        //#     <img .gatsby-resp-image-image title='..' alt='...' >
+        //#...
 
         image.properties.title = title ? title : image.properties.alt
 
