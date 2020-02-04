@@ -1,21 +1,7 @@
 const visit = require('unist-util-visit');
-const unified = require('unified');
-const parse = require('rehype-parse');
-const stringify = require('rehype-stringify');
 const { selectAll, select } = require('hast-util-select');
 
-/** HAST - Hypertext Abstract Syntax Tree */
-function convertHtmlToHast(htmlString) {
-  return unified()
-    .use(parse)
-    .parse(htmlString);
-}
-
-function convertHastToHtml(htmlAst) {
-  return unified()
-    .use(stringify)
-    .stringify(htmlAst);
-}
+const { convertHastToHtml, convertHtmlToHast } = require('../utils/convertHast');
 
 module.exports = ({ markdownAST }) => {
 
