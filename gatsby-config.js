@@ -60,6 +60,7 @@ const plugins = [
             withWebp: true
           }
         },
+        'external-resize-image-plugin',
         'gatsby-remark-responsive-iframe',
         {
           resolve: 'gatsby-remark-prismjs'
