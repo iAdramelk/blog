@@ -5,7 +5,7 @@ description: |
   A call for student applications for Google Summer of Code.
 descriptionLong: |
   DVC is looking for students to take part in Google Summer of Code.
-picture: ../../static/uploads/images/2020-02-04/Summer_of_Code.png
+picture: ../../static/uploads/images/2020-02-04/Summer_of_Code_small.png
 pictureComment:
 author: ../authors/elle_obrien.md
 commentsUrl: https://discuss.dvc.org/t/join-dvc-for-google-summer-of-code/317
