@@ -8,7 +8,7 @@ descriptionLong: |
 picture: ../../static/uploads/images/2020-02-04/Summer_of_Code.png
 pictureComment:
 author: ../authors/elle_obrien.md
-commentsUrl: https://discuss.dvc.org/t/january-20-community-gems/315
+commentsUrl: https://discuss.dvc.org/t/join-dvc-for-google-summer-of-code/317
 tags:
   - Google Summer of Code
   - DVC
