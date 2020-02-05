@@ -1,10 +1,10 @@
 ---
-title: Join DVC for Google Summer of Code
+title: Join DVC for Google Summer of Code 2020
 date: 2020-02-04
 description: |
-  A call for student applications for Google Summer of Code.
+  A call for student applications for Google Summer of Code 2020.
 descriptionLong: |
-  DVC is looking for students to take part in Google Summer of Code.
+  DVC is looking for students to take part in Google Summer of Code 2020.
 picture: ../../static/uploads/images/2020-02-04/Summer_of_Code_small.png
 pictureComment:
 author: ../authors/elle_obrien.md
@@ -92,17 +92,18 @@ differ from our ideas. Projets will be primarily mentored by co-founders
    data science experience <br /> _Difficulty rating:_ Beginner-Medium <br />
 
 4. **Continuous delivery for JetBrains TeamCity.** Continuous integration and
-   continuous delivery (CI/CD) for ML projects is an area where we see DVC make
-   a big impact- specifically, by delivering datasets and ML models into CI/CD
-   pipelines. While there are many cases when DVC is used inside GitHub Actions
-   and GitLab CI, you will be transferring this experience to another type of
-   CI/CD system, [JetBrains TeamCity](https://www.jetbrains.com/teamcity/).
-   We're working to integrate DVC's model and dataset versioning into TeamCity's
-   CI/CD toolkit. This project would be ideal for a student looking to explore
-   the growing field of MLOps, an offshoot of DevOps with the specifics of ML
-   projects at the center. <br /> <br /> _Skills required:_ Python, Git, bash
-   scripting. It would be nice, but not necessary, to have some experience with
-   CI/CD tools and developer workflow automation. <br /> _Difficulty rating:_
+   continuous delivery (CI/CD) for ML projects is an area where we see
+   [DVC make a big impact](https://martinfowler.com/articles/cd4ml.html)-
+   specifically, by delivering datasets and ML models into CI/CD pipelines.
+   While there are many cases when DVC is used inside GitHub Actions and GitLab
+   CI, you will be transferring this experience to another type of CI/CD system,
+   [JetBrains TeamCity](https://www.jetbrains.com/teamcity/). We're working to
+   integrate DVC's model and dataset versioning into TeamCity's CI/CD toolkit.
+   This project would be ideal for a student looking to explore the growing
+   field of MLOps, an offshoot of DevOps with the specifics of ML projects at
+   the center. <br /> <br /> _Skills required:_ Python, Git, bash scripting. It
+   would be nice, but not necessary, to have some experience with CI/CD tools
+   and developer workflow automation. <br /> _Difficulty rating:_
    Medium-Advanced <br />
 
 5. **DVC performance testing framework.** Performance is a core value of DVC. We
