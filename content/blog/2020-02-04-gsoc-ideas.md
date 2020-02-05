@@ -1,152 +1,128 @@
 ---
-title: January '20 Community Gems
-date: 2020-01-20
+title: Join DVC for Google Summer of Code
+date: 2020-02-04
 description: |
-  Great discussions and technical Q&A's from our users.
+  A call for student applications for Google Summer of Code.
 descriptionLong: |
-  Every month we share news, findings, interesting reads,
-  community takeaways, and everything else along the way.
-  Some of those are related to our brainchild DVC and its journey. The others
-  are a collection of exciting stories and ideas centered around ML best
-  practices and workflow.
-picture: ../../static/uploads/images/2020-01-20/Community_Gems.png
+  DVC is looking for students to take part in Google Summer of Code.
+picture: ../../static/uploads/images/2020-02-04/Summer_of_Code.png
 pictureComment:
 author: ../authors/elle_obrien.md
 commentsUrl: https://discuss.dvc.org/t/january-20-community-gems/315
 tags:
-  - Discord
+  - Google Summer of Code
   - DVC
-  - Gems
+  - Students
+  - Mentoring
 ---
 
-## Discord gems
+Announcement, announcement! After a successful experience with
+[Google Season of Docs](https://developers.google.com/season-of-docs) in 2019,
+we're putting out a call for students to apply to work with DVC as part of
+[Google Summer of Code](https://summerofcode.withgoogle.com/). If you want to
+make a dent in open source software development with mentorship from our team,
+read on.
 
-There's a lot of action in our Discord channel these days. Ruslan, DVC's core
-maintainer, said it best with a gif.
+## Prerequisites to apply
 
-https://twitter.com/rkuprieiev/status/1144008869414342658?ref_src=twsrc%5Etfw
+Besides the general requirements to apply to Google Summer of Code, there are a
+few skills we look for in applicants.
 
-It's a lot to keep up with, so here are some highlights. We think these are
-useful, good-to-know, and interesting conversations between DVC developers and
-users.
+1. **Python experience.** All of our core development is done in Python, so we
+   prefer candidates that are experienced in Python. However, we will consider
+   applicants who are very strong in another language and familiar with Python
+   basics.
+2. **Git experience.** Git is also a key part of DVC development, as DVC is
+   built around Git; that said, for certain projects (rated as “Beginner”) a
+   surface-level knowledge of Git will be sufficient.
+3. **People skills.** Beyond technical fundamentals, we put a high value on
+   communication skills: the ability to report and document your experiments and
+   findings, to work kindly with teammates, and explain your goals and work
+   clearly.
 
-### Q: [What pros does DVC have compared to Git LFS?](https://discordapp.com/channels/485586884165107732/563406153334128681/657590900754612284)
+If you like our mission but aren't sure if you're sufficiently prepared, please
+be in touch anyway. We'd love to hear from you.
 
-For an in-depth answer, check out this
-[Stack Overflow discussion](https://stackoverflow.com/questions/58541260/difference-between-git-lfs-and-dvc).
-But in brief, with DVC you don't need a special server, and you can use nearly
-any kind of storage (S3, Google Cloud Storage, Azure Blobs, your own server,
-etc.) without a fuss. There are also no limits on the size of the data that you
-can store, unlike with GitHub. With Git LFS, there are some general LFS server
-limits, too. DVC has additional features for sharing your data (e.g.,
-`dvc import`) and has pipeline support, so it does much more than LFS. Plus, we
-have flexible and quick checkouts, as we utilize different link types (reflinks,
-symlinks, and hardlinks). We think there are lots of advantages; of course, the
-usefulness will depend on your particular needs.
+## Project ideas
 
-### Q: [How do I use DVC with SSH remote storage?](https://discordapp.com/channels/485586884165107732/563406153334128681/656016145119182849) I usually connect with a .pem key file. How do I do the same with DVC?
+Below are several project ideas that are an immediate priority for the core DVC
+team. Of course,we welcome students to create their own proposals, even if they
+differ from our ideas. Projets will be primarily mentored by co-founders
+[Dmitry Petrov](https://github.com/dmpetrov) and
+[Ivan Shcheklein](https://github.com/shcheklein).
 
-DVC is built to work with the SSH protocol to access remote storage (we provide
-some
-[examples in our official documentation](https://dvc.org/doc/user-guide/external-dependencies#ssh)).
-When SSH requires a key file, try this:
+1. **Migrate to the latest v3 API to improve Google Drive support.** Our
+   organization is a co-maintainer of the PyDrive library in collaboration with
+   a team at Google. The PyDrive library is now several years old and still
+   relies on the v2 protocol. We would like to migrate to v3, which we expect
+   will boost performance for many DVC use cases (e.g. the ability to filter
+   fields being retrieved from our API, etc). For this project, we’re looking
+   for a student to work with us to prepare the next major version of the
+   PyDrive library, as well as making important changes to the core DVC code to
+   support it. Because PyDrive is broadly used outside of DVC, this project is a
+   chance to work on a library of widespread interest to the Python community.
+   <br /> <br /> _Skills required:_ Python, Git, experience with APIs <br />
+   _Difficulty rating:_ Beginner-Medium <br />
 
-```dvc
-$ dvc remote modify myremote keyfile <path to *.pem>
-```
+2. **Introducing parallelism to DVC.** One of DVC’s features is the ability to
+   create pipelines, linking data repositories with code to process data, train
+   models, and evaluate model metrics. Once a DVC pipeline is created, the
+   pipeline can be shared and re-run in a systematic and entirely reproducible
+   way. Currently, DVC executes pipelines sequentially, even though some steps
+   may be run in parallel (such as data preprocessing). We would like to support
+   parallelization for pipeline steps specified by the user. Furthermore, we’ll
+   need to support building flags into DVC commands that specify the level of
+   parallelization (CPU, GPU or memory). <br /> <br /> _Skills required:_
+   Python, Git. Some experience with parallelization and/or scientific computing
+   would be helpful but not required. <br /> _Difficulty rating:_ Advanced
+   <br />
 
-### Q: [If you train a TensorFlow model that creates multiple checkpoint files, how do you establish them as dependencies in the DVC pipeline?](https://discordapp.com/channels/485586884165107732/563406153334128681/651098762466426891)
+3. **Developing use cases for data registries and ML model zoos.** A new DVC
+   functionality that we’re particularly excited about is `summon`, a method
+   that can turn remotely-hosted machine learning artifacts such as datasets,
+   trained models, and more into objects in the user’s local environment (such
+   as a Jupyter notebook). This is a foundation for creating data catalogs of
+   data-frames and machine learning model zoos on top of Git repositories and
+   cloud storages (like GCS or S3). We need to identify and implement model zoos
+   (think PyTorch Hub, the Caffe Model Zoo, or the TensorFlow DeepLab Model Zoo)
+   and data registries for types that are not supported by DVC yet. Currently,
+   we’ve tested `summon` with PyTorch image segmentation models and Pandas
+   dataframes. We’re looking for students to explore other possible use cases.
+   <br /> <br /> _Skills required:_ Python, Git, and some machine learning or
+   data science experience <br /> _Difficulty rating:_ Beginner-Medium <br />
 
-You can specify a directory as a dependency/output in your DVC pipeline, and
-store checkpointed models in that directory. It might look like this:
+4. **Continuous delivery for JetBrains TeamCity.** Continuous integration and
+   continuous delivery (CI/CD) for ML projects is an area where we see DVC make
+   a big impact- specifically, by delivering datasets and ML models into CI/CD
+   pipelines. While there are many cases when DVC is used inside GitHub Actions
+   and GitLab CI, you will be transferring this experience to another type of
+   CI/CD system, [JetBrains TeamCity](https://www.jetbrains.com/teamcity/).
+   We're working to integrate DVC's model and dataset versioning into TeamCity's
+   CI/CD toolkit. This project would be ideal for a student looking to explore
+   the growing field of MLOps, an offshoot of DevOps with the specifics of ML
+   projects at the center. <br /> <br /> _Skills required:_ Python, Git, bash
+   scripting. It would be nice, but not necessary, to have some experience with
+   CI/CD tools and developer workflow automation. <br /> _Difficulty rating:_
+   Medium-Advanced <br />
 
-```dvc
-$ dvc run \
-     -f train.dvc \
-     -d data \
-     -d train.py \
-     -o models python code/train.py
-```
+5. **DVC performance testing framework.** Performance is a core value of DVC. We
+   will be creating a performance monitoring and testing framework where new
+   scenarios (e.g., unit testing)can be populated. The framework should reflect
+   all performance improvements and degradations for each of the DVC releases.
+   It would be especially compelling if testing could be integrated with our
+   GitHub workflow (CI/CD). This is a great opportunity for a student to learn
+   about DVC and versioning in-depth and contribute to its stability. <br />
+   <br /> _Skills required:_ Python, Git, bash scripting. <br /> _Difficulty
+   rating:_ Medium-Advanced <br />
 
-where `models` is a directory created for checkpoint files. If you would like to
-preserve your models in the data directory, though, then you would need to
-specify them one by one. You can do this with bash:
+## If you'd like to apply
 
-```dvc
-$ dvc run $(for file in data/*.gz; do echo -n -d $file; done)
-```
-
-Be careful, though: if you declare checkpoint files to be an output of the DVC
-pipeline, you won’t be able to re-run the pipeline using those checkpoint files
-to initialize weights for model training. This would introduce circularity, as
-your output would become your input.
-
-Also keep in mind that whenever you re-run a pipeline with `dvc repro`, outputs
-are deleted and then regenerated. If you don't wish to automatically delete
-outputs, there is a `--persist` flag (see discussion
-[here](https://github.com/iterative/dvc/issues/1214) and
-[here](https://github.com/iterative/dvc/issues/1884)), although we don't
-currently provide technical support for it.
-
-Finally, remember that setting something as a dependency (`-d`) doesn't mean it
-is automatically tracked by DVC. So remember to `dvc add` data files in the
-beginning!
-
-### Q: [Is it possible to use the same cache directory for multiple DVC repos that are used in parallel?](https://discordapp.com/channels/485586884165107732/485596304961962003/655012135973158942) Or do I need external software to prevent potential race conditions?
-
-This is absolutely possible, and you don't need any external software to safely
-use multiple DVC repos in parallel. With DVC, cache operations are atomic. The
-only exception is cleaning the cache with `dvc gc`, which you should only run
-when no one else is working on a shared project that is referenced in your cache
-(and also, be sure to use the `--projects` flag
-[as described in our docs](https://dvc.org/doc/command-reference/gc)). For more
-about using multiple DVC repos in parallel, check out some discussions
-[here](https://discuss.dvc.org/t/setup-dvc-to-work-with-shared-data-on-nas-server/180)
-and [here](https://dvc.org/doc/use-cases/shared-development-server).
-
-### Q: [What are some strategies for reproducibility if parts of our model training pipeline are run on our organizations's HPC?](https://discordapp.com/channels/485586884165107732/485596304961962003/652380507832844328)
-
-Using DVC for version control is entirely compatible with using remote computing
-resources, like high performance computing (HPC), in your model training
-pipeline. We think a great example of using DVC with parallel computing is
-provided by [Peter Fogh](http://www.peterfogh.dk/) Take a
-[look at his repo](https://github.com/PeterFogh/dvc_dask_use_case) for a
-detailed use case. Please keep us posted about how HPC works in your pipeline,
-as we'll be eager to pass on any insights to the community.
-
-### Q: Say I have a Git repository with multiple projets inside (one classification, one object detection, etc.). [Is it possible to tell DVC to just pull data for one particular project?](https://discordapp.com/channels/485586884165107732/563406153334128681/646760832616890408)
-
-Absolutely, DVC supports pulling data from different DVC-files. An example would
-be having two project subdirectories in your Git repo, `classification` and
-`detection`. You could use `dvc pull -R classification` to only pull files in
-that project to your workspace.
-
-If you prefer to be even more granular, you can `dvc add` files individually.
-Then you can use `dvc pull <filename>.dvc` to retrieve the outputs specified
-only by that file.
-
-### Q: [Is it possible to set an S3 remote without the use of AWS credentials with DVC?](https://discordapp.com/channels/485586884165107732/563406153334128681/623234659098296348) I want to publicly host a dataset so that everybody who clones my code repo can just run `dvc pull` to fetch the dataset.
-
-Yes, and we love the idea of publicly hosting a dataset. There are a few ways to
-do it with DVC. We use one method in our own DVC project repository on Github.
-If you run `git clone https://github.com/iterative/dvc` and then `dvc pull`,
-you’ll see that DVC is downloading data from an HTTP repository, which is
-actually just an S3 repository that we've granted public HTTP read-access to.
-
-So you would need to configure two remotes in your config file, each pointing to
-the same S3 bucket through different protocols. Like this:
-
-```dvc
-$ dvc remote add -d --local myremote s3://bucket/path
-$ dvc remote add -d mypublicemote http://s3-external-1.amazonaws.com/bucket/path
-```
-
-Here's why this works: the `-d` flag sets the default remote, and the `--local`
-flag creates a set of configuration preferences that will override the global
-settings when DVC commands are run locally and won't be shared through Git (you
-can read more about this
-[in our docs](https://dvc.org/doc/command-reference/remote/add#remote-add)).
-
-This means that even though you and users from the public are accessing the
-stored dataset by different protocols (S3 and HTTPS), you'll all run the same
-command: `dvc pull`.
+Please refer to the
+[Google Summer of Code](https://summerofcode.withgoogle.com/) application guides
+for specifics of the program. Students looking to know more about DVC, and our
+worldwide community of contributors, will learn most by visiting our
+[Discord channel](https://dvc.org/chat),
+[GitHub repository](https://github.com/iterative/dvc), and
+[Forum](https://discuss.dvc.org/). We are available to discuss project proposals
+from interested students and can be reached by [email](support@dvc.org) or on
+our Discord channel.
