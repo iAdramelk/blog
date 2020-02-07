@@ -7,6 +7,7 @@ import { IBlogPostData } from '../../templates/blog-post';
 
 import { getCommentsCount } from '../../api';
 import { pluralizeComments } from '../../utils/i18n';
+import tagToSlug from '../../utils/tag-to-slug';
 
 import Hero from '../hero';
 import Markdown from '../markdown';
@@ -95,9 +96,13 @@ function Post({ html, timeToRead, frontmatter, fields }: IBlogPostData) {
       {tags && (
         <div className={styles.tags}>
           {tags.map(tag => (
-            <div className={styles.tag} key={tag}>
+            <a
+              href={`/tags/${tagToSlug(tag)}`}
+              className={styles.tag}
+              key={tag}
+            >
               {tag}
-            </div>
+            </a>
           ))}
         </div>
       )}
