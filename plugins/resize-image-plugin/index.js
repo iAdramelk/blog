@@ -104,6 +104,15 @@ module.exports = ({ markdownAST }) => {
         }
       }
 
+      if (imageMaxWidth * 2 > originalSize) {
+        // If original image size not enough for the retina display,
+        // add max-width 1/2 px
+        wrapperImage.properties.style = wrapperImage.properties.style.replace(
+          regexMaxWidth,
+          `max-width: ${originalSize / 2}px`
+        );
+      }
+
       if (resize) {
         wrapperImage.properties.style = wrapperImage.properties.style.replace(
           regexMaxWidth,
