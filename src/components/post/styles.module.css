@@ -165,3 +165,28 @@
     opacity: 0.7;
   }
 }
+
+:global {
+  .gatsby-resp-image-wrapper {
+    &.image-wrap-left,
+    &.image-wrap-right {
+      width: 100%;  /* max-width deals with the rest */
+      margin: 0 25px 25px;
+    }
+
+    &.image-wrap-left {
+      float: left;
+      margin-left: 0;
+    }
+
+    &.image-wrap-right {
+      float: right;
+      margin-right: 0;
+    }
+  }
+
+  .image-wrap-stop {
+    clear: both;
+    margin-bottom: -25px; /* compensate for margin-bottom of image */
+  }
+}

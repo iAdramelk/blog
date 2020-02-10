@@ -1,4 +1,0 @@
-module.exports = {
-  MAX_WIDTH_HERO_IMAGE: 850,
-  MAX_WIDTH_MARKDOWN_IMAGES: 700
-};

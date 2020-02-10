@@ -1,7 +1,7 @@
 import Image from 'gatsby-image';
 import React from 'react';
 
-import { MAX_WIDTH_HERO_IMAGE } from '../../../plugins/config/constants';
+import { imageMaxWidthHero } from '../../constants';
 
 import styles from './styles.module.css';
 
@@ -50,7 +50,7 @@ function NonStretchedImage(props: IGatsbyImageProps) {
   if (props.fluid && props.fluid.presentationWidth) {
     const presetantionWidth = props.fluid?.presentationWidth;
     const width =
-      presetantionWidth < MAX_WIDTH_HERO_IMAGE
+      presetantionWidth < imageMaxWidthHero
         ? presetantionWidth / 2
         : presetantionWidth;
     normalizedProps = {
