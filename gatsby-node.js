@@ -42,13 +42,13 @@ exports.createPages = async ({ graphql, actions }) => {
     const next = index === 0 ? null : posts[index - 1].node;
 
     createPage({
-      path: post.node.fields.slug,
       component: blogPost,
       context: {
-        slug: post.node.fields.slug,
+        next,
         previous,
-        next
-      }
+        slug: post.node.fields.slug
+      },
+      path: post.node.fields.slug
     });
   });
 };
@@ -58,8 +58,8 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
   if (node.internal.type === 'MarkdownRemark') {
     const value = createFilePath({
-      node,
       getNode,
+      node,
       trailingSlash: false
     }).replace(/^\/[0-9\-]*/, '/');
     createNodeField({
@@ -133,11 +133,11 @@ exports.onPreBuild = async function({ graphql }) {
       }
 
       return {
-        url,
-        title,
-        date,
         commentsUrl,
-        pictureUrl
+        date,
+        pictureUrl,
+        title,
+        url
       };
     }
   );
@@ -147,6 +147,8 @@ exports.onPreBuild = async function({ graphql }) {
 
   // Write json file to the public dir,
   // it will be used community page later
-  if (!fs.existsSync(dir)) fs.mkdirSync(dir);
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir);
+  }
   fs.writeFileSync(filepath, JSON.stringify({ posts }));
 };
