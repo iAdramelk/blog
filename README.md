@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/iterative/blog.svg?style=svg)](https://circleci.com/gh/iterative/blog)
+
 # dvc.org blog
 
 ## Installation
