@@ -9,15 +9,16 @@
     "develop": "gatsby develop",
     "serve": "gatsby serve",
     "start": "yarn develop",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "tsc --noEmit --skipLibCheck",
     "test": "jest",
     "lint-ts": "tslint --project .",
     "lint-css": "stylelint \"src/**/*.css\"",
-    "format-all": "prettier --write './**/*.{js,jsx,md,tsx,ts,json}'"
+    "format-all": "prettier --write './**/*.{js,jsx,md,tsx,ts,json}'",
+    "check-all": "prettier --check './**/*.{js,jsx,md,tsx,ts,json}'"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged && yarn typecheck"
     }
   },
   "lint-staged": {
