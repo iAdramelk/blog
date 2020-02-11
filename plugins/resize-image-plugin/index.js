@@ -67,7 +67,7 @@ module.exports = ({ markdownAST }) => {
           ...
     */
     wrapperImageList.forEach(wrapperImage => {
-      const source = select(`picture:first-child`, wrapperImage);
+      const source = select(`picture > source:first-child`, wrapperImage);
       const image = select(`.${imageClass}`, wrapperImage);
 
       let { resize, title, wrap } = extractInstructions(image.properties.title);
