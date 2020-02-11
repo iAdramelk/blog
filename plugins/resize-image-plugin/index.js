@@ -61,13 +61,13 @@ module.exports = ({ markdownAST }) => {
         <a .gatsby-resp-image-link href='/static/...'>
           <span .gatsby-resp-image-background-image background-Image>
           <picture>
-            <source srcset="/static/...webp">
-            <source srcset="/static/...jpg">
+            <source srcset="/static/...webp 600w">
+            <source srcset="/static/...jpg 600w">
             <img .gatsby-resp-image-image title='..' alt='...' max-width: 100%>
           ...
     */
     wrapperImageList.forEach(wrapperImage => {
-      const source = select(`picture > source`, wrapperImage);
+      const source = select(`picture:first-child`, wrapperImage);
       const image = select(`.${imageClass}`, wrapperImage);
 
       let { resize, title, wrap } = extractInstructions(image.properties.title);
@@ -97,26 +97,14 @@ module.exports = ({ markdownAST }) => {
           /margin-(left|right):\s+auto/g,
           ''
         );
-
-        // Force a resize
-        if (!resize || resize > imageMaxWidth / 2) {
-          resize = Math.min(imageMaxWidth / 2, maxWidth);
-        }
       }
 
-      if (imageMaxWidth * 2 > originalSize) {
-        // If original image size not enough for the retina display,
-        // add max-width 1/2 px
+      if (resize || imageMaxWidth * 2 > originalSize) {
         wrapperImage.properties.style = wrapperImage.properties.style.replace(
           regexMaxWidth,
-          `max-width: ${originalSize / 2}px`
-        );
-      }
-
-      if (resize) {
-        wrapperImage.properties.style = wrapperImage.properties.style.replace(
-          regexMaxWidth,
-          `max-width: ${Math.min(resize, maxWidth)}px`
+          `max-width: ${
+            resize ? Math.min(resize, maxWidth) : originalSize / 2
+          }px`
         );
       }
     });
