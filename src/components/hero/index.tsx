@@ -18,22 +18,8 @@ interface IFluidObject {
 }
 
 interface IGatsbyImageProps {
-  sizes?: IFluidObject;
   fluid?: IFluidObject;
-  picture?: IFluidObject;
-  fadeIn?: boolean;
-  title?: string;
-  alt?: string;
-  className?: string | object;
-  critical?: boolean;
   style?: object;
-  imgStyle?: object;
-  placeholderStyle?: object;
-  backgroundColor?: string | boolean;
-  onLoad?: () => void;
-  onStartLoad?: (param: { wasCached: boolean }) => void;
-  onError?: (event: any) => void;
-  Tag?: string;
 }
 
 interface IHeroProps {
