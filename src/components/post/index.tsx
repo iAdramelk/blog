@@ -7,7 +7,6 @@ import { useWindowScroll, useWindowSize } from 'react-use';
 import { IBlogPostData } from '../../templates/blog-post';
 
 import { getCommentsCount } from '../../api';
-import { siteLinks } from '../../data';
 import { pluralizeComments } from '../../utils/i18n';
 
 import Markdown from '../markdown';
