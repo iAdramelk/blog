@@ -78,8 +78,9 @@ module.exports = ({ markdownAST }) => {
         image.properties.title = title ? title : image.properties.alt;
       }
 
-      const originalSize = source.properties.srcSet
-        .pop()
+      const originalSize = source.properties.srcSet[
+        source.properties.srcSet.length - 1
+      ]
         .split(' ')[1]
         .replace('w', '');
 
