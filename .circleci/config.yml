@@ -53,6 +53,4 @@ workflows:
 
   commit:
     jobs:
-      - test:
-          filters:
-            branches: { ignore: master }
+      - test
