@@ -20,8 +20,10 @@ tags:
   - DVC
 ---
 
-Welcome to DVC's February roundup of highlights from our community these past
-weeks.
+Welcome to the February Heartbeat! This month's featured image is a DVC pipeline
+[created by one of our users](https://medium.com/nlp-trend-and-review-en/use-dvc-to-version-control-ml-dl-models-bef61dbfe477),
+which _we_ think resembles a valentine. Here are some more highlights from our
+team and our community:
 
 ## News
 
@@ -113,32 +115,33 @@ image="/uploads/images/2020-02-10/marcel.png" />
 
 Here are a few more stories on our radar:
 
--**AI Singapore shares their method for AI development and deployment.** This
-[blog about how Agile informs their processes](https://makerspace.aisingapore.org/2020/01/agile-ai-engineering-in-aisg/)
-for continuous integration and delivery includes data versioning.
+- **AI Singapore shares their method for AI development and deployment.** This
+  ..
+  [blog about how Agile informs their processes](https://makerspace.aisingapore.org/2020/01/agile-ai-engineering-in-aisg/)
+  for continuous integration and delivery includes data versioning.
 
--**Toucan AI dispenses advice for ML engineers.** This
-[blog for practitioners](https://toucanai.com/blog/post/building-production-ml/)
-discusses questions like, "When to work on ML vs. the processes that surround
-ML". It covers how DVC is used for model versioning in the exploration stage of
-ML.
+- **Toucan AI dispenses advice for ML engineers.** This ..
+  [blog for practitioners](https://toucanai.com/blog/post/building-production-ml/)
+  discusses questions like, "When to work on ML vs. the processes that surround
+  ML". It covers how DVC is used for model versioning in the exploration stage
+  of ML.
 
--**DVC at the University.** A recent
-[pre-print from natural language processing researchers at Université Laval](https://arxiv.org/pdf/1912.01706.pdf)
-explains how DVC facilitated dataset access for collaborators.
+- **DVC at the University.** A recent ..
+  [pre-print from natural language processing researchers at Université Laval](https://arxiv.org/pdf/1912.01706.pdf)
+  explains how DVC facilitated dataset access for collaborators.
 
-> "In our case, the original dataset takes up to 6 Gigabytes. The previous way
-> of retrieving the dataset over the network with a standard 20 Mbits/sec
-> internet connexion took up to an hour to complete (including uncompressing the
-> data). Using DVC reduced the retrieval time of the dataset to 3 minutes over
-> the network with the same internet connexion."
+  > "In our case, the original dataset takes up to 6 Gigabytes. The previous way
+  > of retrieving the dataset over the network with a standard 20 Mbits/sec
+  > internet connexion took up to an hour to complete (including uncompressing
+  > the data). Using DVC reduced the retrieval time of the dataset to 3 minutes
+  > over the network with the same internet connexion."
 
-Thanks for sharing- this is a lovely result. Oh, and last...
+  Thanks for sharing- this is a lovely result. Oh, and last...
 
---**DVC is a job requirement**! We celebrated a small milestone when we stumbled
-across a listing for a data engineer to support R&D at
-[Elvie](https://www.elvie.com/en-us/), a maker of tech for women's health
-(pretty neat mission). The decorations on the job posting are ours 😎
+- **DVC is a job requirement**! We celebrated a small milestone when we stumbled
+  .. across a listing for a data engineer to support R&D at
+  [Elvie](https://www.elvie.com/en-us/), a maker of tech for women's health
+  (pretty neat mission). The decorations on the job posting are ours 😎
 
 ![](/uploads/images/2020-02-10/elvie.png)_A
 [job advertisement](https://www.jobstoday.co.uk/job/40530810/data-engineer/?TrackID=8)
