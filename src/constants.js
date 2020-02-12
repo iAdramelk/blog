@@ -1,3 +1,4 @@
 module.exports = {
-  imageMaxWidth: 700
+  imageMaxWidth: 700,
+  imageMaxWidthHero: 850
 };
