@@ -87,7 +87,7 @@ function Post({ html, timeToRead, frontmatter, fields }: IBlogPostData) {
         </div>
       </div>
 
-      <Hero picture={picture} pictureComment={pictureComment} />
+      {picture && <Hero picture={picture} pictureComment={pictureComment} />}
 
       <div className={styles.content}>
         <Markdown html={html} />

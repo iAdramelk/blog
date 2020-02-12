@@ -2,34 +2,9 @@ import Image from 'gatsby-image';
 import React from 'react';
 
 import { imageMaxWidthHero } from '../../constants';
+import { IBlogPostHero, IGatsbyImageProps } from '../../templates/blog-post';
 
 import styles from './styles.module.css';
-
-interface IFluidObject {
-  aspectRatio: number;
-  src: string;
-  srcSet: string;
-  sizes: string;
-  base64?: string;
-  tracedSVG?: string;
-  srcWebp?: string;
-  srcSetWebp?: string;
-  presentationWidth?: number;
-}
-
-interface IGatsbyImageProps {
-  fluid?: IFluidObject;
-  style?: object;
-}
-
-interface IHeroProps {
-  picture?: {
-    childImageSharp: {
-      fluid?: IFluidObject;
-    };
-  };
-  pictureComment?: string;
-}
 
 function NonStretchedImage(props: IGatsbyImageProps) {
   let normalizedProps = props;
@@ -51,7 +26,7 @@ function NonStretchedImage(props: IGatsbyImageProps) {
   return <Image {...normalizedProps} />;
 }
 
-function Hero({ pictureComment, picture }: IHeroProps) {
+function Hero({ pictureComment, picture }: IBlogPostHero) {
   return (
     <div className={styles.pictureWrapper}>
       <div className={styles.picture}>

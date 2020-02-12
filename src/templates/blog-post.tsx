@@ -1,4 +1,4 @@
-import { FixedObject, FluidObject } from 'gatsby-image';
+import { FixedObject, FluidObject, GatsbyImageProps } from 'gatsby-image';
 
 import { graphql } from 'gatsby';
 import React from 'react';
@@ -6,6 +6,23 @@ import React from 'react';
 import Layout from '../components/layout';
 import Post from '../components/post';
 import SEO from '../components/seo';
+
+interface IFluidObject extends FluidObject {
+  presentationWidth?: number;
+}
+
+export interface IGatsbyImageProps extends GatsbyImageProps {
+  fluid?: IFluidObject;
+}
+
+export interface IBlogPostHero {
+  picture?: {
+    childImageSharp: {
+      fluid: IFluidObject;
+    };
+  };
+  pictureComment?: string;
+}
 
 export interface IBlogPostFrontmatter {
   title: string;
@@ -16,7 +33,7 @@ export interface IBlogPostFrontmatter {
   tags?: string[];
   picture?: {
     childImageSharp: {
-      fluid: FluidObject;
+      fluid: IFluidObject;
     };
   };
   pictureComment?: string;
