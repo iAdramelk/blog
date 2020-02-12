@@ -27,6 +27,8 @@ commands:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
+      - run: yarn
+
   cache:
     steps:
       # Upload dependencies cache
@@ -35,7 +37,7 @@ commands:
             - node_modules
           key: v1-dependencies-{{ checksum "yarn.lock" }}
 jobs:
-  lint:
+  test:
     <<: *defaults
     steps:
       - install
@@ -43,6 +45,7 @@ jobs:
       - run: yarn check-all
       - run: yarn lint-ts
       - run: yarn lint-css
+      - run: yarn test
       - cache
 
 workflows:
@@ -51,5 +54,3 @@ workflows:
   commit:
     jobs:
       - test
-        filters:
-          branches: { ignore: master }
