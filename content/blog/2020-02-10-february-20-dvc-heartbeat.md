@@ -15,7 +15,7 @@ author: ../authors/elle_obrien.md
 commentsUrl: https://discuss.dvc.org/t/january-20-dvc-heartbeat/314
 tags:
   - Heartbeat
-  - Continuous integration
+  - Continuous Integration
   - DVC
 ---
 
@@ -39,10 +39,26 @@ We're **gearing up for a spring full of talks** about DVC projects, including
 new up-and-coming features for data cataloging and continuous integration. Here
 are just a few events that have been added to our schedule:
 
--Engineer [Pavel Redzynski](https://twitter.com/Paffciu1) was accepted to speak
-at [Machine Learning Prague](https://www.mlprague.com) on Saturday, March 21.
-Pavel's talk is called "Open source tools for versioning machine learning
-projects."
+<external-link
+href="https://www.mlprague.com/#schedule-saturday"
+title="Machine Learning Prague - March 19"
+description="DVC engineer Pawel Redzynski will talk about open source tools for versioning machine learning projects."
+link="mlprague.com"
+image="/uploads/images/2020-02-10/mlprague.jpg" />
+
+<external-link
+href="https://www.mlprague.com/#schedule-saturday"
+title="DivOps 2020 - March 24"
+description="Elle O'Brien is talking about open source software in the growing field of MLOps at this international, remote conference."
+link="https://divops.org/"
+image="/uploads/images/2020-02-10/divops_logo.png" />
+
+<external-link
+href="https://www.mlprague.com/#schedule-saturday"
+title="Women in Data Science San Diego - May 9"
+description="Elle O'Brien will be delivering a keynote talk about data catalogs and feature stores."
+link="https://www.widsconference.org/"
+image="/uploads/images/2020-02-10/wids.jpeg" />
 
 -Elle O'Brien was recently accepted to give a keynote at
 [Women in Data Science](https://www.widsconference.org/) San Diego on May 9. The
@@ -101,17 +117,17 @@ image="/uploads/images/2020-02-10/marcel.png" />
 
 Here are a few more stories on our radar:
 
---**AI Singapore shares their method for AI development and deployment.** This
+-**AI Singapore shares their method for AI development and deployment.** This
 [blog about how Agile informs their processes](https://makerspace.aisingapore.org/2020/01/agile-ai-engineering-in-aisg/)
 for continuous integration and delivery includes data versioning.
 
---**Toucan AI dispenses advice for ML engineers.** This
+-**Toucan AI dispenses advice for ML engineers.** This
 [blog for practitioners](https://toucanai.com/blog/post/building-production-ml/)
 discusses questions like, "When to work on ML vs. the processes that surround
 ML". It covers how DVC is used for model versioning in the exploration stage of
 ML.
 
---**DVC at the University.** A recent
+-**DVC at the University.** A recent
 [pre-print from natural language processing researchers at Université Laval](https://arxiv.org/pdf/1912.01706.pdf)
 explains how DVC facilitated dataset access for collaborators.
 
