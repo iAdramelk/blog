@@ -98,7 +98,7 @@ way, the libraries that have made it easier than ever to iterate through
 different model architectures have increased the need for reproducibility in
 proportion.
 
-Meanwhile in Germany, superusers Marcel Mikl and Bert Bessel wrote
+Meanwhile in Germany, superusers Marcel Mikl and Bert Besser wrote
 [another](https://blog.codecentric.de/en/2019/03/walkthrough-dvc/) seriously
 comprehensive article about DVC for Codecentric. Marcel and Bert walk readers
 through the steps to **build a custom machine learning training pipeline with
