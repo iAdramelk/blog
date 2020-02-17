@@ -1,6 +1,6 @@
 ---
 title:
-  AITA for making this? A public dataset of Reddit posts about moral dilemmas.
+  AITA for making this? A public dataset of Reddit posts about moral dilemmas
 date: 2020-02-17
 description: |
   Releasing an open natural language dataset based on r/AmItheAsshole.
@@ -314,7 +314,7 @@ certainly room to push the state of the art in asshole detection!
 Additionally, while there are databases like
 [pushshift.io](https://pushshift.io/) containing basically all of Reddit’s
 content, I wanted to remove some of the barriers to analyzing text from
-r/AmITheAsshole by providing an already-processed and cleaned version of the
+r/AmItheAsshole by providing an already-processed and cleaned version of the
 data that can be downloaded with a line of code. You could use pushshift.io's
 API and/or praw to augment this dataset in some way- perhaps to compare activity
 in this subreddit with another, or broader patterns on Reddit.
