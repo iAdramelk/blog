@@ -93,7 +93,10 @@ and attempted to remove edits where the author had clearly given away the
 verdict (e.g., an edit that says, “Update: You’re right, I was the asshole.”).
 There were also verdicts that only occurred once (“cheap asshole”, “Crouching
 Liar; hidden asshole”, “the pizza is the asshole”), so I restricted the dataset
-to posts with standard verdicts. This left ~63K points.
+to posts with standard verdicts. This left ~63K points. Below is a sample of the
+resulting dataframe:
+
+![](/uploads/images/2020-02-17/df_sample.png)_Click to enlarge._
 
 The dataset is a snapshot of the subreddit in its current state, but the
 subreddit is certain to change over time as new content gets added. In the
