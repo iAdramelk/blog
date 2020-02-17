@@ -8,7 +8,7 @@ descriptionLong: |
   Delve into an open natural language dataset of posts about tricky situations from
   r/AmItheAsshole. Use this dataset for whatever you want- we'll show you how to get it and
   start playing.
-picture:
+picture: ../../static/uploads/images/2020-02-17/header2.png
 pictureComment:
 author: ../authors/elle_obrien.md
 commentsUrl: https://discuss.dvc.org/t/dvc-heartbeat-feburary-20/318
@@ -24,7 +24,7 @@ In data science, we frequently deal with classification problems like, _is this
 this [email begging me](https://archive.ics.uci.edu/ml/datasets/spambase) to
 claim my long-lost inheritance spam? Does this
 [movie critic](http://ai.stanford.edu/~amaas/data/sentiment/) have a positive
-opinion of [Cats](https://www.rottentomatoes.com/m/cats_2019)?_
+opinion of [Cats](https://bit.ly/2UXhaSW)?_
 
 Perhaps we should also consider the fundamental introspective matter of, _am I
 maybe being a bit of an asshole?_
@@ -149,9 +149,10 @@ the majority of posts are deemed “Not the Asshole” or “No Assholes Here”
 are posting on r/AmITheAsshole, you are probably not the asshole.
 
 Next, I attempted a very basic classifier, logistic regression using 1-gram
-frequencies (i.e., word counts from posts) as features. This is intended to give
-a baseline for what kind of performance any future modeling efforts should beat.
-Because of the strong class imbalance, I used
+frequencies (i.e., the frequency of word occurences in post titles and bodies)
+as features. This is intended to give a baseline for what kind of performance
+any future modeling efforts should beat. Because of the strong class imbalance,
+I used
 [SMOTE to oversample](https://imbalanced-learn.readthedocs.io/en/stable/generated/imblearn.over_sampling.SMOTE.html)
 Asshole posts. And, for simplicity, I binarized the category labels:
 
@@ -298,8 +299,8 @@ every day. The biggest asshole may still be out there.
 
 ### More resources
 
-For inspiration and reference, you may want to check out a few more efforts to
-get at r/AmItheAsshole from a data-scientific perspective, including
+You may want to check out a few more efforts to get at r/AmItheAsshole from a
+data-scientific perspective, including
 [topic modeling](https://medium.com/@tom.gonda/what-does-reddit-argue-about-28432b11ea26),
 [visualizing voting patterns](http://www.nathancunn.com/2019-04-04-am-i-the-asshole/)
 and
@@ -308,13 +309,14 @@ and
 [classification](https://www.informatik.hu-berlin.de/de/forschung/gebiete/wbi/teaching/studienDiplomArbeiten/finished/2019/expose_fletcher.pdf)
 with [deep learning](https://github.com/amr-amr/am-i-the-asshole). With a
 dataset this rich, there’s much more to be investigated, including continuing to
-refine the analyses already floating around the internet. And there’s almost
-certainly room to push the state of the art in asshole detection!
+refine these existing methods. And there’s almost certainly room to push the
+state of the art in asshole detection!
 
-Additionally, while there are databases like
-[pushshift.io](https://pushshift.io/) containing basically all of Reddit’s
-content, I wanted to remove some of the barriers to analyzing text from
-r/AmItheAsshole by providing an already-processed and cleaned version of the
-data that can be downloaded with a line of code. You could use pushshift.io's
-API and/or praw to augment this dataset in some way- perhaps to compare activity
-in this subreddit with another, or broader patterns on Reddit.
+If you're interested in learning more about using Reddit data, check out
+[pushshift.io](https://pushshift.io/), a database that contains basically all of
+Reddit's content (so why make this dataset? I wanted to remove some of the
+barriers to analyzing text from r/AmItheAsshole by providing an
+already-processed and cleaned version of the data that can be downloaded with a
+line of code; pushshift takes some work). You might use pushshift's API and/or
+praw to augment this dataset in some way- perhaps to compare activity in this
+subreddit with another, or broader patterns on Reddit.
