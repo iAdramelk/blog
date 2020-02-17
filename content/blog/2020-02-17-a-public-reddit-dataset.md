@@ -8,7 +8,7 @@ descriptionLong: |
   Delve into an open natural language dataset of posts about tricky situations from
   r/AmItheAsshole. Use this dataset for whatever you want- we'll show you how to get it and
   start playing.
-picture: ../../static/uploads/images/2020-02-17/header2.png
+picture: ../../static/uploads/images/2020-02-17/header.png
 pictureComment:
 author: ../authors/elle_obrien.md
 commentsUrl: https://discuss.dvc.org/t/dvc-heartbeat-feburary-20/318
@@ -141,7 +141,7 @@ for how common different verdicts are on the subreddit. In addition to “Asshol
 and “Not the Asshole”, there are two additional rulings: “Everybody Sucks” and
 “No Assholes Here”.
 
-![](/uploads/images/2020-02-17/visualization.svg 'freqplot =1000')
+![](/uploads/images/2020-02-17/freq_plot.svg 'freqplot =1000')
 
 In general agreement with an
 [analysis by Nathan Cunn](http://www.nathancunn.com/2019-04-04-am-i-the-asshole/),
