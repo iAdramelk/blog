@@ -294,7 +294,7 @@ probable errors (you can file issues
 Lastly, please stay tuned for more releases- there are hundreds of new posts
 every day. The biggest asshole may still be out there.
 
-...
+<hr />
 
 ### More resources
 
