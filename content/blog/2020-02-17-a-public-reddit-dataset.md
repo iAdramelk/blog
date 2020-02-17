@@ -136,10 +136,12 @@ $ dvc get --rev lightweight \
 
 ## A quick look at the data
 
-Let’s take a flyover look at the dataset so far. First, here’s a frequency plot
-for how common different verdicts are on the subreddit. In addition to “Asshole”
-and “Not the Asshole”, there are two additional rulings: “Everybody Sucks” and
-“No Assholes Here”.
+Let’s take a flyover look at the dataset so far. The code to make the following
+visuals and results is
+[available on GitHub](https://github.com/andronovhopf/aita_viz_and_classify)
+First, here’s a frequency plot for how common different verdicts are on the
+subreddit. In addition to “Asshole” and “Not the Asshole”, there are two
+additional rulings: “Everybody Sucks” and “No Assholes Here”.
 
 ![](/uploads/images/2020-02-17/freq_plot.svg 'freqplot =1000')
 
