@@ -138,7 +138,7 @@ for how common different verdicts are on the subreddit. In addition to “Asshol
 and “Not the Asshole”, there are two additional rulings: “Everybody Sucks” and
 “No Assholes Here”.
 
-![](/uploads/images/2020-02-17/aita_freq_plot.png 'freqplot =1000')
+![](/uploads/images/2020-02-17/visualization.svg 'freqplot =1000')
 
 In general agreement with an
 [analysis by Nathan Cunn](http://www.nathancunn.com/2019-04-04-am-i-the-asshole/),
@@ -177,7 +177,7 @@ Assholes go back to edit their posts). Since familial relationships featured
 prominently, I estimated the log odds of being voted Asshole if your post
 mentions a mom, dad, girlfriend/wife or boyfriend/husband:
 
-![](/uploads/images/2020-02-17/aita_kw.png 'aita_kw =1000')
+![](/uploads/images/2020-02-17/svg_kw.svg 'aita_kw =1000')
 
 For reference, the log odds are computed with base 2; a score of 1 means that
 Asshole posts are twice as likely to contain the keyword as Not the Asshole
