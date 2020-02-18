@@ -8,7 +8,7 @@ descriptionLong: |
   Delve into an open natural language dataset of posts about moral dilemmas from
   r/AmItheAsshole. Use this dataset for whatever you want- here's how to get it and
   start playing.
-picture: ../../static/uploads/images/2020-02-17/AITA_post_header.png
+picture: ../../static/uploads/images/2020-02-17/post_header_gmoji.png
 pictureComment:
 author: ../authors/elle_obrien.md
 commentsUrl: https://discuss.dvc.org/t/dvc-heartbeat-feburary-20/318
@@ -180,13 +180,17 @@ looked at which words were predictive of class using the
 [chi-squared test](https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.chi2.html).
 The top five informative words were mom, wife, mother, edit, and dad (looks like
 Assholes go back to edit their posts). Since familial relationships featured
-prominently, I estimated the log odds of being voted Asshole if your post
-mentions a mom, dad, girlfriend/wife or boyfriend/husband:
+prominently, I
+[estimated the log odds ratio](https://www.tidytextmining.com/twitter.html#comparing-word-usage)
+of being voted Asshole (versus Not the Asshole) if your post mentions a mom,
+dad, girlfriend/wife or boyfriend/husband. Roughly, the log odds ratio
+represents the difference in probability of a keyword occurring in Asshole posts
+compared to Not-Asshole posts.
 
-![](/uploads/images/2020-02-17/svg_kw.svg 'aita_kw =1000')
+![](/uploads/images/2020-02-17/svg_kw2.svg)
 
-For reference, the log odds are computed with base 2; a score of 1 means that
-Asshole posts are twice as likely to contain the keyword as Not the Asshole
+For reference, the log odd ratios are computed with base 2; a score of 1 means
+that Asshole posts are twice as likely to contain the keyword as Not the Asshole
 posts. So keep in mind that the effect sizes we’re detecting, although almost
 certainly non-zero, are still fairly small.
 
