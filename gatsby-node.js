@@ -104,9 +104,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     }
 
     if (descriptionLong) {
-      node.frontmatter.pictureComment = markdownToHtml(
-        descriptionLong
-      ).contents;
+      node.frontmatter.pictureComment = markdownToHtml(pictureComment).contents;
     }
     // end Convert fields
   }
