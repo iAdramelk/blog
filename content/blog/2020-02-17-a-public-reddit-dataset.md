@@ -65,7 +65,7 @@ their judgment.
 
 It seems fun to try, though. It helps that the data is plentiful: because the
 subreddit is popular and well-moderated, there’s an especially strong volume of
-high-quality (re: on-topic and appropriately formatted) content being posted
+high-quality content (re: on-topic and appropriately formatted) being posted
 daily.
 
 ## Building the dataset
