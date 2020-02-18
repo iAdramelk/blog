@@ -11,7 +11,7 @@ descriptionLong: |
 picture: ../../static/uploads/images/2020-02-17/post_header_gmoji.png
 pictureComment:
 author: ../authors/elle_obrien.md
-commentsUrl: https://discuss.dvc.org/t/dvc-heartbeat-feburary-20/318
+commentsUrl: https://discuss.dvc.org/t/aita-for-making-this-a-public-dataset-of-reddit-posts-about-moral-dilemmas/323
 tags:
   - Project
   - Data
