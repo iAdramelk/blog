@@ -170,7 +170,7 @@ modestly: accuracy was 62.0% +/- 0.005 (95% confidence interval). Curiously, the
 only other classifier attempt I could find online
 [reported 61% accuracy on held-out data](https://github.com/amr-amr/am-i-the-asshole)
 using the much more powerful BERT architecture. Considering that logistic
-regression has zero [hidden layers](https://towardsdatascience.com/beginners-ask-how-many-hidden-layers-neurons-to-use-in-artificial-neural-networks-51466afa0d3e), and our features discard sequential
+regression has zero hidden layers, and our features discard sequential
 information entirely, we’re doing quite well! Although I can’t be certain, I’m
 curious how much the discrepancy comes down to dataset size: the previous effort
 with BERT appears to be trained on ~30K posts.
