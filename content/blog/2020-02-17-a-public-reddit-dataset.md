@@ -5,10 +5,10 @@ date: 2020-02-17
 description: |
   Releasing an open natural language dataset based on r/AmItheAsshole.
 descriptionLong: |
-  Delve into an open natural language dataset of posts about tricky situations from
-  r/AmItheAsshole. Use this dataset for whatever you want- we'll show you how to get it and
+  Delve into an open natural language dataset of posts about moral dilemmas from
+  r/AmItheAsshole. Use this dataset for whatever you want- here's how to get it and
   start playing.
-picture: ../../static/uploads/images/2020-02-17/header.png
+picture: ../../static/uploads/images/2020-02-17/AITA_post_header.png
 pictureComment:
 author: ../authors/elle_obrien.md
 commentsUrl: https://discuss.dvc.org/t/dvc-heartbeat-feburary-20/318
@@ -21,10 +21,10 @@ tags:
 
 In data science, we frequently deal with classification problems like, _is this
 [Yelp reviewer unhappy](https://www.ics.uci.edu/~vpsaini/) with their brunch? Is
-this [email begging me](https://archive.ics.uci.edu/ml/datasets/spambase) to
+[this email](https://archive.ics.uci.edu/ml/datasets/spambase) begging me to
 claim my long-lost inheritance spam? Does this
 [movie critic](http://ai.stanford.edu/~amaas/data/sentiment/) have a positive
-opinion of [Cats](https://bit.ly/2UXhaSW)?_
+opinion of Cats?_
 
 Perhaps we should also consider the fundamental introspective matter of, _am I
 maybe being a bit of an asshole?_
@@ -34,7 +34,7 @@ as the judgments handed down by a jury of Redditors. The wellspring of this data
 is the [r/AmItheAsshole](https://www.reddit.com/r/AmItheAsshole/) subreddit, one
 of the natural wonders of the digital world. In this article, I'll show you
 what's in the dataset, how to get it, and some things you can do to move the
-frontiers of Asshole research forwards.
+frontiers of Asshole research forward.
 
 ## What makes an Asshole?
 
@@ -47,9 +47,9 @@ as The Asshole or not. For example:
 
 Without bringing any code into the picture, it’s intuitive to think of each new
 post as a classification task for the subreddit. Formally, we could think of the
-subreddit as executing a function f such that
+subreddit as executing a function _f_ such that
 
-![](/uploads/images/2020-02-17/aita_formula.png)
+![](/uploads/images/2020-02-17/aita_formula.png '=500')
 
 Of course, finding f won’t be trivial. To be frank, I’m not positive how well we
 could hope to forecast the rulings of the subreddit. A lot of posts are not easy
@@ -114,7 +114,7 @@ ways is `pip install dvc`.
 Say you have a directory on your local machine where you plan to build some
 analysis scripts. Simply run
 
-```
+```dvc
 $ dvc get https://github.com/iterative/aita_dataset \
       aita_clean.csv
 ```
@@ -128,7 +128,7 @@ with 10,000 randomly sampled (cleaned) data points for quick-and-dirty
 experimentation that won’t occupy all your laptop’s memory. To download only
 this smaller dataset, run
 
-```
+```dvc
 $ dvc get --rev lightweight \
       https://github.com/iterative/aita_dataset \
       aita_clean.csv
@@ -138,12 +138,12 @@ $ dvc get --rev lightweight \
 
 Let’s take a flyover look at the dataset so far. The code to make the following
 visuals and results is
-[available on GitHub](https://github.com/andronovhopf/aita_viz_and_classify)
+[available on GitHub](https://github.com/andronovhopf/aita_viz_and_classify).
 First, here’s a frequency plot for how common different verdicts are on the
 subreddit. In addition to “Asshole” and “Not the Asshole”, there are two
 additional rulings: “Everybody Sucks” and “No Assholes Here”.
 
-![](/uploads/images/2020-02-17/freq_plot.svg 'freqplot =1000')
+![](/uploads/images/2020-02-17/freq_plot.svg)
 
 In general agreement with an
 [analysis by Nathan Cunn](http://www.nathancunn.com/2019-04-04-am-i-the-asshole/),
@@ -215,7 +215,7 @@ hosted data set. This is desirable if you might iterate through several
 experiments in the search for the right architecture, for example, or think
 you’ll want to re-train a model . To get the dataset the first time, you’ll run:
 
-```
+```dvc
 $ git init
 $ dvc init
 $ dvc import https://github.com/iterative/aita_dataset \
@@ -225,7 +225,7 @@ $ dvc import https://github.com/iterative/aita_dataset \
 Then, because the dataset in your workspace is linked to our dataset repository,
 you can update it by simply running:
 
-```
+```dvc
 $ dvc update aita_clean.csv
 ```
 
@@ -236,7 +236,7 @@ history then, not only to previous versions of code but also to versions of
 (specifically, links to) data. For example, you could roll back the state of the
 project to before you updated the dataset and re-run your classifier:
 
-```
+```dvc
 $ git log --oneline
 58e28a5 retrain logistic reg
 6a44161 update aita dataset
@@ -254,7 +254,7 @@ older version of the dataset using the tags associated with each release. The
 current release is v.20.1 and the original release is v.20.0- the numeric codes
 correspond to the year and month.
 
-```
+```dvc
 $ dvc get --rev v.20.0 \
       https://github.com/iterative/aita_dataset aita_clean.csv
 ```
