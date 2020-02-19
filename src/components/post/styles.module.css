@@ -70,6 +70,10 @@
       margin-top: 10px;
     }
   }
+
+  & a {
+    color: var(--color-black);
+  }
 }
 
 .share {
