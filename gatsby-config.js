@@ -106,7 +106,6 @@ const plugins = [
                         title
                         date
                         description
-                        descriptionLong
                       }
                     }
                   }
@@ -118,8 +117,7 @@ const plugins = [
               return Object.assign({}, edge.node.frontmatter, {
                 custom_elements: [{ 'content:encoded': edge.node.html }],
                 date: edge.node.frontmatter.date,
-                description:
-                  edge.node.descriptionLong || edge.node.descriptionLong,
+                description: edge.node.description,
                 guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
                 url: site.siteMetadata.siteUrl + edge.node.fields.slug
               });
