@@ -5,6 +5,8 @@ async function handleRequest(request) {
   let blog = 'https://blog.dvc.org';
 
   // Legacy domain + Medium old blog redirects
+  // Full list of redirects is here:
+  // https://github.com/iterative/blog/issues/23
   if (url.host === 'blog.dataversioncontrol.com') {
     switch (path) {
       case '/data-version-control-tutorial-9146715eda46':
@@ -20,8 +22,13 @@ async function handleRequest(request) {
           'https://github.com/iterative/dvc/releases',
           301
         );
-      case /^\/.*-[a-z0-9]{12}$/.test(path):
-        return Response.redirect(blog + path.replace(/-[a-z0-9]$/, ''), 301);
+      default:
+        if (path.match(/^\/.*-[a-z0-9]{12}$/)) {
+          return Response.redirect(
+            blog + path.replace(/-[a-z0-9]{12}$/, ''),
+            301
+          );
+        }
     }
   }
 
