@@ -9,15 +9,15 @@ descriptionLong: |
   Every month we are sharing here our news, findings, interesting reads,
   community takeaways, and everything along the way.
 
-  Some of those are related to our brainchild [DVC](https://dvc.org) and
-  its journey. The others are a collection of exciting stories and ideas
-  centered around ML best practices and workflow.
+  Some of those are related to our brainchild [DVC](https://dvc.org) and its
+  journey. The others are a collection of exciting stories and ideas centered
+  around ML best practices and workflow.
 picture: ../../static/uploads/images/2019-08-01/post-image.png
-pictureComment:
-  Special edition [DVC
-  shirt](https://twitter.com/rkuprieiev/status/1144298339200098306?s=20). We
-  made this one for [Ruslan](https://github.com/efiop) — DVC maintainer and the
-  best tech lead.
+pictureComment: |
+  Special edition
+  [DVC shirt](https://twitter.com/rkuprieiev/status/1144298339200098306?s=20).
+  We made this one for [Ruslan](https://github.com/efiop) — DVC maintainer and
+  the best tech lead.
 author: ../authors/svetlana_grinchenko.md
 commentsUrl: https://discuss.dvc.org/t/july-19-dvc-heartbeat/288
 tags:

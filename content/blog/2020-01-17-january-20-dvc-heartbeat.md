@@ -2,14 +2,12 @@
 title: January '20 DVC❤️Heartbeat
 date: 2020-01-17
 description: |
-  Reaching 100 contributors, PyData LA,
-  and more news from the DVC community.
+  Reaching 100 contributors, PyData LA, and more news from the DVC community.
 descriptionLong: |
-  Every month we share news, findings, interesting reads,
-  community takeaways, and everything else along the way.
-  Some of those are related to our brainchild DVC and its journey. The others
-  are a collection of exciting stories and ideas centered around ML best
-  practices and workflow.
+  Every month we share news, findings, interesting reads, community takeaways,
+  and everything else along the way. Some of those are related to our brainchild
+  [DVC](https://dvc.org) and its journey. The others are a collection of
+  exciting stories and ideas centered around ML best practices and workflow.
 picture: ../../static/uploads/images/2020-01-17/DVC_chalk_donuts.png
 pictureComment: We spread the joys of version control and donuts at PyData LA.
 author: ../authors/elle_obrien.md

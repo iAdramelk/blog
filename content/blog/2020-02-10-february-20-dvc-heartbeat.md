@@ -5,10 +5,12 @@ description: |
   DVC talks around the world,
   new team members, and full-stack machine learning.
 descriptionLong: |
-  Every month we share news, findings, interesting reads,
-  community takeaways, and everything else along the way.
-  Look here for updates about DVC, our journey as a startup, 
-  projects by our users and big ideas about best practices in ML and data science.
+  Every month we share news, findings, interesting reads, community takeaways,
+  and everything else along the way.
+
+  Look here for updates about [DVC](https://dvc.org), our journey as a startup,
+  projects by our users and big ideas about best practices in ML and data
+  science.
 picture: ../../static/uploads/images/2020-02-10/heartbeat_black.png
 pictureComment:
   Just in time for Valentine's day, here's a seasonally-relevant DVC pipeline.

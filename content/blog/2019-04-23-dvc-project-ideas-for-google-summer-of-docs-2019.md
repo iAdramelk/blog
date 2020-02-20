@@ -6,11 +6,13 @@ description: |
   sponsored by Google that pairs technical writers with open source projects to
   collaborate on the open source project documentation.
 descriptionLong: |
-  DVC.org is applying for Google Season of Docs — a new and unique program
-  sponsored by Google that pairs technical writers with open source projects to
-  collaborate on the open source project documentation. It’s happening for the
-  first time in 2019 and we are excited about the opportunity to be a part of
-  it!
+  [DVC.org](https://dvc.org) is applying for
+  [Google Season of Docs](https://developers.google.com/season-of-docs/) — a new
+  and unique program sponsored by Google that pairs technical writers with open source projects to
+  collaborate on the open source project documentation.
+
+  It’s happening for the first time in 2019 and we are excited about the
+  opportunity to be a part of it!
 picture: ../../static/uploads/images/2019-04-23/post-image.png
 author: ../authors/svetlana_grinchenko.md
 commentsUrl: https://discuss.dvc.org/t/dvc-project-ideas-for-google-season-of-docs-2019/291

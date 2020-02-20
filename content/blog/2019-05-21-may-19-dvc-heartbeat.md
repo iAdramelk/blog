@@ -8,13 +8,14 @@ description: |
 descriptionLong: |
   Every month we are sharing here our news, findings, interesting reads,
   community takeaways, and everything along the way.
-  Some of those are related to our brainchild DVC and its journey. The others
-  are a collection of exciting stories and ideas centered around ML best
-  practices and workflow.
+
+  Some of those are related to our brainchild [DVC](https://dvc.org) and its
+  journey. The others are a collection of exciting stories and ideas centered
+  around ML best practices and workflow.
 picture: ../../static/uploads/images/2019-05-21/post-image.jpeg
-pictureComment:
-  Kudos to StickerMule.com for our amazing stickers (and great customer
-  service)!
+pictureComment: |
+  Kudos to [StickerMule.com](https://www.stickermule.com) for our amazing
+  stickers (and great customer service)!
 author: ../authors/svetlana_grinchenko.md
 commentsUrl: https://discuss.dvc.org/t/may-19-dvc-heartbeat/290
 tags:

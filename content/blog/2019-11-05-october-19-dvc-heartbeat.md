@@ -7,9 +7,10 @@ description: |
 descriptionLong: |
   Every month we are sharing here our news, findings, interesting reads,
   community takeaways, and everything along the way.
-  Some of those are related to our brainchild DVC and its journey. The others
-  are a collection of exciting stories and ideas centered around ML best
-  practices and workflow.
+
+  Some of those are related to our brainchild [DVC](https://dvc.org) and its
+  journey. The others are a collection of exciting stories and ideas centered
+  around ML best practices and workflow.
 picture: ../../static/uploads/images/2019-11-05/post-image.png
 author: ../authors/svetlana_grinchenko.md
 commentsUrl: https://discuss.dvc.org/t/october-19-dvc-heartbeat/285

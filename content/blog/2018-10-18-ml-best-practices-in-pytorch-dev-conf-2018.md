@@ -7,11 +7,13 @@ description: |
 descriptionLong: |
   In the Machine Learning (ML) field tools and techniques for best practices are
   just starting to be developed. At the PyTorch developer conference (PTDC-18),
-  several speakers including Jerome Pesenti, VP of AI from Facebook and Andrej
-  Karpathy, Director of Tesla AI spoke about best practices for machine learning
-  development.
+  several speakers including **Jerome Pesenti, VP of AI from Facebook** and
+  **Andrej Karpathy, Director of Tesla AI** spoke about best practices for
+  machine learning development.
 picture: ../../static/uploads/images/2018-10-18/post-image.jpeg
-pictureComment: 'The image source: blog.hubspot.com'
+pictureComment: |
+  The image source:
+  [link](https://blog.hubspot.com/customers/bid/109553/5-Homepage-Design-Best-Practices)
 author: ../authors/dmitry_petrov.md
 commentsUrl: https://discuss.dvc.org/t/ml-best-practices-in-pytorch-dev-conf-2018/294
 tags:
