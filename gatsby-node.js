@@ -5,6 +5,11 @@ const tagToSlug = require('./src/utils/tag-to-slug');
 const iterPages = require('./src/components/paginator/utils/iter-pages');
 const { siteMetadata } = require('./gatsby-config');
 
+const remark = require('remark');
+const remarkHTML = require('remark-html');
+
+const markdownToHtml = remark().use(remarkHTML).processSync;
+
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
@@ -120,6 +125,22 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       node,
       value
     });
+
+    // Convert fields in frontmatter from markdown to html
+    const {
+      frontmatter: { descriptionLong, pictureComment }
+    } = node;
+
+    if (descriptionLong) {
+      node.frontmatter.descriptionLong = markdownToHtml(
+        descriptionLong
+      ).contents;
+    }
+
+    if (pictureComment) {
+      node.frontmatter.pictureComment = markdownToHtml(pictureComment).contents;
+    }
+    // end Convert fields
   }
 };
 

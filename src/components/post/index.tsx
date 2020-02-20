@@ -74,9 +74,14 @@ function Post({ html, timeToRead, frontmatter, fields }: IBlogPostData) {
       <div className={styles.head}>
         <div className={styles.headContent}>
           <h1 className={styles.title}>{title}</h1>
-          <div className={styles.description}>
-            {descriptionLong || description}
-          </div>
+          {descriptionLong ? (
+            <div
+              className={styles.description}
+              dangerouslySetInnerHTML={{ __html: descriptionLong }}
+            />
+          ) : (
+            <div className={styles.description}>{description}</div>
+          )}
           <Meta
             commentsCount={commentsCount}
             commentsUrl={commentsUrl}

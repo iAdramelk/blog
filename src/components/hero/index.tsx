@@ -33,7 +33,10 @@ function Hero({ pictureComment, picture }: IBlogPostHero) {
         <NonStretchedImage fluid={picture?.childImageSharp.fluid} />
       </div>
       {pictureComment && (
-        <div className={styles.pictureComment}>{pictureComment}</div>
+        <div
+          className={styles.pictureComment}
+          dangerouslySetInnerHTML={{ __html: pictureComment }}
+        />
       )}
     </div>
   );

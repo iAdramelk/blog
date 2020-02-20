@@ -62,6 +62,18 @@
 
     margin: 30px 0 20px;
   }
+
+  & p {
+    margin: 0;
+
+    + p {
+      margin-top: 10px;
+    }
+  }
+
+  & a {
+    color: var(--color-black);
+  }
 }
 
 .share {

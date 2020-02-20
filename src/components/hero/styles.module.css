@@ -55,4 +55,16 @@
   font-style: italic;
   text-align: center;
   color: var(--color-gray);
+
+  & p {
+    margin: 0;
+
+    + p {
+      margin-top: 5px;
+    }
+  }
+
+  & a {
+    color: var(--color-gray);
+  }
 }
