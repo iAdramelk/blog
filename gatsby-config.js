@@ -2,7 +2,7 @@ const path = require('path');
 require('./config/prismjs/dvc');
 const { imageMaxWidth } = require('./src/constants');
 
-const title = 'Data Version Control · DVC';
+const title = 'Data Version Control';
 const keywords =
   'git, data, version control, machine learning models management, datasets';
 const description =
