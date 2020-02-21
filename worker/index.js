@@ -4,6 +4,16 @@ async function handleRequest(request) {
   let site = 'https://dvc.org';
   let blog = 'https://blog.dvc.org';
 
+  if (url.host === 'www.dataversioncontrol.com') {
+    return Response.redirect(
+      request.url.replace(
+        'www.dataversioncontrol.com',
+        'dataversioncontrol.com'
+      ),
+      301
+    );
+  }
+
   // Legacy domain + Medium old blog redirects
   // Full list of redirects is here:
   // https://github.com/iterative/blog/issues/23
